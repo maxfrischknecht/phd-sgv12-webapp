@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:hover {
+    transition: all 0.3s;
+}
+
+body {
+    @apply bg-background;
+    @apply text-light;
+    @apply font-sans;
+    @apply text-sans-md;
+}
+
