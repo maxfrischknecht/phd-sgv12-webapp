@@ -1,38 +1,66 @@
 <script>
-	$: pageTitle = 'Generated Visualization';
+	import { onMount } from 'svelte';
+	let settings = null;
+
+	// Fetch the settings to dynamically generate the navigations
+	onMount(async () => {
+		try {
+			const response = await fetch('/generative-settings.json');
+			if (response.ok) {
+				settings = await response.json();
+				console.log('Data fetched:', settings);
+			} else {
+				console.error('Failed to load JSON data');
+			}
+		} catch (error) {
+			console.error('Error fetching data:', error);
+		}
+	});
+
+	// Get the current page for dynamic subnavigation
+	// Get the current route an format it from "/about" to "About"
+	// save it in a reactive variable with $:
+	import { page } from '$app/stores';
+	$: currentPage = $page.url.pathname.split('/')[1];
+
+	console.log($page, currentPage);
 </script>
 
-<header>
-	<!-- HEADER BAR -->
-	<div class="grid grid-cols-12 gap-6">
-		<div class="col-span-10 col-start-2 bg-black px-6 pb-1 h-12 flex items-center border-l border-r border-grey">
-			<h1>Collection Ernst Brunner</h1>
-			<h2 class="pl-4 text-blue">{pageTitle}</h2>
-		</div>
+<header class="w-100 min-h-8 bg-background">
+	<!-- SECTIONS HEADERS -->
+	<div class="grid grid-cols-12 gap-6 px-6">
+		<button class="col-span-2 bg-light text-dark font-mono text-mono-sm h-8">Settings</button>
+		{#if settings === null}
+			<p class="font-mono text-mono-sm">generating sections...</p>
+		{:else if settings.sections && settings.sections.length > 0}
+			{#each settings.sections as section}
+				<div class="col-span-2 h-8 flex items-center font-mono text-mono-sm">{section}</div>
+			{/each}
+		{:else}
+			<p class="font-mono text-mono-sm">No sections available</p>
+		{/if}
 	</div>
-	<!-- VISUALIZATION GENERATOR -->
-	<div class="grid grid-cols-12 gap-6">
-		<div class="col-span-10 col-start-2 border border-grey">
-			<div class="grid grid-cols-3 px-6 gap-6 bg-black">
-				<div class="col-span-1 py-5 border-r border-grey">
-					<p class="font-mono text-mono-sm pb-3">Analytical Interest</p>
-					<p>Releationship</p>
-                    <p>Time</p>
-                    <p>Space</p>
-				</div>
-				<div class="col-span-1 pt-5 pb-4 border-r border-grey">
-					<p class="font-mono text-mono-sm pb-3">Data</p>
-					<p>Keywords</p>
-					<p>Dates</p>
-					<p>Locations</p>
-					<p>Comments</p>
-				</div>
-                <div class="col-span-1 pt-5 pb-4 ">
-					<p class="font-mono text-mono-sm pb-3">Data Manipulation</p>
-					<p>Co-Occurence Matrix</p>
-					<p>Force-Directed Graph</p>
-				</div>
+
+	<!-- SECTION OPTIONS -->
+	<div class="grid grid-cols-12 gap-6 px-6 pb-4 border-b border-grey">
+		<!-- META DATA OPTIONS -->
+		{#if settings != null && settings['meta-data'] && settings['meta-data'].length > 0}
+			<div class="col-start-3 col-span-2 font-sans text-sans-md text-blue">
+				<p>{settings['data-set'][0]['label']}</p>
 			</div>
-		</div>
+			<div class="col-span-2 font-sans text-sans-md">
+				{#each settings['meta-data'] as option}
+					<a href="/{option.url}" class="block">{option.label}</a>
+				{/each}
+			</div>
+		{/if}
+		<!-- DATA CURATION OPTIONS -->
+		{#if settings != null && currentPage}
+			<div class="col-span-2 font-sans text-sans-md">
+				{#each settings['data-curation'][currentPage] as option}
+					<a href="/{option.url}" class="block">{option.label}</a>
+				{/each}
+			</div>
+		{/if}
 	</div>
 </header>

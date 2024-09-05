@@ -1,0 +1,60 @@
+{
+    "sections": [
+        "Data Set",
+        "Meta-Data",
+        "Data Curation",
+        "Data Visualization"
+    ],
+    "data-set": [
+        {
+            "label": "Negatives Ernst Brunner Collection",
+            "details": "Negatives Ernst Brunner \n 48'000 Images"
+        }
+    ],
+    "meta-data": [
+        {
+            "label": "Keywords",
+            "url": "keywords",
+            "details": "Keywords \n 22’562 Images / 44%"
+        },
+        {
+            "label": "Dates",
+            "url": "dates",
+            "details": "unknown"
+        },
+        {
+            "label": "Locations",
+            "url": "locations",
+            "details": "unknown"
+        },
+        {
+            "label": "Comments",
+            "url": "comments",
+            "details": "unknown"
+        }
+    ],
+    "data-curation": {
+        "keywords": [
+            {
+                "label": "Co-Occurence Count",
+                "details": "Co-Occurence Count \n Threshold 5 \n 18’000 Images / 35%"
+            },
+            {
+                "label": "Regex Pattern",
+                "details": "unknown"
+            }
+        ]
+    },
+    "data-visualization": {
+        "co-occurence": [
+            {
+                "label": "Matrix",
+                "details": "Matrix \n < 5 / 100 / 1000"
+            },
+            {
+                "label": "Force Directed Network",
+                "details": "unknown"
+            }
+        ]
+    }
+}
