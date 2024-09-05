@@ -36,12 +36,32 @@
     "data-curation": {
         "keywords": [
             {
-                "label": "Co-Occurence Count",
+                "label": "Co-Occurence",
+                "url": "co-occurence",
                 "details": "Co-Occurence Count \n Threshold 5 \n 18’000 Images / 35%"
             },
             {
-                "label": "Regex Pattern",
+                "label": "Series Finder",
+                "url": "series-finder",
                 "details": "unknown"
+            }
+        ],
+        "dates": [
+            {
+                "label": "Timeline",
+                "details": "Unknown"
+            }
+        ],
+        "locations": [
+            {
+                "label": "Map",
+                "details": "Unknown"
+            }
+        ], 
+        "comments": [
+            {
+                "label": "Series Timeline",
+                "details": "Unknown"
             }
         ]
     },

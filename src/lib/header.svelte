@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	let settings = null;
+	let activeMetaData = null;
 
 	// Fetch the settings to dynamically generate the navigations
 	onMount(async () => {
@@ -23,7 +24,7 @@
 	import { page } from '$app/stores';
 	$: currentPage = $page.url.pathname.split('/')[1];
 
-	console.log($page, currentPage);
+	// console.log($page, currentPage);
 </script>
 
 <header class="w-100 min-h-8 bg-background">
@@ -43,22 +44,36 @@
 
 	<!-- SECTION OPTIONS -->
 	<div class="grid grid-cols-12 gap-6 px-6 pb-4 border-b border-grey">
-		<!-- META DATA OPTIONS -->
-		{#if settings != null && settings['meta-data'] && settings['meta-data'].length > 0}
+		<!-- DATA SET OPTIONS -->
+		{#if settings != null && settings['data-set'] && settings['data-set'].length > 0}
 			<div class="col-start-3 col-span-2 font-sans text-sans-md text-blue">
 				<p>{settings['data-set'][0]['label']}</p>
 			</div>
+		{/if}
+		<!-- META DATA OPTIONS -->
+		{#if settings != null && settings['meta-data'] && settings['meta-data'].length > 0}
 			<div class="col-span-2 font-sans text-sans-md">
 				{#each settings['meta-data'] as option}
-					<a href="/{option.url}" class="block">{option.label}</a>
+					<a
+						on:mouseover={() => (activeMetaData = option.url)}
+						on:focus={() => (activeMetaData = option.url)}
+						href="/{option.url}"
+						class="block">{option.label}</a
+					>
 				{/each}
 			</div>
 		{/if}
 		<!-- DATA CURATION OPTIONS -->
 		{#if settings != null && currentPage}
 			<div class="col-span-2 font-sans text-sans-md">
-				{#each settings['data-curation'][currentPage] as option}
-					<a href="/{option.url}" class="block">{option.label}</a>
+				{#each Object.keys(settings['data-curation']) as sectionKey}
+					{#if activeMetaData == sectionKey}
+						<div id={sectionKey}>
+							{#each settings['data-curation'][sectionKey] as option}
+								<a href="/{option.url}" class="block">{option.label}</a>
+							{/each}
+						</div>
+					{/if}
 				{/each}
 			</div>
 		{/if}
