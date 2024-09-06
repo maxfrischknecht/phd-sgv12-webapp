@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { imageIdsStore } from './../../lib/store';
 
 	let sortedData = [];
 	let sortLabelAsc = true;
@@ -9,8 +10,8 @@
 		const response = await fetch('/data/sgv-12_all_keywords.json');
 		const data = await response.json();
 		// sortedData = data.sort((a, b) => b.count - a.count);
-        sortedData = data.sort((a, b) => a.label.localeCompare(b.label));
-        console.log(data.length)
+		sortedData = data.sort((a, b) => a.label.localeCompare(b.label));
+		console.log(data.length);
 	});
 
 	function sortByLabel() {
@@ -34,6 +35,10 @@
 		});
 		sortCountAsc = !sortCountAsc;
 	}
+
+	function handleRowClick(imageIds) {
+		imageIdsStore.set(imageIds);
+	}
 </script>
 
 <!-- TABLE HEADER -->
@@ -51,7 +56,7 @@
 
 <!-- TABLE CONTENT -->
 {#each sortedData as item}
-	<div class="grid grid-cols-12 gap-6 px-6 border-b border-grey">
+	<div class="grid grid-cols-12 gap-6 px-6 border-b border-grey cursor-pointer" on:click={() => handleRowClick(item.image_ids)}>
 		<div class="col-span-3 p-2">
 			<p class="font-mono text-mono-sm">{item.label}</p>
 		</div>
