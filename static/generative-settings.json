@@ -8,60 +8,64 @@
     "data-set": [
         {
             "label": "Negatives Ernst Brunner Collection",
+            "id": "negatives-ernst-brunner-collection",
             "details": "Negatives Ernst Brunner \n 48'000 Images"
         }
     ],
     "meta-data": [
         {
             "label": "Keywords",
-            "url": "keywords",
+            "id": "keywords",
             "details": "Keywords \n 22’562 Images / 44%"
         },
         {
             "label": "Dates",
-            "url": "dates",
-            "details": "unknown"
+            "id": "dates",
+            "details": "Some details on dates"
         },
         {
             "label": "Locations",
-            "url": "locations",
-            "details": "unknown"
+            "id": "locations",
+            "details": "Some details on locations"
         },
         {
             "label": "Comments",
-            "url": "comments",
-            "details": "unknown"
+            "id": "comments",
+            "details": "Some details on comments"
         }
     ],
     "data-curation": {
         "keywords": [
             {
                 "label": "Co-Occurence",
-                "url": "co-occurence",
+                "id": "co-occurence",
                 "details": "Co-Occurence Count \n Threshold 5 \n 18’000 Images / 35%"
             },
             {
                 "label": "Series Finder",
-                "url": "series-finder",
-                "details": "unknown"
+                "id": "series-finder",
+                "details": "details on regex keyword curation"
             }
         ],
         "dates": [
             {
                 "label": "Timeline",
-                "details": "Unknown"
+                "id": "timeline", 
+                "details": "details on timeline date curation"
             }
         ],
         "locations": [
             {
                 "label": "Map",
-                "details": "Unknown"
+                "id": "map",
+                "details": "details on map location curation"
             }
         ], 
         "comments": [
             {
                 "label": "Series Timeline",
-                "details": "Unknown"
+                "id": "series-timeline",
+                "details": "details on series timeline curation"
             }
         ]
     },
@@ -69,11 +73,20 @@
         "co-occurence": [
             {
                 "label": "Matrix",
-                "details": "Matrix \n < 5 / 100 / 1000"
+                "id": "matrix",
+                "details": "Details on Matrix visualization"
             },
             {
                 "label": "Force Directed Network",
-                "details": "unknown"
+                "id": "network",
+                "details": "Details on Force Directed Network"
+            }
+        ],
+        "series-finder": [
+            {
+                "label": "Timeline",
+                "id": "timeline",
+                "details": "Details on Timeline visualization"
             }
         ]
     }
