@@ -1,9 +1,12 @@
 <script>
 	import '../app.css';
 	import Header from '$lib/header.svelte';
+	import Panel from '$lib/panel.svelte';
+
 </script>
 
 <Header></Header>
-<div class="pt-12">
+<Panel></Panel>
+<div class="">
 	<slot></slot>
 </div>

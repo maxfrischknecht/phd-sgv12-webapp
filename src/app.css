@@ -17,3 +17,12 @@ a:hover {
     @apply text-blue;
 }
 
+.control-btn:hover {
+    @apply bg-background;
+    @apply text-light;
+    @apply border-grey;
+    @apply border-l;
+    @apply border-r;
+    @apply border-b;
+}
+

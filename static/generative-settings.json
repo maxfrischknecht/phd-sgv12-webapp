@@ -9,14 +9,14 @@
         {
             "label": "Negatives Ernst Brunner Collection",
             "id": "negatives-ernst-brunner-collection",
-            "details": "Negatives Ernst Brunner \n 48'000 Images"
+            "details": "47'837 total objects"
         }
     ],
     "meta-data": [
         {
             "label": "Keywords",
             "id": "keywords",
-            "details": "Keywords \n 22’562 Images / 44%"
+            "details": "22'364 total objects (46.75%) <br> 71'092 total keywords <br> 1578 unique keywords"
         },
         {
             "label": "Dates",
@@ -39,7 +39,7 @@
             {
                 "label": "Co-Occurence",
                 "id": "co-occurence",
-                "details": "Co-Occurence Count \n Threshold 5 \n 18’000 Images / 35%"
+                "details": "Co-Occurence Count <br> Threshold 5 <br> 18’000 Images / 35%"
             },
             {
                 "label": "Series Finder",
