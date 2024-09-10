@@ -21,17 +21,17 @@
         {
             "label": "Dates",
             "id": "dates",
-            "details": "Some details on dates"
+            "details": "33'539 total objects (70.11%) <br> 39'489 total dates <br> 574 unique dates"
         },
         {
             "label": "Locations",
             "id": "locations",
-            "details": "Some details on locations"
+            "details": "42'107 total objects (88.02%%) <br> 42'107 total locations <br> 1087 unique locations"
         },
         {
             "label": "Comments",
             "id": "comments",
-            "details": "Some details on comments"
+            "details": "40'666 total objects (85.01%%) <br> 60475 total comments <br> 3378 unique comments"
         }
     ],
     "data-curation": {
