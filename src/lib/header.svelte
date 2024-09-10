@@ -15,7 +15,7 @@
 		'meta-data': null,
 		'data-curation': null,
 		'data-visualization': null
-	};;
+	};
 
 	// the settings to create all navigation options
 	let settings = null;
@@ -40,12 +40,16 @@
 			if (currentMetaData) currentSetting['meta-data'] = currentMetaData;
 		}
 		if (secondLevelRoute) {
-			let currentDataCuration = settings['data-curation'][firstLevelRoute].find((item) => item.id === secondLevelRoute)
-			if (currentDataCuration) currentSetting["data-curation"] = currentDataCuration;
+			let currentDataCuration = settings['data-curation'][firstLevelRoute].find(
+				(item) => item.id === secondLevelRoute
+			);
+			if (currentDataCuration) currentSetting['data-curation'] = currentDataCuration;
 		}
-		if (thirdLevelRoute){
-			let currentDataVisualization = settings['data-visualization'][secondLevelRoute].find((item) => item.id === thirdLevelRoute)
-			if (currentDataVisualization) currentSetting["data-visualization"] = currentDataVisualization;
+		if (thirdLevelRoute) {
+			let currentDataVisualization = settings['data-visualization'][secondLevelRoute].find(
+				(item) => item.id === thirdLevelRoute
+			);
+			if (currentDataVisualization) currentSetting['data-visualization'] = currentDataVisualization;
 		}
 	});
 
@@ -103,9 +107,9 @@
 			<div class="col-span-2 font-sans text-sans-md">
 				{#each settings['meta-data'] as option}
 					<a
-						on:click={setMetaData(option)}
-						on:mouseover={setMetaData(option)}
-						on:focus={setMetaData(option)}
+						on:click={() => setMetaData(option)}
+						on:mouseover={() => setMetaData(option)}
+						on:focus={() => setMetaData(option)}
 						href="/{option.id}"
 						class="block {currentSetting['meta-data'] &&
 						currentSetting['meta-data']['id'] === option.id
@@ -118,7 +122,7 @@
 		{/if}
 		<!-- DATA CURATION OPTIONS -->
 		<!-- visible depending on subpage route, e.g /keywords -->
-		<!-- not clickable, only shows viz options -->
+		<!-- show pyhton notebooks -->
 		{#if settings != null && currentSetting['meta-data']}
 			<div class="col-span-2 font-sans text-sans-md">
 				{#each Object.keys(settings['data-curation']) as optionKey}
@@ -126,13 +130,15 @@
 						<div id={optionKey}>
 							{#each settings['data-curation'][optionKey] as option}
 								<!-- hover over these will dynamically show data viz options -->
-								<button
-									on:mouseover={setDataCuration(option)}
-									on:focus={setDataCuration(option)}
+								<a
+									on:mouseover={() => setDataCuration(option)}
+									on:focus={() => setDataCuration(option)}
+									on:click={() => setDataCuration(option)}
+									href="/{currentSetting['meta-data']['id']}/{option.id}"
 									class="block {currentSetting['data-curation'] &&
 									currentSetting['data-curation']['id'] === option.id
 										? 'text-blue'
-										: ''}">{option.label}</button
+										: ''}">{option.label}</a
 								>
 							{/each}
 						</div>
@@ -149,9 +155,9 @@
 						<div id={optionKey}>
 							{#each settings['data-visualization'][optionKey] as option}
 								<a
-									on:mouseover={setDataVisualization(option)}
-									on:focus={setDataVisualization(option)}
-									href="/{firstLevelRoute}/{optionKey}/{option.id}"
+									on:mouseover={() => setDataVisualization(option)}
+									on:focus={() => setDataVisualization(option)}
+									href="/{currentSetting['meta-data']['id']}/{currentSetting['data-curation']['id']}/{option.id}"
 									class="block {currentSetting['data-visualization'] &&
 									currentSetting['data-visualization']['id'] === option.id
 										? 'text-blue'
