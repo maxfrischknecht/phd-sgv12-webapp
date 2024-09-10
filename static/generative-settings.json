@@ -2,8 +2,7 @@
     "sections": [
         "Data Set",
         "Meta-Data",
-        "Data Curation",
-        "Data Visualization"
+        "Data Interpretation"
     ],
     "data-set": [
         {
@@ -34,31 +33,26 @@
             "details": "40'666 total objects (85.01%%) <br> 60475 total comments <br> 3378 unique comments"
         }
     ],
-    "data-curation": {
+    "data-interpretation": {
         "keywords": [
             {
-                "label": "Co-Occurence",
-                "id": "co-occurence",
-                "details": "Co-Occurence Count <br> Threshold 5 <br> 18’000 Images / 35%"
-            },
-            {
-                "label": "Series Finder",
-                "id": "series-finder",
-                "details": "details on regex keyword curation"
+                "label": "Co-Occurence Matrix",
+                "id": "co-occurence-matrix",
+                "details": "tbd"
             }
         ],
         "dates": [
             {
-                "label": "Timeline",
-                "id": "timeline", 
-                "details": "details on timeline date curation"
+                "label": "tbd",
+                "id": "tbd", 
+                "details": "tbd"
             }
         ],
         "locations": [
             {
-                "label": "Map",
-                "id": "map",
-                "details": "details on map location curation"
+                "label": "tbd",
+                "id": "tbd", 
+                "details": "tbd"
             }
         ], 
         "comments": [
@@ -66,27 +60,6 @@
                 "label": "Series Timeline",
                 "id": "series-timeline",
                 "details": "details on series timeline curation"
-            }
-        ]
-    },
-    "data-visualization": {
-        "co-occurence": [
-            {
-                "label": "Matrix",
-                "id": "matrix",
-                "details": "Details on Matrix visualization"
-            },
-            {
-                "label": "Force Directed Network",
-                "id": "network",
-                "details": "Details on Force Directed Network"
-            }
-        ],
-        "series-finder": [
-            {
-                "label": "Timeline",
-                "id": "timeline",
-                "details": "Details on Timeline visualization"
             }
         ]
     }

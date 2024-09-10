@@ -108,4 +108,3 @@
 </script>
 
 <svg id="network-svg"></svg>
-<!-- <pre>{JSON.stringify(data, null, 2)}</pre> -->

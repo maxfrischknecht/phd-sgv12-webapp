@@ -1,21 +1,25 @@
 <script>
 	import { onMount } from 'svelte';
 	import Tread from './tread.svelte';
+	import { viewVisualization } from './store';
+	import { get } from 'svelte/store';
 
 	// get the current route to set the settings on reload
 	// /keywords, /co-occurence-matrix
 	import { page } from '$app/stores';
 	$: firstLevelRoute = $page.url.pathname.split('/')[1]; // keywords
 	$: secondLevelRoute = $page.url.pathname.split('/')[2]; // co-occurence
-	$: thirdLevelRoute = $page.url.pathname.split('/')[3]; // matrix
 
 	// keep track of the current settings based on section interaction
 	$: currentSetting = {
 		data: null,
 		'meta-data': null,
-		'data-curation': null,
-		'data-visualization': null
+		'data-interpretartion': null
 	};
+
+	function toggleView(view) {
+		viewVisualization.set(view);
+	}
 
 	// the settings to create all navigation options
 	let settings = null;
@@ -40,40 +44,28 @@
 			if (currentMetaData) currentSetting['meta-data'] = currentMetaData;
 		}
 		if (secondLevelRoute) {
-			let currentDataCuration = settings['data-curation'][firstLevelRoute].find(
+			let currentDataInterpretation = settings['data-interpretation'][firstLevelRoute].find(
 				(item) => item.id === secondLevelRoute
 			);
-			if (currentDataCuration) currentSetting['data-curation'] = currentDataCuration;
-		}
-		if (thirdLevelRoute) {
-			let currentDataVisualization = settings['data-visualization'][secondLevelRoute].find(
-				(item) => item.id === thirdLevelRoute
-			);
-			if (currentDataVisualization) currentSetting['data-visualization'] = currentDataVisualization;
+			if (currentDataInterpretation)
+				currentSetting['data-interpretation'] = currentDataInterpretation;
 		}
 	});
 
 	// update the currentSettings by section interaction
 	function setDataSet() {
 		currentSetting['meta-data'] = null;
-		currentSetting['data-curation'] = null;
-		currentSetting['data-visualization'] = null;
+		currentSetting['data-interpretation'] = null;
 		// console.log('set data set', 'default ernst brunner negatives');
 	}
 	function setMetaData(metadata) {
 		currentSetting['meta-data'] = metadata;
-		currentSetting['data-curation'] = null;
-		currentSetting['data-visualization'] = null;
+		currentSetting['data-interpretation'] = null;
 		// console.log('set meta data', metadata);
 	}
-	function setDataCuration(datacuration) {
-		currentSetting['data-curation'] = datacuration;
-		currentSetting['data-visualization'] = null;
-		// console.log('set data curation', datacuration);
-	}
-	function setDataVisualization(datavisualization) {
-		currentSetting['data-visualization'] = datavisualization;
-		// console.log('set data curation', datavisualization);
+	function setDataInterpretation(datainterpretation) {
+		currentSetting['data-interpretation'] = datainterpretation;
+		// console.log('set data curation', datainterpretation);
 	}
 </script>
 
@@ -90,6 +82,28 @@
 		{:else}
 			<p class="font-mono text-mono-sm">No sections available</p>
 		{/if}
+		<div class="col-span-2 flex">
+			<!-- VISUALIZATION BUTTON -->
+			<button
+				class="border-b border-l border-grey font-mono text-mono-sm h-8 flex-1"
+				class:bg-light={$viewVisualization}
+				class:text-dark={$viewVisualization}
+				class:text-grey={!$viewVisualization}
+				on:click={() => toggleView(true)}
+			>
+				Visualization
+			</button>
+			<!-- DURATION BUTTON -->
+			<button
+				class="border-b border-l border-r border-grey font-mono text-mono-sm h-8 flex-1"
+				class:bg-light={!$viewVisualization}
+				class:text-dark={!$viewVisualization}
+				class:text-grey={$viewVisualization}
+				on:click={() => toggleView(false)}
+			>
+				Curation
+			</button>
+		</div>
 	</div>
 
 	<!-- 2nd Row: SECTION OPTIONS -->
@@ -120,46 +134,22 @@
 				{/each}
 			</div>
 		{/if}
-		<!-- DATA CURATION OPTIONS -->
+		<!-- DATA INTERPRETATION OPTIONS -->
 		<!-- visible depending on subpage route, e.g /keywords -->
-		<!-- show pyhton notebooks -->
 		{#if settings != null && currentSetting['meta-data']}
 			<div class="col-span-2 font-sans text-sans-md">
-				{#each Object.keys(settings['data-curation']) as optionKey}
+				{#each Object.keys(settings['data-interpretation']) as optionKey}
 					{#if currentSetting['meta-data']['id'] == optionKey}
 						<div id={optionKey}>
-							{#each settings['data-curation'][optionKey] as option}
+							{#each settings['data-interpretation'][optionKey] as option}
 								<!-- hover over these will dynamically show data viz options -->
 								<a
-									on:mouseover={() => setDataCuration(option)}
-									on:focus={() => setDataCuration(option)}
-									on:click={() => setDataCuration(option)}
+									on:mouseover={() => setDataInterpretation(option)}
+									on:focus={() => setDataInterpretation(option)}
+									on:click={() => setDataInterpretation(option)}
 									href="/{currentSetting['meta-data']['id']}/{option.id}"
-									class="block {currentSetting['data-curation'] &&
-									currentSetting['data-curation']['id'] === option.id
-										? 'text-blue'
-										: ''}">{option.label}</a
-								>
-							{/each}
-						</div>
-					{/if}
-				{/each}
-			</div>
-		{/if}
-		<!-- DATA VISUALIZATION OPTIONS -->
-		<!-- visible on hover of data curation option -->
-		{#if settings != null && currentSetting['data-curation'] != null}
-			<div class="col-span-2 font-sans text-sans-md">
-				{#each Object.keys(settings['data-visualization']) as optionKey}
-					{#if currentSetting['data-curation']['id'] == optionKey}
-						<div id={optionKey}>
-							{#each settings['data-visualization'][optionKey] as option}
-								<a
-									on:mouseover={() => setDataVisualization(option)}
-									on:focus={() => setDataVisualization(option)}
-									href="/{currentSetting['meta-data']['id']}/{currentSetting['data-curation']['id']}/{option.id}"
-									class="block {currentSetting['data-visualization'] &&
-									currentSetting['data-visualization']['id'] === option.id
+									class="block {currentSetting['data-interpretation'] &&
+									currentSetting['data-interpretation']['id'] === option.id
 										? 'text-blue'
 										: ''}">{option.label}</a
 								>

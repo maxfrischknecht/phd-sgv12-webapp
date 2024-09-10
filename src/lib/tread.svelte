@@ -23,20 +23,14 @@
 			<p class="font-mono text-mono-sm">{@html currentSetting['meta-data']['details']}</p>
 		{/if}
 	</div>
-	<!-- DATA CURATION DETAILS -->
+	<!-- DATA INTERPRETATION DETAILS -->
 	<div class="col-span-2 mt-2">
 		{#if currentSetting && currentSetting['data-curation']}
 			<p class="font-mono text-mono-sm">{currentSetting['data-curation']['details']}</p>
 		{/if}
 	</div>
-	<!-- DATA VISUALIZATION DETAILS -->
-	<div class="col-span-2 mt-2">
-		{#if currentSetting && currentSetting['data-visualization']}
-			<p class="font-mono text-mono-sm">{currentSetting['data-visualization']['details']}</p>
-		{/if}
-	</div>
 	<!-- OBJECT VIEWER BUTTON -->
-	<button on:click={togglePanel} class="control-btn col-span-2 bg-light text-dark font-mono text-mono-sm h-8"
+	<button on:click={togglePanel} class="control-btn col-span-2  text-grey border-b border-l border-r border-grey font-mono text-mono-sm h-8"
 		>Object Viewer</button
 	>
 </div>
