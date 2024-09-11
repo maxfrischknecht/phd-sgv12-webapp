@@ -1,110 +1,86 @@
 <script>
-	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
+
+	// get data from parent
 	export let data;
 
-	onMount(() => {
-		let cBG = '#141414';
-		let cLight = '#F4F4F4';
+	// dimensions
+	let width = 13000;
+	let height = 13000;
+	let margin = { top: 0, right: 0, bottom: 0, left: 0 };
 
-		const width = 13000;
-		const height = 13000;
-		const margin = { top: 0, right: 0, bottom: 0, left: 0 };
+	// colors
+	let grey = '#5A5A5A';
+	let cLight = '#F4F4F4';
 
-		// custom color scale
-		const thresholds = [10, 30, 50, 100, 200, 400, 600, 800, 1000];
-		const numColors = 9;
-		const colors = [];
+	// color scale
+	const thresholds = [10, 30, 50, 100, 200, 400, 600, 800, 1000];
+	const numColors = 9;
+	let colors = [];
+	for (let i = 0; i < numColors; i++) {
+		colors.push(d3.interpolateWarm(i / (numColors - 1)));
+	}
+	const colorScale = d3.scaleThreshold().domain(thresholds).range(colors);
 
-		for (let i = 0; i < numColors; i++) {
-			colors.push(d3.interpolateWarm(i / (numColors - 1)));
-		}
-		const colorScale = d3.scaleThreshold().domain(thresholds).range(colors);
+	// scales: use all keywords
+	let keywordsArray = data.data.map((d) => d.row);
+	const xScale = d3.scaleBand().domain(keywordsArray).range([0, width]);
+	const yScale = d3.scaleBand().domain(keywordsArray).range([0, height]);
 
-		const sortedKeywords = sortMatrix(data.data);
+	function handleMouseOver(event, d) {
+		const hoveredCell = d3.select(event.target);
+		const padding = 10;
 
-		const xScale = d3.scaleBand().domain(sortedKeywords).range([0, width]);
-		const yScale = d3.scaleBand().domain(sortedKeywords).range([0, height]);
+		const svg = d3.select('#network-svg');
 
-		const svg = d3
-			.select('#network-svg')
-			.attr('width', width + margin.left + margin.right)
-			.attr('height', height + margin.top + margin.bottom)
-			.append('g')
-			.attr('transform', `translate(${margin.left},${margin.top})`);
+		// Append a group to hold the text and background rect
+		const labelGroup = svg.append('g').attr('class', 'hoveredLabel');
 
-		// Draw the cells of the matrix
-		svg
-			.selectAll('.cell')
-			.data(data.data)
-			.enter()
-			.append('rect')
-			.attr('x', (d) => xScale(d.col))
-			.attr('y', (d) => yScale(d.row))
-			.attr('width', xScale.bandwidth())
-			.attr('height', yScale.bandwidth())
-			.attr('fill', (d) => (d.value === 0 ? '#141414' : colorScale(d.value))) // Gray for empty cells
-			.attr('class', 'cell')
-			.style('cursor', 'pointer')
-			// Add mouseover event
-			.on('mouseover', function (event, d) {
-				// 'd' contains the data for the hovered cell (row, col, value)
-				const hoveredCell = d3.select(this);
-				const padding = 10; // Padding around the text
+		const textElement = labelGroup
+			.append('text')
+			.attr('x', +hoveredCell.attr('x') + 30)
+			.attr('y', +hoveredCell.attr('y') + 3)
+			.attr('text-anchor', 'left')
+			.attr('dominant-baseline', 'middle')
+			.attr('fill', grey)
+			.attr('class', 'font-mono text-mono-sm')
+			.text(`${d.value}x ${d.row.toUpperCase()} / ${d.col.toUpperCase()}`);
 
-				// Append temporary text to calculate width
-				const textElement = svg
-					.append('text')
-					.attr('x', +hoveredCell.attr('x') + 30)
-					.attr('y', +hoveredCell.attr('y') + 3) // Positioned above the cell
-					.attr('text-anchor', 'left')
-					.attr('dominant-baseline', 'middle')
-					.attr('fill', cBG)
-					.attr('class', 'font-mono text-mono-sm')
-					.text(`${d.value}x ${d.row.toUpperCase()} / ${d.col.toUpperCase()}`);
+		// Ensure the text element is appended before accessing its bounding box
+		const textWidth = textElement.node().getBBox().width;
 
-				// Get the width of the text element
-				const textWidth = textElement.node().getBBox().width;
+		labelGroup
+			.insert('rect', 'text')
+			.attr('x', +hoveredCell.attr('x') + 20)
+			.attr('y', +hoveredCell.attr('y') - 10)
+			.attr('width', textWidth + 2 * padding)
+			.attr('height', 25)
+			.attr('fill', cLight);
+	}
 
-				// Append a background rect behind the text
-				svg
-					.append('rect')
-					.attr('class', 'hoveredLabel')
-					// .attr("x", +hoveredCell.attr("x") + xScale.bandwidth() / 2 - textWidth / 2 - padding)
-					.attr('x', +hoveredCell.attr('x') + 20)
-					.attr('y', +hoveredCell.attr('y') - 10) // Positioned above the text
-					.attr('width', textWidth + 2 * padding)
-					.attr('height', 25) // Text height + padding (adjust as needed)
-					.attr('fill', cLight);
-				// .attr("stroke", none)
-
-				// Re-append the text to ensure it is on top of the background box
-				textElement.raise().attr('class', 'hoveredLabel font-mono text-mono-sm');
-			})
-			// Add mouseout event
-			.on('mouseout', function (event, d) {
-				// Remove the labels and background box
-				d3.selectAll('.hoveredLabel').remove();
-			});
-	});
-
-	function sortMatrix(data) {
-		// Calculate the total frequency for each keyword
-		const keywordFrequencies = {};
-		data.forEach((d) => {
-			if (!keywordFrequencies[d.row]) keywordFrequencies[d.row] = 0;
-			if (!keywordFrequencies[d.col]) keywordFrequencies[d.col] = 0;
-			keywordFrequencies[d.row] += d.value;
-			keywordFrequencies[d.col] += d.value;
-		});
-
-		// Sort keywords by total frequency
-		const sortedKeywords = Object.keys(keywordFrequencies).sort(
-			(a, b) => keywordFrequencies[b] - keywordFrequencies[a]
-		);
-
-		return sortedKeywords;
+	function handleMouseOut(event, d) {
+		d3.selectAll('.hoveredLabel').remove();
 	}
 </script>
 
-<svg id="network-svg"></svg>
+<svg
+	id="network-svg"
+	width={width + margin.left + margin.right}
+	height={height + margin.top + margin.bottom}
+>
+	<g transform={`translate(${margin.left},${margin.top})`}>
+		{#each data.data as d}
+			<rect
+				x={xScale(d.col)}
+				y={yScale(d.row)}
+				width={xScale.bandwidth()}
+				height={yScale.bandwidth()}
+				fill={colorScale(d.value)}
+				class="cell"
+				style="cursor: pointer"
+				on:mouseover={(event) => handleMouseOver(event, d)}
+				on:mouseout={(event) => handleMouseOut(event, d)}
+			/>
+		{/each}
+	</g>
+</svg>
