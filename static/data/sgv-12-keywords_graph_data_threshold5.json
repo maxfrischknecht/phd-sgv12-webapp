@@ -1,37 +1,34 @@
 {
     "nodes": [
         {
+            "id": "Karte (Kartografie)"
+        },
+        {
             "id": "Garbe (Getreide)"
         },
         {
             "id": "Viehmarkt"
         },
         {
-            "id": "Wagner/-in"
+            "id": "Seedamm von Rapperswil"
         },
         {
-            "id": "Anstehen"
+            "id": "1. Mai"
         },
         {
-            "id": "Vordach"
+            "id": "Fluss"
+        },
+        {
+            "id": "Holzschuh"
+        },
+        {
+            "id": "Kupferkessel"
+        },
+        {
+            "id": "Chalet"
         },
         {
             "id": "Chorgest\u00fchl"
-        },
-        {
-            "id": "B\u00fcgelbrett"
-        },
-        {
-            "id": "Besen"
-        },
-        {
-            "id": "M\u00f6we"
-        },
-        {
-            "id": "Holzhacken"
-        },
-        {
-            "id": "Pony"
         },
         {
             "id": "Nasenschild"
@@ -40,3442 +37,13 @@
             "id": "Rechen"
         },
         {
-            "id": "Stier"
-        },
-        {
-            "id": "Steintisch"
-        },
-        {
-            "id": "Kochtopf"
-        },
-        {
-            "id": "Misericordie"
-        },
-        {
-            "id": "Str\u00f6mung"
-        },
-        {
-            "id": "Pilgerweg"
-        },
-        {
-            "id": "Besitzzeichen"
-        },
-        {
-            "id": "Rad"
-        },
-        {
-            "id": "Doppelbelichtung"
-        },
-        {
-            "id": "B\u00e4r"
-        },
-        {
-            "id": "Kritzelei"
-        },
-        {
-            "id": "Garderobe"
-        },
-        {
-            "id": "Blumenkiste"
-        },
-        {
-            "id": "Fischernetz"
-        },
-        {
-            "id": "Geh\u00f6ft"
-        },
-        {
-            "id": "Steinhauer/Steinhauerin"
-        },
-        {
-            "id": "Salz"
-        },
-        {
-            "id": "Spielen"
-        },
-        {
-            "id": "Spielkurs auf dem Herzberg"
-        },
-        {
-            "id": "Schloss Landshut"
-        },
-        {
-            "id": "Bildung"
-        },
-        {
-            "id": "Hufschmied/-in"
-        },
-        {
-            "id": "Strassenschild"
-        },
-        {
-            "id": "Kiste"
-        },
-        {
-            "id": "Sitzbank"
-        },
-        {
-            "id": "Unterstand"
-        },
-        {
-            "id": "Andenken"
-        },
-        {
-            "id": "Ebene"
-        },
-        {
-            "id": "Fabrik"
-        },
-        {
-            "id": "H\u00fctte"
-        },
-        {
-            "id": "Kunst- und Kongresshaus Luzern"
-        },
-        {
-            "id": "Feuer"
-        },
-        {
-            "id": "Tuch"
-        },
-        {
-            "id": "Winde (Mechanik)"
-        },
-        {
-            "id": "Habit"
-        },
-        {
-            "id": "Autobahn"
-        },
-        {
-            "id": "Zwiebelturm"
-        },
-        {
-            "id": "Kirche St. Oswald (Zug)"
-        },
-        {
-            "id": "Zahnradbahn"
-        },
-        {
-            "id": "Fronleichnam"
-        },
-        {
-            "id": "Maske"
-        },
-        {
-            "id": "Stimmzettel"
-        },
-        {
-            "id": "Maus"
-        },
-        {
-            "id": "Hasel"
-        },
-        {
-            "id": "Bett"
-        },
-        {
-            "id": "Weber/-in"
-        },
-        {
-            "id": "Fohlen"
-        },
-        {
-            "id": "B\u00fccherregal"
-        },
-        {
-            "id": "Bohrer"
-        },
-        {
-            "id": "Gant"
-        },
-        {
-            "id": "Milieu"
-        },
-        {
-            "id": "D\u00fcnger"
-        },
-        {
-            "id": "Pilatus"
-        },
-        {
-            "id": "Wasser"
-        },
-        {
-            "id": "Stapel"
-        },
-        {
-            "id": "Maiens\u00e4ss"
-        },
-        {
-            "id": "Klebdach"
-        },
-        {
-            "id": "Halle"
-        },
-        {
-            "id": "Hund / H\u00fcndin"
-        },
-        {
-            "id": "Wolke"
-        },
-        {
-            "id": "Spengler/-in"
-        },
-        {
-            "id": "Boden"
-        },
-        {
-            "id": "Teich"
-        },
-        {
-            "id": "Sprungbrett"
-        },
-        {
-            "id": "Eckstein"
-        },
-        {
-            "id": "Gep\u00e4ck"
-        },
-        {
-            "id": "Dekoration"
-        },
-        {
-            "id": "Grabschmuck"
-        },
-        {
-            "id": "Gastronomie"
-        },
-        {
-            "id": "Schallplatte"
-        },
-        {
-            "id": "Kuhkampf"
-        },
-        {
-            "id": "Kuppelhaus"
-        },
-        {
-            "id": "Alter Mann"
-        },
-        {
-            "id": "Regen"
-        },
-        {
-            "id": "Holzfachschule"
-        },
-        {
-            "id": "Lokomotive"
-        },
-        {
-            "id": "Stricken"
-        },
-        {
-            "id": "Arzt/\u00c4rztin"
-        },
-        {
-            "id": "Schlafen"
-        },
-        {
-            "id": "Feder"
-        },
-        {
-            "id": "Fr\u00fchling"
-        },
-        {
-            "id": "Haust\u00fcr"
-        },
-        {
-            "id": "Geige"
-        },
-        {
-            "id": "Schwimmen"
-        },
-        {
-            "id": "Speicher"
-        },
-        {
-            "id": "Brett"
-        },
-        {
-            "id": "Klettern"
-        },
-        {
-            "id": "H\u00e4userzeile"
-        },
-        {
-            "id": "Zeitung"
-        },
-        {
-            "id": "Taufe"
-        },
-        {
-            "id": "Geweih"
-        },
-        {
-            "id": "Krug"
-        },
-        {
-            "id": "Gertel"
-        },
-        {
-            "id": "Hochzeit"
-        },
-        {
-            "id": "Teller"
-        },
-        {
-            "id": "H\u00f6hle"
-        },
-        {
-            "id": "Holzk\u00e4nnel"
-        },
-        {
-            "id": "Ger\u00e4t"
-        },
-        {
-            "id": "Rumantsch Grischun"
-        },
-        {
-            "id": "Armut"
-        },
-        {
-            "id": "Gotthardbahn"
-        },
-        {
-            "id": "Hakenkreuz"
-        },
-        {
-            "id": "Fest"
-        },
-        {
-            "id": "Rauchen"
-        },
-        {
-            "id": "S\u00e4gerei"
-        },
-        {
-            "id": "Klavierbauer"
-        },
-        {
-            "id": "Steinwappen"
-        },
-        {
-            "id": "Schaufel"
-        },
-        {
-            "id": "Gebirgspass"
-        },
-        {
-            "id": "Gefl\u00fcgel"
-        },
-        {
-            "id": "Schmuggler/Schmugglerin"
-        },
-        {
-            "id": "Schuh"
-        },
-        {
-            "id": "Bischof"
-        },
-        {
-            "id": "Fussg\u00e4ngerstreifen"
-        },
-        {
-            "id": "Curling"
-        },
-        {
-            "id": "Kies"
-        },
-        {
-            "id": "Holzf\u00e4ller/-in"
-        },
-        {
-            "id": "Siedlung"
-        },
-        {
-            "id": "Strasse"
-        },
-        {
-            "id": "Glas"
-        },
-        {
-            "id": "Aussicht"
-        },
-        {
-            "id": "Milit\u00e4r"
-        },
-        {
-            "id": "Kupferschmied/-in"
-        },
-        {
-            "id": "Backen"
-        },
-        {
-            "id": "Kloster Einsiedeln"
-        },
-        {
-            "id": "Holzverarbeitung"
-        },
-        {
-            "id": "Konzert"
-        },
-        {
-            "id": "Erde"
-        },
-        {
-            "id": "Engadiner-Haus"
-        },
-        {
-            "id": "Besichtigung"
-        },
-        {
-            "id": "Boot"
-        },
-        {
-            "id": "Skistock"
-        },
-        {
-            "id": "Flugblatt"
-        },
-        {
-            "id": "Winzerfest"
-        },
-        {
-            "id": "Zementfabrik"
-        },
-        {
-            "id": "Pflug"
-        },
-        {
-            "id": "Ger\u00fcst"
-        },
-        {
-            "id": "Maultier"
-        },
-        {
-            "id": "Archivieren"
-        },
-        {
-            "id": "Schreibtisch"
-        },
-        {
-            "id": "Haussegen"
-        },
-        {
-            "id": "Pferd"
-        },
-        {
-            "id": "Mosterei"
-        },
-        {
-            "id": "Obstbaum"
-        },
-        {
-            "id": "Dock"
-        },
-        {
-            "id": "Spital"
-        },
-        {
-            "id": "Schaufenster"
-        },
-        {
-            "id": "Mosaik"
-        },
-        {
-            "id": "Kohl"
-        },
-        {
-            "id": "Verzierung"
-        },
-        {
-            "id": "Auto"
-        },
-        {
-            "id": "Steinboden"
-        },
-        {
-            "id": "Flasche"
-        },
-        {
-            "id": "Grenze"
-        },
-        {
-            "id": "Fahrzeug"
-        },
-        {
-            "id": "Hacke"
-        },
-        {
-            "id": "Rollladen"
-        },
-        {
-            "id": "Haltestelle"
-        },
-        {
-            "id": "Bauernhausforschung"
-        },
-        {
-            "id": "Nagel"
-        },
-        {
-            "id": "Fahrende"
-        },
-        {
-            "id": "Gewerbe"
-        },
-        {
-            "id": "Aluminium"
-        },
-        {
-            "id": "Abbruch"
-        },
-        {
-            "id": "Altar"
-        },
-        {
-            "id": "Gesch\u00e4ft"
-        },
-        {
-            "id": "Buschwindr\u00f6schen"
-        },
-        {
-            "id": "Dampflokomotive"
-        },
-        {
-            "id": "Denkmalschutz"
-        },
-        {
-            "id": "Kanzel"
-        },
-        {
-            "id": "Hospitz"
-        },
-        {
-            "id": "Luzerner Bauernhausforschung"
-        },
-        {
-            "id": "Rundbogen"
-        },
-        {
-            "id": "Fussball"
-        },
-        {
-            "id": "Post"
-        },
-        {
-            "id": "Fensterbank"
-        },
-        {
-            "id": "Flechte (Pflanze)"
-        },
-        {
-            "id": "Schuhnagel"
-        },
-        {
-            "id": "Schloss Hallwyl"
-        },
-        {
-            "id": "Zielscheibe"
-        },
-        {
-            "id": "Wasserschloss"
-        },
-        {
-            "id": "Bachbett"
-        },
-        {
-            "id": "Frisur"
-        },
-        {
-            "id": "Baselstab"
-        },
-        {
-            "id": "Knabenschiessen"
-        },
-        {
-            "id": "\u00d6l-Malerei"
-        },
-        {
-            "id": "Versammlung"
-        },
-        {
-            "id": "Br\u00fcnigbahn"
-        },
-        {
-            "id": "B\u00e4cker/-in"
-        },
-        {
-            "id": "Getrockneter Mist"
-        },
-        {
-            "id": "B\u00fcrstenbinder/-in"
-        },
-        {
-            "id": "Ziegelei"
-        },
-        {
-            "id": "Angelrute"
-        },
-        {
-            "id": "Ackerbau"
-        },
-        {
-            "id": "Sch\u00fcssel"
-        },
-        {
-            "id": "Tonne (Gef\u00e4ss)"
-        },
-        {
-            "id": "Wappen"
-        },
-        {
-            "id": "Kathedrale"
-        },
-        {
-            "id": "Streichen"
-        },
-        {
-            "id": "Feldarbeit"
-        },
-        {
-            "id": "Feldwerkzeug"
-        },
-        {
-            "id": "Valorisierung: Maultier Museum"
-        },
-        {
-            "id": "M\u00e4hen"
-        },
-        {
-            "id": "Gel\u00e4nder"
-        },
-        {
-            "id": "Kamin"
-        },
-        {
-            "id": "Schiff"
-        },
-        {
-            "id": "Grillieren"
-        },
-        {
-            "id": "Saatgut"
-        },
-        {
-            "id": "Obelisk"
-        },
-        {
-            "id": "Esel"
-        },
-        {
-            "id": "Frau"
-        },
-        {
-            "id": "Wegweiser"
-        },
-        {
-            "id": "Form"
-        },
-        {
-            "id": "Kapelle"
-        },
-        {
-            "id": "Zementrohr"
-        },
-        {
-            "id": "Presse"
-        },
-        {
-            "id": "Strommast"
-        },
-        {
-            "id": "Blumenstrauss"
-        },
-        {
-            "id": "Pause"
-        },
-        {
-            "id": "Meissel"
-        },
-        {
-            "id": "Abfahrt"
-        },
-        {
-            "id": "Aschermittwoch"
-        },
-        {
-            "id": "Stromleitung"
-        },
-        {
-            "id": "Schwimmer/Schwimmerin"
-        },
-        {
-            "id": "Segensspruch"
-        },
-        {
-            "id": "Verbotstafel"
-        },
-        {
-            "id": "Puppe (Getreide)"
-        },
-        {
-            "id": "Brief"
-        },
-        {
-            "id": "Misttransport"
-        },
-        {
-            "id": "Milch"
-        },
-        {
-            "id": "Schulzimmer"
-        },
-        {
-            "id": "Museumsobjekt"
-        },
-        {
-            "id": "Stubenwagen"
-        },
-        {
-            "id": "Sonne"
-        },
-        {
-            "id": "Koffer"
-        },
-        {
-            "id": "Gaden (Geb\u00e4ude)"
-        },
-        {
-            "id": "T\u00fcr"
-        },
-        {
-            "id": "Autofriedhof"
-        },
-        {
-            "id": "Kutsche"
-        },
-        {
-            "id": "Lastwagen"
-        },
-        {
-            "id": "Rhone"
-        },
-        {
-            "id": "Michaelskreuz"
-        },
-        {
-            "id": "Spinnrad"
-        },
-        {
-            "id": "Bauer/B\u00e4uerin"
-        },
-        {
-            "id": "Schmuggeln"
-        },
-        {
-            "id": "Sack"
-        },
-        {
-            "id": "Zeltplatz"
-        },
-        {
-            "id": "Fussg\u00e4nger/-in"
-        },
-        {
-            "id": "Handschrift"
-        },
-        {
-            "id": "Klausjagen"
-        },
-        {
-            "id": "Metzger/-in"
-        },
-        {
-            "id": "Birke"
-        },
-        {
-            "id": "Drahtseilbahn"
-        },
-        {
-            "id": "Fruchtsaft"
-        },
-        {
-            "id": "Museggmauer und -t\u00fcrme"
-        },
-        {
-            "id": "Kerze"
-        },
-        {
-            "id": "Verkehr"
-        },
-        {
-            "id": "Pfahl"
-        },
-        {
-            "id": "Ringtanz"
-        },
-        {
-            "id": "Verein"
-        },
-        {
-            "id": "Kermesse"
-        },
-        {
-            "id": "Schindeldach"
-        },
-        {
-            "id": "H\u00f6llgrotten"
-        },
-        {
-            "id": "M\u00fctze"
-        },
-        {
-            "id": "Spinnen"
-        },
-        {
-            "id": "Weinen"
-        },
-        {
-            "id": "Gehsteig"
-        },
-        {
-            "id": "Sarg"
-        },
-        {
-            "id": "Nikolaus"
-        },
-        {
-            "id": "Eidgen\u00f6ssische Getreideverwaltung"
-        },
-        {
-            "id": "Zweig"
-        },
-        {
-            "id": "Reuss (Fluss)"
-        },
-        {
-            "id": "Getr\u00e4nk"
-        },
-        {
-            "id": "Bl\u00fcte"
-        },
-        {
-            "id": "Arena"
-        },
-        {
-            "id": "Arbeiter/-in"
-        },
-        {
-            "id": "Schlosser/-in"
-        },
-        {
-            "id": "Stadt"
-        },
-        {
-            "id": "Nahrungsmittel"
-        },
-        {
-            "id": "Gartenbau-Ausstellung"
-        },
-        {
-            "id": "Dieme"
-        },
-        {
-            "id": "Ziegel"
-        },
-        {
-            "id": "Valorisierung: Museum Burgrain"
-        },
-        {
-            "id": "Hausierer/-in"
-        },
-        {
-            "id": "Rauch"
-        },
-        {
-            "id": "Ausbildung"
-        },
-        {
-            "id": "Beinhaus"
-        },
-        {
-            "id": "Spruch"
-        },
-        {
-            "id": "Drehorgel"
-        },
-        {
-            "id": "Wirbelsturm"
-        },
-        {
-            "id": "Seilbahn"
-        },
-        {
-            "id": "Hausfront"
-        },
-        {
-            "id": "Pflanzentopf"
-        },
-        {
-            "id": "Felsbrocken"
-        },
-        {
-            "id": "Meer"
-        },
-        {
-            "id": "Schmied/-in"
-        },
-        {
-            "id": "Ungl\u00fcck"
-        },
-        {
-            "id": "Abstimmung"
-        },
-        {
-            "id": "Fass"
-        },
-        {
-            "id": "Industrie"
-        },
-        {
-            "id": "Strassenbeleuchtung"
-        },
-        {
-            "id": "Veranstaltung"
-        },
-        {
-            "id": "Schachtel"
-        },
-        {
-            "id": "Wurst"
-        },
-        {
-            "id": "Wanduhr"
-        },
-        {
-            "id": "Tracht"
-        },
-        {
-            "id": "Treppe"
-        },
-        {
-            "id": "Generation"
-        },
-        {
-            "id": "Masten"
-        },
-        {
-            "id": "Flugzeug"
-        },
-        {
-            "id": "Valorisierung: Giornate grigionitaliane 2021"
-        },
-        {
-            "id": "Destillerie"
-        },
-        {
-            "id": "Schnur"
-        },
-        {
-            "id": "Uetliberg"
-        },
-        {
-            "id": "Handwerk"
-        },
-        {
-            "id": "Furkabahn"
-        },
-        {
-            "id": "Schreiner/-in"
-        },
-        {
-            "id": "Herstellung"
-        },
-        {
-            "id": "Tier"
-        },
-        {
-            "id": "Bahnhof"
-        },
-        {
-            "id": "Briefkasten"
-        },
-        {
-            "id": "Weinfass"
-        },
-        {
-            "id": "Rinde"
-        },
-        {
-            "id": "Leiter"
-        },
-        {
-            "id": "Holzhaus"
-        },
-        {
-            "id": "Wohnung"
-        },
-        {
-            "id": "Kerzenst\u00e4nder"
-        },
-        {
-            "id": "Holzofen"
-        },
-        {
-            "id": "S\u00e4ge"
-        },
-        {
-            "id": "Seeufer"
-        },
-        {
-            "id": "Gl\u00fchbirne"
-        },
-        {
-            "id": "Zimmerpflanze"
-        },
-        {
-            "id": "Landsgemeinde"
-        },
-        {
-            "id": "Grabstein"
-        },
-        {
-            "id": "Baum"
-        },
-        {
-            "id": "Stahl"
-        },
-        {
-            "id": "Viehherde"
-        },
-        {
-            "id": "Baby"
-        },
-        {
-            "id": "Liegestuhl"
-        },
-        {
-            "id": "Furkapass"
-        },
-        {
-            "id": "T\u00fcrgriff"
-        },
-        {
-            "id": "Geistliche/-r"
-        },
-        {
-            "id": "Werbetafel"
-        },
-        {
-            "id": "Geschirr"
-        },
-        {
-            "id": "Eidgen\u00f6ssische Forschungsanstalt f\u00fcr Obst-, Wein- und Gartenbau"
-        },
-        {
-            "id": "Dachbalke"
-        },
-        {
-            "id": "Schranke"
-        },
-        {
-            "id": "Modell (Architektur)"
-        },
-        {
-            "id": "Scheunentor"
-        },
-        {
-            "id": "Konsulat"
-        },
-        {
-            "id": "Stuhl"
-        },
-        {
-            "id": "Pranger"
-        },
-        {
-            "id": "Latzhose"
-        },
-        {
-            "id": "Zug"
-        },
-        {
-            "id": "Politik"
-        },
-        {
-            "id": "Bergsturz"
-        },
-        {
-            "id": "Tierspuren"
-        },
-        {
-            "id": "Lampe"
-        },
-        {
-            "id": "B\u00fcrste"
-        },
-        {
-            "id": "Holzbeige"
-        },
-        {
-            "id": "Rhein (Fluss)"
-        },
-        {
-            "id": "Holzhag"
-        },
-        {
-            "id": "Valorisierung: Publikation Ausstellung passadis- \u00fcber alle Berge"
-        },
-        {
-            "id": "Kirchturm"
-        },
-        {
-            "id": "Kirchenschiff"
-        },
-        {
-            "id": "Farn"
-        },
-        {
-            "id": "Blume"
-        },
-        {
-            "id": "Limmat (Fluss)"
-        },
-        {
-            "id": "Auslandschweizer/-in"
-        },
-        {
-            "id": "Eggen (T\u00e4tigkeit)"
-        },
-        {
-            "id": "Brienzer Rothorn"
-        },
-        {
-            "id": "Bibliothek"
-        },
-        {
-            "id": "Altstadt"
-        },
-        {
-            "id": "Innenhof"
-        },
-        {
-            "id": "Korb"
-        },
-        {
-            "id": "Gewehr"
-        },
-        {
-            "id": "Tellskapelle"
-        },
-        {
-            "id": "Strauch"
-        },
-        {
-            "id": "Wagen"
-        },
-        {
-            "id": "Verkaufsstelle"
-        },
-        {
-            "id": "Schwan"
-        },
-        {
-            "id": "Gruppenportrait"
-        },
-        {
-            "id": "Wiese"
-        },
-        {
-            "id": "Melkeimer"
-        },
-        {
-            "id": "Burg Rotberg"
-        },
-        {
-            "id": "Zunfthaus"
-        },
-        {
-            "id": "Balkon"
-        },
-        {
-            "id": "Passh\u00f6he"
-        },
-        {
-            "id": "Maurer/-in"
-        },
-        {
-            "id": "Gautschen"
-        },
-        {
-            "id": "Fotoapparat"
-        },
-        {
-            "id": "Steindach"
-        },
-        {
-            "id": "Bauschutt"
-        },
-        {
-            "id": "Madonna (Bibel)"
-        },
-        {
-            "id": "Stadion"
-        },
-        {
-            "id": "Wasserfall"
-        },
-        {
-            "id": "Eisenbahn"
-        },
-        {
-            "id": "Rh\u00e4tische Bahn RhB"
-        },
-        {
-            "id": "Lattenzaun"
-        },
-        {
-            "id": "Wand"
-        },
-        {
-            "id": "Holzschuh"
-        },
-        {
-            "id": "Gabel"
-        },
-        {
-            "id": "Skirennen"
-        },
-        {
-            "id": "Seilwinde"
-        },
-        {
-            "id": "Riegel"
-        },
-        {
-            "id": "Schweizerische Bundesbahnen"
-        },
-        {
-            "id": "Druckerei"
-        },
-        {
-            "id": "Metall (Material)"
-        },
-        {
-            "id": "Segnung"
-        },
-        {
-            "id": "Schloss Lenzburg"
-        },
-        {
-            "id": "Baden"
-        },
-        {
-            "id": "Horn (Tier)"
-        },
-        {
-            "id": "Keramik"
-        },
-        {
-            "id": "Tr\u00e4nke"
-        },
-        {
-            "id": "Drechslerei"
-        },
-        {
-            "id": "Bad"
-        },
-        {
-            "id": "Herbst"
-        },
-        {
-            "id": "Laubbaum"
-        },
-        {
-            "id": "Strebe"
-        },
-        {
-            "id": "Hufeisen"
-        },
-        {
-            "id": "Fotograf/Fotografin"
-        },
-        {
-            "id": "Korn"
-        },
-        {
-            "id": "Pfeiler"
-        },
-        {
-            "id": "Rheinufer"
-        },
-        {
-            "id": "Messerschmied/-in"
-        },
-        {
-            "id": "Bahnangestellte/-r"
-        },
-        {
-            "id": "Ochse"
-        },
-        {
-            "id": "Hohle Gasse"
-        },
-        {
-            "id": "Weihnachten"
-        },
-        {
-            "id": "Pro Juventute"
-        },
-        {
-            "id": "Braut"
-        },
-        {
-            "id": "Apfel"
-        },
-        {
-            "id": "Haar"
-        },
-        {
-            "id": "Basler Fasnacht"
-        },
-        {
-            "id": "Mosten"
-        },
-        {
-            "id": "Sparbuch"
-        },
-        {
-            "id": "Luftballon"
-        },
-        {
-            "id": "K\u00e4serei"
-        },
-        {
-            "id": "See"
-        },
-        {
-            "id": "Ruderboot"
-        },
-        {
-            "id": "Schnitzen"
-        },
-        {
-            "id": "Papier (Material)"
-        },
-        {
-            "id": "Geburtstag"
-        },
-        {
-            "id": "Bew\u00e4sserung"
-        },
-        {
-            "id": "Giornate Grigionitaliane - Poschiavo 2021"
-        },
-        {
-            "id": "B\u00fcrgenstock"
-        },
-        {
-            "id": "Spaziergang"
-        },
-        {
-            "id": "Volksfest"
-        },
-        {
-            "id": "Beleuchtung"
-        },
-        {
-            "id": "Fahrplan"
-        },
-        {
-            "id": "Wandern"
-        },
-        {
-            "id": "Luganersee"
-        },
-        {
-            "id": "Hose"
-        },
-        {
-            "id": "Gotik (Baustil)"
-        },
-        {
-            "id": "Fuhre"
-        },
-        {
-            "id": "Sammeln"
-        },
-        {
-            "id": "Futter"
-        },
-        {
-            "id": "Saane (Fluss)"
-        },
-        {
-            "id": "Schuhmacherladen"
-        },
-        {
-            "id": "Aletschwald"
-        },
-        {
-            "id": "Wohnwagen"
-        },
-        {
-            "id": "Blochmontag"
-        },
-        {
-            "id": "Degen"
-        },
-        {
-            "id": "Arbeit"
-        },
-        {
-            "id": "Schiffsverkehr"
-        },
-        {
-            "id": "Schornstein"
-        },
-        {
-            "id": "Alph\u00fctte"
-        },
-        {
-            "id": "Bank (Geb\u00e4ude)"
-        },
-        {
-            "id": "Ausmessen"
-        },
-        {
-            "id": "Brienzersee"
-        },
-        {
-            "id": "Autobus"
-        },
-        {
-            "id": "Gondola"
-        },
-        {
-            "id": "S\u00e4ule"
-        },
-        {
-            "id": "Hotel Montana Luzern"
-        },
-        {
-            "id": "Fels"
-        },
-        {
-            "id": "Geisslechl\u00f6pfen"
-        },
-        {
-            "id": "Umzug"
-        },
-        {
-            "id": "Blumenkranz"
-        },
-        {
-            "id": "Fensterrahmen"
-        },
-        {
-            "id": "Mutter"
-        },
-        {
-            "id": "Schmutz"
-        },
-        {
-            "id": "Zelt"
-        },
-        {
-            "id": "Hinterhof"
-        },
-        {
-            "id": "Reise"
-        },
-        {
-            "id": "Tyndall-Effekt"
-        },
-        {
-            "id": "Kinderwagen"
-        },
-        {
-            "id": "Flechten (Verb)"
-        },
-        {
-            "id": "Sense (Werkzeug)"
-        },
-        {
-            "id": "Fotosammlung Ernst Brunner"
-        },
-        {
-            "id": "Quai"
-        },
-        {
-            "id": "Wirtshaus"
-        },
-        {
-            "id": "Reproduktion"
-        },
-        {
-            "id": "Efeu"
-        },
-        {
-            "id": "Tasche"
-        },
-        {
-            "id": "Hausanbau"
-        },
-        {
-            "id": "Stift (Kirche)"
-        },
-        {
-            "id": "Pfeifen (Verb)"
-        },
-        {
-            "id": "Hochzeitskleid"
-        },
-        {
-            "id": "Amphore"
-        },
-        {
-            "id": "Affe"
-        },
-        {
-            "id": "Bauernhaus"
-        },
-        {
-            "id": "Aletschgletscher"
-        },
-        {
-            "id": "Gedenkst\u00e4tte"
-        },
-        {
-            "id": "Schloss"
-        },
-        {
-            "id": "Valorisierung: Lebensbericht Benjamin Arnold"
-        },
-        {
-            "id": "Knochen"
-        },
-        {
-            "id": "Glaserei"
-        },
-        {
-            "id": "Zaumzeug"
-        },
-        {
-            "id": "T\u00fcrschloss"
-        },
-        {
-            "id": "Getreidespeicher"
-        },
-        {
-            "id": "Oberaarwerk"
-        },
-        {
-            "id": "Fang"
-        },
-        {
-            "id": "Kunst"
-        },
-        {
-            "id": "Kanone"
-        },
-        {
-            "id": "Gem\u00fcse"
-        },
-        {
-            "id": "Grabplatte"
-        },
-        {
-            "id": "Mechanik"
-        },
-        {
-            "id": "Hafner/-in"
-        },
-        {
-            "id": "L\u00f6we/-in"
-        },
-        {
-            "id": "Bauernmaler/-in"
-        },
-        {
-            "id": "Waldenburgerbahn"
-        },
-        {
-            "id": "Bienenhaus"
-        },
-        {
-            "id": "Murbacherstrasse 31"
-        },
-        {
-            "id": "Bildstock"
-        },
-        {
-            "id": "Gotthard"
-        },
-        {
-            "id": "Kinderspielplatz"
-        },
-        {
-            "id": "Beerdigung"
-        },
-        {
-            "id": "Taube"
-        },
-        {
-            "id": "Spaghetti"
-        },
-        {
-            "id": "Rheinsprung"
-        },
-        {
-            "id": "Festtafel"
-        },
-        {
-            "id": "Br\u00fccke"
-        },
-        {
-            "id": "Kartoffel"
-        },
-        {
-            "id": "Wurzel"
-        },
-        {
-            "id": "Ambrosianische T\u00e4ler"
-        },
-        {
-            "id": "Turmuhr"
-        },
-        {
-            "id": "Rafzerfeld"
-        },
-        {
-            "id": "Zerfall"
-        },
-        {
-            "id": "Hahn"
-        },
-        {
-            "id": "Kurs"
-        },
-        {
-            "id": "Strumpfhose"
-        },
-        {
-            "id": "Tal"
-        },
-        {
-            "id": "Garage"
-        },
-        {
-            "id": "Pendeluhr"
-        },
-        {
-            "id": "Hecke"
-        },
-        {
-            "id": "Felsendom"
-        },
-        {
-            "id": "Sofa"
-        },
-        {
-            "id": "Erstkommunion"
-        },
-        {
-            "id": "Eimer"
-        },
-        {
-            "id": "Portrait"
-        },
-        {
-            "id": "Musik"
-        },
-        {
-            "id": "Strohdach"
-        },
-        {
-            "id": "Glasbl\u00e4ser/-in"
-        },
-        {
-            "id": "Acker"
-        },
-        {
-            "id": "Bootsbauer/-in"
-        },
-        {
-            "id": "Buchbinderei"
-        },
-        {
-            "id": "Mahlzeit"
-        },
-        {
-            "id": "Romanik (Baustil)"
-        },
-        {
-            "id": "Laterne"
-        },
-        {
-            "id": "Feuerwerk"
-        },
-        {
-            "id": "Bildhauer/-in"
-        },
-        {
-            "id": "Architektur"
-        },
-        {
-            "id": "Landessender Berom\u00fcnster"
-        },
-        {
-            "id": "Examen"
-        },
-        {
-            "id": "Margerite"
-        },
-        {
-            "id": "Bilderrahmen"
-        },
-        {
-            "id": "Blumenbeet"
-        },
-        {
-            "id": "Untertagebau"
-        },
-        {
-            "id": "Schneekette"
-        },
-        {
-            "id": "Stausee"
-        },
-        {
-            "id": "Lagerung"
-        },
-        {
-            "id": "Freundschaft"
-        },
-        {
-            "id": "Grossm\u00fcnster (Kirche)"
-        },
-        {
-            "id": "Spatz Zelt"
-        },
-        {
-            "id": "Baldachin"
-        },
-        {
-            "id": "Gipfelkreuz"
-        },
-        {
-            "id": "Lesen"
-        },
-        {
-            "id": "Bahn\u00fcbergang"
-        },
-        {
-            "id": "Mickey Mouse"
-        },
-        {
-            "id": "Lehnstuhl"
-        },
-        {
-            "id": "Schlagbaum"
-        },
-        {
-            "id": "Herberge"
-        },
-        {
-            "id": "Welle"
-        },
-        {
-            "id": "Anzug"
-        },
-        {
-            "id": "Zement"
-        },
-        {
-            "id": "Zollbeamte/-r"
-        },
-        {
-            "id": "Berggipfel"
-        },
-        {
-            "id": "Weberei"
-        },
-        {
-            "id": "Fernglas"
-        },
-        {
-            "id": "Postauto"
-        },
-        {
-            "id": "Tierpfleger/-in"
-        },
-        {
-            "id": "Ast"
-        },
-        {
-            "id": "Schiffsmodell"
-        },
-        {
-            "id": "Ziege"
-        },
-        {
-            "id": "Strassenzug"
-        },
-        {
-            "id": "Pass"
-        },
-        {
-            "id": "Klausenpass"
-        },
-        {
-            "id": "Marroni"
-        },
-        {
-            "id": "Bart"
-        },
-        {
-            "id": "Faden"
-        },
-        {
-            "id": "Torbogen"
-        },
-        {
-            "id": "Schiffssteg"
-        },
-        {
-            "id": "Waffe"
-        },
-        {
-            "id": "Fernrohr"
-        },
-        {
-            "id": "Passagier/-in"
-        },
-        {
-            "id": "Kerbholz"
-        },
-        {
-            "id": "Schifffahrt"
-        },
-        {
-            "id": "Strassenecke"
-        },
-        {
-            "id": "Wein"
-        },
-        {
-            "id": "Arbeitsplattform"
-        },
-        {
-            "id": "Frucht"
-        },
-        {
-            "id": "Bettzeug"
-        },
-        {
-            "id": "Rigi (Berg)"
-        },
-        {
-            "id": "Vierwaldst\u00e4ttersee"
-        },
-        {
-            "id": "Hutte"
-        },
-        {
-            "id": "Uhr"
-        },
-        {
-            "id": "Lehrer/-in"
-        },
-        {
-            "id": "Buche (Laubbaum)"
-        },
-        {
-            "id": "Palazzo"
-        },
-        {
-            "id": "Kachelofen"
-        },
-        {
-            "id": "Villa"
-        },
-        {
-            "id": "Teer"
-        },
-        {
-            "id": "Zihlkanal"
-        },
-        {
-            "id": "Sozialdemokraten"
-        },
-        {
-            "id": "Lebkuchen"
-        },
-        {
-            "id": "Orgelbauer/-in"
-        },
-        {
-            "id": "Holunder"
-        },
-        {
-            "id": "Muschel"
-        },
-        {
-            "id": "Schulklasse"
-        },
-        {
-            "id": "Wanderweg"
-        },
-        {
-            "id": "Strassenbahn"
-        },
-        {
-            "id": "Steg"
-        },
-        {
-            "id": "Kuh"
-        },
-        {
-            "id": "Coiffeurgesch\u00e4ft"
-        },
-        {
-            "id": "Angler/-in"
-        },
-        {
-            "id": "Betrieb"
-        },
-        {
-            "id": "Lawinenverbauung"
-        },
-        {
-            "id": "Stein"
-        },
-        {
-            "id": "Traggestell"
-        },
-        {
-            "id": "Skifahrer/-in"
-        },
-        {
-            "id": "Schilf"
-        },
-        {
-            "id": "Vorhang"
-        },
-        {
-            "id": "Schafwolle"
-        },
-        {
-            "id": "Sockel"
-        },
-        {
-            "id": "Iglu"
-        },
-        {
-            "id": "Knecht"
-        },
-        {
-            "id": "Bauernhof"
-        },
-        {
-            "id": "Kurgast"
-        },
-        {
-            "id": "Absperrung"
-        },
-        {
-            "id": "Bundeshaus"
-        },
-        {
-            "id": "Notiz"
-        },
-        {
-            "id": "Schloss (Geb\u00e4ude)"
-        },
-        {
-            "id": "Schutzbrille"
-        },
-        {
-            "id": "Schlacht"
-        },
-        {
-            "id": "Textilindustrie"
-        },
-        {
-            "id": "Kleiderb\u00fcgel"
-        },
-        {
-            "id": "Riesenrad"
-        },
-        {
-            "id": "Hirsch"
-        },
-        {
-            "id": "Gehstock"
-        },
-        {
-            "id": "Decke (Haus)"
-        },
-        {
-            "id": "Ball"
-        },
-        {
-            "id": "Brunnen"
-        },
-        {
-            "id": "Kirchenbank"
-        },
-        {
-            "id": "Restaurant"
-        },
-        {
-            "id": "Seil"
-        },
-        {
-            "id": "Apotheke"
-        },
-        {
-            "id": "Schindelhaus"
-        },
-        {
-            "id": "Mantel"
-        },
-        {
-            "id": "Filz"
-        },
-        {
-            "id": "Haus"
-        },
-        {
-            "id": "Rast"
-        },
-        {
-            "id": "Warenanpreisung"
-        },
-        {
-            "id": "Kirche"
-        },
-        {
-            "id": "Buttertrommel"
-        },
-        {
-            "id": "Platz"
-        },
-        {
-            "id": "Brienz-Rothorn-Bahn BRB"
-        },
-        {
-            "id": "Kutte"
-        },
-        {
-            "id": "Torte"
-        },
-        {
-            "id": "Adventskalender 2018"
-        },
-        {
-            "id": "Melk\u00adsche\u00admel"
-        },
-        {
-            "id": "Falle"
-        },
-        {
-            "id": "Grillspiess"
-        },
-        {
-            "id": "K\u00e4seteilet"
-        },
-        {
-            "id": "Butzenscheibe"
-        },
-        {
-            "id": "Bibel"
-        },
-        {
-            "id": "Mais"
-        },
-        {
-            "id": "Blumenwiese"
-        },
-        {
-            "id": "Vater"
-        },
-        {
-            "id": "Hotel"
-        },
-        {
-            "id": "Fischen"
-        },
-        {
-            "id": "Dunst"
-        },
-        {
-            "id": "Blumenkohl"
-        },
-        {
-            "id": "L\u00f6ffel"
-        },
-        {
-            "id": "Pelikan"
-        },
-        {
-            "id": "Grab"
-        },
-        {
-            "id": "B\u00e4ckerei"
-        },
-        {
-            "id": "Zierwerk"
-        },
-        {
-            "id": "Getreideernte"
-        },
-        {
-            "id": "Stuck"
-        },
-        {
-            "id": "religi\u00f6se/-r W\u00fcrdentr\u00e4ger/-in"
-        },
-        {
-            "id": "Kloster"
-        },
-        {
-            "id": "Dachboden"
-        },
-        {
-            "id": "Piccolofl\u00f6te"
-        },
-        {
-            "id": "Familie"
-        },
-        {
-            "id": "H\u00fchnerstall"
-        },
-        {
-            "id": "Feier"
-        },
-        {
-            "id": "Tasse"
-        },
-        {
-            "id": "Winter"
-        },
-        {
-            "id": "Mauer"
-        },
-        {
-            "id": "Textilie"
-        },
-        {
-            "id": "Glas (Material)"
-        },
-        {
-            "id": "Hobel"
-        },
-        {
-            "id": "Stoff (Material)"
-        },
-        {
-            "id": "Kind"
-        },
-        {
-            "id": "Grimselwerke"
-        },
-        {
-            "id": "Deichsel"
-        },
-        {
-            "id": "Tierheim"
-        },
-        {
-            "id": "Glash\u00fctte"
-        },
-        {
-            "id": "Axenstrasse"
-        },
-        {
-            "id": "Hafen"
-        },
-        {
-            "id": "Umritt"
-        },
-        {
-            "id": "Fallobst"
-        },
-        {
-            "id": "Schlitten"
-        },
-        {
-            "id": "Papierfabrik"
-        },
-        {
-            "id": "Gerste"
-        },
-        {
-            "id": "Bergkette"
-        },
-        {
-            "id": "Steilhang"
-        },
-        {
-            "id": "M\u00f6bel"
-        },
-        {
-            "id": "Fuchs"
-        },
-        {
-            "id": "Eis"
-        },
-        {
-            "id": "Laub"
-        },
-        {
-            "id": "Martinimarkt"
-        },
-        {
-            "id": "Turm"
-        },
-        {
-            "id": "Marktstand"
-        },
-        {
-            "id": "Dom (Bauwerk)"
-        },
-        {
-            "id": "#SGVfokus_Baden"
-        },
-        {
-            "id": "Dole"
-        },
-        {
-            "id": "Stall"
-        },
-        {
-            "id": "Haushalt"
-        },
-        {
-            "id": "Schwein"
-        },
-        {
-            "id": "Brautpaar"
-        },
-        {
-            "id": "Brennofen"
-        },
-        {
-            "id": "Stand"
-        },
-        {
-            "id": "Plattenspieler"
-        },
-        {
-            "id": "Kurbel"
-        },
-        {
-            "id": "Brettspiel"
-        },
-        {
-            "id": "Berg"
-        },
-        {
-            "id": "Wohnblock"
-        },
-        {
-            "id": "Stock"
-        },
-        {
-            "id": "Filmstreifen"
-        },
-        {
-            "id": "Sonnenuhr"
-        },
-        {
-            "id": "Karte (Kartografie)"
-        },
-        {
-            "id": "Lagune"
-        },
-        {
-            "id": "Miststock"
-        },
-        {
-            "id": "Heizung"
-        },
-        {
-            "id": "1. Mai"
-        },
-        {
-            "id": "Kupferkessel"
+            "id": "Silberschmied/-in"
         },
         {
             "id": "Weinrebe"
         },
         {
-            "id": "Silberschmied/-in"
-        },
-        {
             "id": "Viehschau"
-        },
-        {
-            "id": "Heilsarmee"
-        },
-        {
-            "id": "Platane"
-        },
-        {
-            "id": "Gartenarbeit"
-        },
-        {
-            "id": "Rucksack"
-        },
-        {
-            "id": "Schmiedekunst"
-        },
-        {
-            "id": "Prozession"
-        },
-        {
-            "id": "Firmung"
-        },
-        {
-            "id": "Urkunde"
-        },
-        {
-            "id": "Grundriss"
-        },
-        {
-            "id": "Schweizerische Landesausstellung 1939"
-        },
-        {
-            "id": "Insel"
-        },
-        {
-            "id": "Luftschutz"
-        },
-        {
-            "id": "Kanal"
-        },
-        {
-            "id": "Wissen Sie mehr?"
-        },
-        {
-            "id": "Pavillon"
-        },
-        {
-            "id": "Gras"
-        },
-        {
-            "id": "Tanne"
-        },
-        {
-            "id": "Grigionitaliano"
-        },
-        {
-            "id": "Verkauf"
-        },
-        {
-            "id": "Kran"
-        },
-        {
-            "id": "T\u00fcrrahmen"
-        },
-        {
-            "id": "Kruzifix"
-        },
-        {
-            "id": "Waschen"
-        },
-        {
-            "id": "Billett"
-        },
-        {
-            "id": "Heutuch"
-        },
-        {
-            "id": "Aussaat"
-        },
-        {
-            "id": "Zerst\u00f6rung"
-        },
-        {
-            "id": "Traube"
-        },
-        {
-            "id": "K\u00e4se"
-        },
-        {
-            "id": "Tee"
-        },
-        {
-            "id": "Kapellbr\u00fccke Luzern"
-        },
-        {
-            "id": "Buchbinder/-in"
-        },
-        {
-            "id": "Glockenband"
-        },
-        {
-            "id": "Tafel"
-        },
-        {
-            "id": "Steinmauer"
-        },
-        {
-            "id": "Rutschbahn"
-        },
-        {
-            "id": "Schatten"
-        },
-        {
-            "id": "Soldat"
-        },
-        {
-            "id": "Brennmaterial"
-        },
-        {
-            "id": "Zoll"
-        },
-        {
-            "id": "B\u00fcgeleisen"
-        },
-        {
-            "id": "Lago Maggiore"
-        },
-        {
-            "id": "Wacholder"
-        },
-        {
-            "id": "Feldweg"
-        },
-        {
-            "id": "Steinbock"
-        },
-        {
-            "id": "Schnecke"
-        },
-        {
-            "id": "Brennholz"
-        },
-        {
-            "id": "Landessender"
-        },
-        {
-            "id": "Trommel"
-        },
-        {
-            "id": "Museum"
-        },
-        {
-            "id": "Sonnenbrille"
-        },
-        {
-            "id": "Buchdrucker/-in"
-        },
-        {
-            "id": "Friedhof"
-        },
-        {
-            "id": "Fensterl\u00e4den"
-        },
-        {
-            "id": "Denkmal"
-        },
-        {
-            "id": "Gep\u00e4ckwagen"
-        },
-        {
-            "id": "Gem\u00fcsebeet"
-        },
-        {
-            "id": "Wahlurne"
-        },
-        {
-            "id": "Eingangstor"
-        },
-        {
-            "id": "Schneider/-in"
-        },
-        {
-            "id": "Viehhaltung"
-        },
-        {
-            "id": "Baumstamm"
-        },
-        {
-            "id": "Inspektorat"
-        },
-        {
-            "id": "Vogel"
-        },
-        {
-            "id": "Bergsee"
-        },
-        {
-            "id": "Feld"
-        },
-        {
-            "id": "Sichel"
-        },
-        {
-            "id": "Thermalbad"
-        },
-        {
-            "id": "Information"
-        },
-        {
-            "id": "Regenkleider"
-        },
-        {
-            "id": "Schermauser"
-        },
-        {
-            "id": "Stimmabgabe"
-        },
-        {
-            "id": "Ruine"
-        },
-        {
-            "id": "Schnurrbart"
-        },
-        {
-            "id": "Hornschlitten"
-        },
-        {
-            "id": "Schweizerisches Bauernmuseum"
-        },
-        {
-            "id": "Grabinschrift"
-        },
-        {
-            "id": "Rohr"
-        },
-        {
-            "id": "Hosentr\u00e4ger"
-        },
-        {
-            "id": "Defekt"
-        },
-        {
-            "id": "Verbrennen"
-        },
-        {
-            "id": "Hirtenstab"
-        },
-        {
-            "id": "Dokument"
-        },
-        {
-            "id": "Picknick"
-        },
-        {
-            "id": "Dirigent/-in"
-        },
-        {
-            "id": "Dachstuhl"
-        },
-        {
-            "id": "Wehr"
-        },
-        {
-            "id": "Motorrad"
-        },
-        {
-            "id": "Alp"
-        },
-        {
-            "id": "Religion"
-        },
-        {
-            "id": "Hausbau"
-        },
-        {
-            "id": "Rechenschieber"
-        },
-        {
-            "id": "Hirte/-in"
-        },
-        {
-            "id": "Bier"
-        },
-        {
-            "id": "Brennhafen"
-        },
-        {
-            "id": "Holz"
-        },
-        {
-            "id": "Unterw\u00e4sche"
-        },
-        {
-            "id": "Relief"
-        },
-        {
-            "id": "Z\u00fcrichsee"
-        },
-        {
-            "id": "Staffelei"
-        },
-        {
-            "id": "Nummernschild (Fahrzeug)"
-        },
-        {
-            "id": "Hochhaus"
-        },
-        {
-            "id": "Flechter/-in"
-        },
-        {
-            "id": "Armbrust"
-        },
-        {
-            "id": "Fuhrwerk"
-        },
-        {
-            "id": "Flur (Geb\u00e4ude)"
-        },
-        {
-            "id": "Krone"
-        },
-        {
-            "id": "Wanderer/Wanderin"
-        },
-        {
-            "id": "Flicken"
-        },
-        {
-            "id": "Sturm"
-        },
-        {
-            "id": "Ikonographie"
-        },
-        {
-            "id": "Kreuzgang"
-        },
-        {
-            "id": "Burg"
-        },
-        {
-            "id": "R\u00e4umungsarbeiten"
-        },
-        {
-            "id": "Dampfwalze"
-        },
-        {
-            "id": "T\u00e4fer"
-        },
-        {
-            "id": "Eisen (Material)"
-        },
-        {
-            "id": "Kopfbedeckung"
-        },
-        {
-            "id": "Axt"
-        },
-        {
-            "id": "Terrasse"
-        },
-        {
-            "id": "Messer"
-        },
-        {
-            "id": "Tr\u00f6te"
-        },
-        {
-            "id": "Elektrizit\u00e4t"
-        },
-        {
-            "id": "Schlitteln"
-        },
-        {
-            "id": "Sticken"
-        },
-        {
-            "id": "Gasse"
-        },
-        {
-            "id": "Karton"
-        },
-        {
-            "id": "Eingang"
-        },
-        {
-            "id": "Giebel"
-        },
-        {
-            "id": "Sessellift"
-        },
-        {
-            "id": "Strand"
-        },
-        {
-            "id": "Krippenspiel"
-        },
-        {
-            "id": "Hochstuhl"
-        },
-        {
-            "id": "Markt"
-        },
-        {
-            "id": "Kreuz"
-        },
-        {
-            "id": "Schnee"
-        },
-        {
-            "id": "Backofen"
-        },
-        {
-            "id": "Schnitzbank"
-        },
-        {
-            "id": "Kraftwerk"
-        },
-        {
-            "id": "S\u00e4gen (T\u00e4tigkeit)"
-        },
-        {
-            "id": "Bielersee"
-        },
-        {
-            "id": "Parkplatz"
-        },
-        {
-            "id": "Krawatte"
-        },
-        {
-            "id": "Wilhelm Tell"
-        },
-        {
-            "id": "Sch\u00fctzenfest"
-        },
-        {
-            "id": "Transport"
-        },
-        {
-            "id": "Wildheuet"
-        },
-        {
-            "id": "Morgenstern (Waffe)"
-        },
-        {
-            "id": "Fundament"
-        },
-        {
-            "id": "Bergbau"
-        },
-        {
-            "id": "Dachdecken"
-        },
-        {
-            "id": "Schloss Bottmingen"
-        },
-        {
-            "id": "Gespr\u00e4ch"
-        },
-        {
-            "id": "Weide (Baum)"
-        },
-        {
-            "id": "Vieh"
-        },
-        {
-            "id": "Hauseingang"
-        },
-        {
-            "id": "Schuhmacher/-in"
-        },
-        {
-            "id": "Metzgerei"
-        },
-        {
-            "id": "Weinherstellung"
-        },
-        {
-            "id": "Forstwirtschaft"
-        },
-        {
-            "id": "Brauch"
-        },
-        {
-            "id": "Nahrung"
-        },
-        {
-            "id": "Egge"
-        },
-        {
-            "id": "Pfosten"
-        },
-        {
-            "id": "Lawinenwinter 1951"
-        },
-        {
-            "id": "Seer\u00fccken (Thurgau)"
-        },
-        {
-            "id": "Wiege"
-        },
-        {
-            "id": "Seilzug"
-        },
-        {
-            "id": "Weide"
-        },
-        {
-            "id": "Gem\u00e4lde"
-        },
-        {
-            "id": "Jubil\u00e4um"
-        },
-        {
-            "id": "Wasserrinne"
-        },
-        {
-            "id": "Abbau (Bergbau)"
-        },
-        {
-            "id": "Inschrift"
-        },
-        {
-            "id": "Holz (Material)"
-        },
-        {
-            "id": "Wasserloch"
-        },
-        {
-            "id": "Buffet"
-        },
-        {
-            "id": "Kellerfenster"
-        },
-        {
-            "id": "Besatzung"
-        },
-        {
-            "id": "Krawattenschleife"
-        },
-        {
-            "id": "Parkett"
-        },
-        {
-            "id": "Truhe"
-        },
-        {
-            "id": "Sonnenstrahl"
-        },
-        {
-            "id": "T\u00fcrbogen"
-        },
-        {
-            "id": "Bodensee"
-        },
-        {
-            "id": "K\u00fcche"
-        },
-        {
-            "id": "Waschbrett"
-        },
-        {
-            "id": "G\u00fcllefass"
-        },
-        {
-            "id": "Scheiterbeige"
-        },
-        {
-            "id": "Bauen"
-        },
-        {
-            "id": "Umarmung"
-        },
-        {
-            "id": "Gef\u00e4ngnis"
-        },
-        {
-            "id": "Handschuh"
-        },
-        {
-            "id": "Fuhrwagen"
-        },
-        {
-            "id": "Viadukt"
-        },
-        {
-            "id": "M\u00f6nch"
-        },
-        {
-            "id": "Mahlen"
-        },
-        {
-            "id": "Reederei"
-        },
-        {
-            "id": "Betteltag"
-        },
-        {
-            "id": "Renaissance (Baustil)"
-        },
-        {
-            "id": "Dampfschiff"
-        },
-        {
-            "id": "Stabelle"
-        },
-        {
-            "id": "Stroh"
-        },
-        {
-            "id": "Statue"
-        },
-        {
-            "id": "Herd"
-        },
-        {
-            "id": "Milchkanne"
-        },
-        {
-            "id": "Vogelnest"
-        },
-        {
-            "id": "Knabe"
-        },
-        {
-            "id": "Pflanze"
-        },
-        {
-            "id": "Wohnhaus"
-        },
-        {
-            "id": "Eichh\u00f6rnchen"
-        },
-        {
-            "id": "Schule"
-        },
-        {
-            "id": "Neue Z\u00fcrcher Zeitung"
-        },
-        {
-            "id": "Balke"
-        },
-        {
-            "id": "Leinen (Textil)"
-        },
-        {
-            "id": "Birne"
-        },
-        {
-            "id": "L\u00f6wenzahn"
-        },
-        {
-            "id": "Sgraffito"
-        },
-        {
-            "id": "11. Schweizerische Ausstellung f\u00fcr Landwirtschaft, Forstwirtschaft und Gartenbau"
-        },
-        {
-            "id": "Kirschbaum"
-        },
-        {
-            "id": "Hof"
-        },
-        {
-            "id": "Besitzerzeichen"
-        },
-        {
-            "id": "Theater"
-        },
-        {
-            "id": "Tannenzweig"
-        },
-        {
-            "id": "Fraum\u00fcnster"
-        },
-        {
-            "id": "Kinderheim"
-        },
-        {
-            "id": "Dengeln"
-        },
-        {
-            "id": "Palme"
-        },
-        {
-            "id": "Waschbecken"
-        },
-        {
-            "id": "Heugabel"
-        },
-        {
-            "id": "Bagger"
-        },
-        {
-            "id": "T\u00fcrlersee"
-        },
-        {
-            "id": "Pumpe"
-        },
-        {
-            "id": "Zigarette"
-        },
-        {
-            "id": "Pension"
-        },
-        {
-            "id": "Trinken (T\u00e4tigkeit)"
-        },
-        {
-            "id": "Brot (Geb\u00e4ck)"
-        },
-        {
-            "id": "G\u00fcterwagen"
-        },
-        {
-            "id": "Seilrolle"
-        },
-        {
-            "id": "Dach"
-        },
-        {
-            "id": "Jute"
-        },
-        {
-            "id": "Marmor"
-        },
-        {
-            "id": "Saumtier"
-        },
-        {
-            "id": "Steinfundament"
-        },
-        {
-            "id": "Antenne"
-        },
-        {
-            "id": "Flussbett"
-        },
-        {
-            "id": "Technik"
-        },
-        {
-            "id": "S\u00e4umer"
-        },
-        {
-            "id": "Fl\u00fcgelaltar"
-        },
-        {
-            "id": "Seedamm von Melide"
-        },
-        {
-            "id": "Seife"
-        },
-        {
-            "id": "Kreide"
-        },
-        {
-            "id": "Keil"
-        },
-        {
-            "id": "Fussabdruck"
-        },
-        {
-            "id": "Student/-in"
-        },
-        {
-            "id": "Trocknen"
-        },
-        {
-            "id": "Thermalquelle"
-        },
-        {
-            "id": "Schlucht"
-        },
-        {
-            "id": "Rangierbahnhof"
-        },
-        {
-            "id": "Skipiste"
-        },
-        {
-            "id": "Schiefertafel"
-        },
-        {
-            "id": "Ernte"
-        },
-        {
-            "id": "Bahn"
-        },
-        {
-            "id": "Streusiedlung"
-        },
-        {
-            "id": "Kaffee"
-        },
-        {
-            "id": "Reparatur"
-        },
-        {
-            "id": "Trottinett"
-        },
-        {
-            "id": "Schlachthof"
-        },
-        {
-            "id": "Pfadfinder/Pfadfinderin"
-        },
-        {
-            "id": "Schultafel"
-        },
-        {
-            "id": "Baumpflege"
-        },
-        {
-            "id": "Wintersport"
-        },
-        {
-            "id": "Quelle"
-        },
-        {
-            "id": "Wandmalerei"
-        },
-        {
-            "id": "Aareschlucht"
-        },
-        {
-            "id": "Holzbau"
-        },
-        {
-            "id": "Rind"
-        },
-        {
-            "id": "Spielzeug"
-        },
-        {
-            "id": "Troph\u00e4e"
-        },
-        {
-            "id": "Weink\u00fcfer/Weink\u00fcferin"
-        },
-        {
-            "id": "Nagelschmiede"
-        },
-        {
-            "id": "Bluse"
-        },
-        {
-            "id": "Eiszapfen"
-        },
-        {
-            "id": "Br\u00e4utigam"
-        },
-        {
-            "id": "Kleid"
-        },
-        {
-            "id": "Teppichstange"
-        },
-        {
-            "id": "Backstein"
-        },
-        {
-            "id": "Bademode"
-        },
-        {
-            "id": "Weinstube"
-        },
-        {
-            "id": "Schneegrenze"
-        },
-        {
-            "id": "Buch"
-        },
-        {
-            "id": "Schubkarre"
-        },
-        {
-            "id": "Matterhorn (Berg)"
-        },
-        {
-            "id": "Gruppe"
-        },
-        {
-            "id": "Sand"
-        },
-        {
-            "id": "Orgel"
-        },
-        {
-            "id": "Stadtmauer"
-        },
-        {
-            "id": "Totholz"
-        },
-        {
-            "id": "Eisbahn"
-        },
-        {
-            "id": "Zwiebeldach"
-        },
-        {
-            "id": "Biblische Szene"
-        },
-        {
-            "id": "Berglandschaft"
-        },
-        {
-            "id": "Inneneinrichtung"
-        },
-        {
-            "id": "Wickeltisch"
-        },
-        {
-            "id": "Stofftier"
-        },
-        {
-            "id": "Schaf"
-        },
-        {
-            "id": "Zelten"
-        },
-        {
-            "id": "Ordensschwester"
-        },
-        {
-            "id": "K\u00fcrbis"
-        },
-        {
-            "id": "Schulweg"
-        },
-        {
-            "id": "Privat"
-        },
-        {
-            "id": "Himmel"
-        },
-        {
-            "id": "Beil"
-        },
-        {
-            "id": "Polizeiposten"
-        },
-        {
-            "id": "T\u00fcrklingel"
-        },
-        {
-            "id": "Religi\u00f6se Bauten"
-        },
-        {
-            "id": "Verkehrshaus der Schweiz"
-        },
-        {
-            "id": "Kreuz (religi\u00f6ser Kontext)"
-        },
-        {
-            "id": "Beton"
-        },
-        {
-            "id": "Erker"
-        },
-        {
-            "id": "Gehege"
-        },
-        {
-            "id": "Freilichtmuseum"
-        },
-        {
-            "id": "Markusl\u00f6we"
-        },
-        {
-            "id": "Holztransport"
-        },
-        {
-            "id": "Weihnachtskrippe"
-        },
-        {
-            "id": "Gamelle"
-        },
-        {
-            "id": "Tunnel"
-        },
-        {
-            "id": "Fischer/-in"
-        },
-        {
-            "id": "Heuernte"
-        },
-        {
-            "id": "Netz"
-        },
-        {
-            "id": "Adventskalender 2017"
-        },
-        {
-            "id": "Riss"
-        },
-        {
-            "id": "Forschung"
-        },
-        {
-            "id": "Sch\u00fcrze"
-        },
-        {
-            "id": "Sitzen (T\u00e4tigkeit)"
-        },
-        {
-            "id": "Steinbruch"
-        },
-        {
-            "id": "K\u00e4selaib"
-        },
-        {
-            "id": "Weben"
-        },
-        {
-            "id": "Schrank"
-        },
-        {
-            "id": "Figur"
-        },
-        {
-            "id": "Valposchiavo"
-        },
-        {
-            "id": "Feiertag"
-        },
-        {
-            "id": "Gew\u00e4chshaus"
-        },
-        {
-            "id": "Hut"
-        },
-        {
-            "id": "Zoo"
-        },
-        {
-            "id": "Schiessen (T\u00e4tigkeit)"
-        },
-        {
-            "id": "Riegelhaus"
-        },
-        {
-            "id": "Reiter/-in"
-        },
-        {
-            "id": "Grabkreuz"
-        },
-        {
-            "id": "Glocke"
-        },
-        {
-            "id": "Banane"
-        },
-        {
-            "id": "Textilfabrik"
-        },
-        {
-            "id": "Priester"
-        },
-        {
-            "id": "Z\u00fcrcher Kantonale Landwirtschafts- und Gewerbeausstellung"
-        },
-        {
-            "id": "Banner"
-        },
-        {
-            "id": "Aussichtsplattform"
-        },
-        {
-            "id": "Robe"
-        },
-        {
-            "id": "Feuerwehr"
-        },
-        {
-            "id": "Kirchgang"
-        },
-        {
-            "id": "Trockenmauer"
-        },
-        {
-            "id": "Bischofsstab"
-        },
-        {
-            "id": "Gedenken"
-        },
-        {
-            "id": "Initialen"
-        },
-        {
-            "id": "Ware"
-        },
-        {
-            "id": "Heuen"
-        },
-        {
-            "id": "Heustock"
-        },
-        {
-            "id": "Grenzstein"
-        },
-        {
-            "id": "Promenade"
-        },
-        {
-            "id": "Pferdeschau Sempach"
-        },
-        {
-            "id": "Drechselmaschine"
-        },
-        {
-            "id": "Sch\u00e4del"
-        },
-        {
-            "id": "Schlauch"
-        },
-        {
-            "id": "Arkade"
-        },
-        {
-            "id": "Markusdom"
-        },
-        {
-            "id": "Nonne"
-        },
-        {
-            "id": "M\u00fchlrad"
-        },
-        {
-            "id": "Fahnenstange"
-        },
-        {
-            "id": "Seedamm von Rapperswil"
-        },
-        {
-            "id": "Gitarre"
-        },
-        {
-            "id": "Spreuerbr\u00fccke Luzern"
-        },
-        {
-            "id": "Senn"
-        },
-        {
-            "id": "Fluss"
-        },
-        {
-            "id": "Stake"
-        },
-        {
-            "id": "Chalet"
-        },
-        {
-            "id": "Postkartenserie Brunner 2018"
-        },
-        {
-            "id": "Druck"
         },
         {
             "id": "Butter"
@@ -3493,22 +61,28 @@
             "id": "Mann"
         },
         {
-            "id": "Scharnier"
+            "id": "Heilsarmee"
         },
         {
             "id": "Land"
         },
         {
+            "id": "Steintisch"
+        },
+        {
             "id": "Genfersee"
         },
         {
-            "id": "Schaukasten"
+            "id": "Kochtopf"
         },
         {
-            "id": "Brieftr\u00e4ger/-in"
+            "id": "Misericordie"
         },
         {
-            "id": "Weibel"
+            "id": "Baden"
+        },
+        {
+            "id": "Pilgerweg"
         },
         {
             "id": "N\u00e4hen"
@@ -3520,10 +94,16 @@
             "id": "Hausnummer"
         },
         {
-            "id": "Illustration"
+            "id": "Tr\u00e4nke"
         },
         {
-            "id": "Projekt Staud\u00e4mme"
+            "id": "Drechslerei"
+        },
+        {
+            "id": "Schmiedekunst"
+        },
+        {
+            "id": "Prozession"
         },
         {
             "id": "Molkerei"
@@ -3532,10 +112,22 @@
             "id": "Schulreise"
         },
         {
+            "id": "Rad"
+        },
+        {
             "id": "Bach"
         },
         {
+            "id": "Herbst"
+        },
+        {
+            "id": "Firmung"
+        },
+        {
             "id": "Zaun"
+        },
+        {
+            "id": "Urkunde"
         },
         {
             "id": "Schnitzerei"
@@ -3544,13 +136,16 @@
             "id": "B\u00fcndel"
         },
         {
-            "id": "Arbeitszimmer"
+            "id": "Laubbaum"
         },
         {
             "id": "Reisende"
         },
         {
-            "id": "Iffele"
+            "id": "Schweizerische Landesausstellung 1939"
+        },
+        {
+            "id": "Grundriss"
         },
         {
             "id": "Holzstapel"
@@ -3559,10 +154,10 @@
             "id": "Haarschleife"
         },
         {
-            "id": "Reihenhaus"
+            "id": "Insel"
         },
         {
-            "id": "Wall"
+            "id": "Reihenhaus"
         },
         {
             "id": "Heu"
@@ -3571,13 +166,10 @@
             "id": "Jesus Christus (Bibel)"
         },
         {
-            "id": "Hofeingang"
+            "id": "Fischernetz"
         },
         {
-            "id": "Truthahn/Truthuhn"
-        },
-        {
-            "id": "Lauch"
+            "id": "Kanal"
         },
         {
             "id": "Progetto collaborativo e partecipativo tra la SSTP e la Pro Grigionitaliano"
@@ -3586,28 +178,52 @@
             "id": "Tannenwald"
         },
         {
-            "id": "Thunersee"
+            "id": "Bauernmalerei"
         },
         {
-            "id": "Bauernmalerei"
+            "id": "Korn"
+        },
+        {
+            "id": "Fotograf/Fotografin"
+        },
+        {
+            "id": "Geh\u00f6ft"
+        },
+        {
+            "id": "Salz"
         },
         {
             "id": "Ski"
         },
         {
-            "id": "Kegelbahn"
+            "id": "Spielen"
         },
         {
-            "id": "Schweizerfahne"
+            "id": "Gras"
+        },
+        {
+            "id": "Tanne"
+        },
+        {
+            "id": "Messerschmied/-in"
         },
         {
             "id": "Gletscher"
         },
         {
+            "id": "Bahnangestellte/-r"
+        },
+        {
             "id": "Maschine"
         },
         {
-            "id": "Kissen"
+            "id": "Ochse"
+        },
+        {
+            "id": "Spielkurs auf dem Herzberg"
+        },
+        {
+            "id": "Schloss Landshut"
         },
         {
             "id": "Fassade"
@@ -3616,49 +232,109 @@
             "id": "Unterricht"
         },
         {
-            "id": "Weiche"
+            "id": "Strassenschild"
+        },
+        {
+            "id": "Grigionitaliano"
         },
         {
             "id": "Heilige/-r"
         },
         {
+            "id": "Sitzbank"
+        },
+        {
+            "id": "Kran"
+        },
+        {
+            "id": "T\u00fcrrahmen"
+        },
+        {
+            "id": "Pro Juventute"
+        },
+        {
+            "id": "Kruzifix"
+        },
+        {
             "id": "Pflasterstein"
         },
         {
-            "id": "Chemin\u00e9e"
+            "id": "Waschen"
         },
         {
-            "id": "K\u00fcfer/-in"
+            "id": "Braut"
         },
         {
-            "id": "Maler/-in"
+            "id": "Heutuch"
+        },
+        {
+            "id": "Apfel"
+        },
+        {
+            "id": "Ebene"
+        },
+        {
+            "id": "Basler Fasnacht"
+        },
+        {
+            "id": "Fabrik"
+        },
+        {
+            "id": "Zerst\u00f6rung"
         },
         {
             "id": "Schienen"
         },
         {
-            "id": "Giesskanne"
+            "id": "K\u00e4se"
+        },
+        {
+            "id": "H\u00fctte"
+        },
+        {
+            "id": "Mosten"
+        },
+        {
+            "id": "Feuer"
+        },
+        {
+            "id": "Kapellbr\u00fccke Luzern"
         },
         {
             "id": "Himmelfahrt Christi"
         },
         {
-            "id": "#SGVfokus"
+            "id": "Winde (Mechanik)"
         },
         {
             "id": "Feldkreuz"
         },
         {
+            "id": "Autobahn"
+        },
+        {
             "id": "Wald"
         },
         {
-            "id": "Weihwasser"
+            "id": "Kirche St. Oswald (Zug)"
         },
         {
-            "id": "K\u00fccken"
+            "id": "Zahnradbahn"
         },
         {
-            "id": "Abf\u00fcllen"
+            "id": "K\u00e4serei"
+        },
+        {
+            "id": "Fronleichnam"
+        },
+        {
+            "id": "See"
+        },
+        {
+            "id": "Maske"
+        },
+        {
+            "id": "Stimmzettel"
         },
         {
             "id": "Ding"
@@ -3667,49 +343,106 @@
             "id": "Forstlehre"
         },
         {
-            "id": "Fresko"
-        },
-        {
             "id": "Bauarbeiten"
         },
         {
-            "id": "Wippe"
+            "id": "Fresko"
         },
         {
-            "id": "Klavarskribo"
+            "id": "Ruderboot"
         },
         {
-            "id": "Sch\u00e4ren"
+            "id": "Steinmauer"
         },
         {
-            "id": "Rangiergleis"
+            "id": "Schnitzen"
+        },
+        {
+            "id": "Papier (Material)"
+        },
+        {
+            "id": "Geburtstag"
+        },
+        {
+            "id": "Schatten"
         },
         {
             "id": "Geschwister"
         },
         {
+            "id": "Weber/-in"
+        },
+        {
             "id": "Jeep"
         },
         {
-            "id": "Kirche St. Leodegar im Hof Luzern"
+            "id": "B\u00fccherregal"
         },
         {
-            "id": "Ei"
+            "id": "Fohlen"
+        },
+        {
+            "id": "Bew\u00e4sserung"
+        },
+        {
+            "id": "Gant"
+        },
+        {
+            "id": "Milieu"
         },
         {
             "id": "Schneer\u00e4umung"
         },
         {
-            "id": "Schnaps"
+            "id": "Pilatus"
+        },
+        {
+            "id": "Giornate Grigionitaliane - Poschiavo 2021"
+        },
+        {
+            "id": "Lago Maggiore"
+        },
+        {
+            "id": "B\u00fcrgenstock"
+        },
+        {
+            "id": "Wasser"
+        },
+        {
+            "id": "Stapel"
         },
         {
             "id": "H\u00fcgel"
         },
         {
-            "id": "Fr\u00fcchteverk\u00e4ufer/-in"
+            "id": "Feldweg"
         },
         {
-            "id": "B\u00fcste"
+            "id": "Spaziergang"
+        },
+        {
+            "id": "Maiens\u00e4ss"
+        },
+        {
+            "id": "Klebdach"
+        },
+        {
+            "id": "Brennholz"
+        },
+        {
+            "id": "Volksfest"
+        },
+        {
+            "id": "Trommel"
+        },
+        {
+            "id": "Museum"
+        },
+        {
+            "id": "Hund / H\u00fcndin"
+        },
+        {
+            "id": "Wolke"
         },
         {
             "id": "Beschlag"
@@ -3718,124 +451,283 @@
             "id": "Bergwerk"
         },
         {
+            "id": "Buchdrucker/-in"
+        },
+        {
+            "id": "Wandern"
+        },
+        {
             "id": "Reiten"
         },
         {
-            "id": "Scheuklappen"
+            "id": "Friedhof"
         },
         {
-            "id": "Ausflug"
+            "id": "Luganersee"
         },
         {
-            "id": "Melken"
+            "id": "Fensterl\u00e4den"
         },
         {
-            "id": "Kalb"
+            "id": "Denkmal"
+        },
+        {
+            "id": "Gep\u00e4ck"
+        },
+        {
+            "id": "Dekoration"
+        },
+        {
+            "id": "Gem\u00fcsebeet"
+        },
+        {
+            "id": "Gastronomie"
+        },
+        {
+            "id": "Eingangstor"
+        },
+        {
+            "id": "Kuhkampf"
         },
         {
             "id": "Holzt\u00fcr"
         },
         {
-            "id": "Schwert"
-        },
-        {
             "id": "Traktor"
-        },
-        {
-            "id": "Stelze"
         },
         {
             "id": "Gondoliere"
         },
         {
+            "id": "Baumstamm"
+        },
+        {
+            "id": "Saane (Fluss)"
+        },
+        {
+            "id": "Aletschwald"
+        },
+        {
+            "id": "Alter Mann"
+        },
+        {
+            "id": "Holzfachschule"
+        },
+        {
+            "id": "Lokomotive"
+        },
+        {
+            "id": "Stricken"
+        },
+        {
+            "id": "Wohnwagen"
+        },
+        {
+            "id": "Bergsee"
+        },
+        {
+            "id": "Feld"
+        },
+        {
             "id": "Stimmausz\u00e4hlung"
         },
         {
-            "id": "Anpflanzen"
+            "id": "Sichel"
         },
         {
-            "id": "Karussell"
+            "id": "Blochmontag"
         },
         {
-            "id": "Weiher"
+            "id": "Fr\u00fchling"
         },
         {
-            "id": "Kieswerk"
+            "id": "Arbeit"
         },
         {
-            "id": "Farbe"
+            "id": "Schiffsverkehr"
+        },
+        {
+            "id": "Schornstein"
         },
         {
             "id": "Fahrrad"
         },
         {
+            "id": "Ruine"
+        },
+        {
+            "id": "Alph\u00fctte"
+        },
+        {
             "id": "Rebberg"
+        },
+        {
+            "id": "Speicher"
+        },
+        {
+            "id": "Ausmessen"
         },
         {
             "id": "Volk"
         },
         {
-            "id": "Eiche"
+            "id": "Brett"
+        },
+        {
+            "id": "H\u00e4userzeile"
+        },
+        {
+            "id": "Zeitung"
+        },
+        {
+            "id": "Brienzersee"
+        },
+        {
+            "id": "Autobus"
+        },
+        {
+            "id": "Gondola"
+        },
+        {
+            "id": "Schweizerisches Bauernmuseum"
+        },
+        {
+            "id": "Hochzeit"
+        },
+        {
+            "id": "Grabinschrift"
         },
         {
             "id": "Koch/K\u00f6chin"
         },
         {
-            "id": "Keller"
+            "id": "Rohr"
         },
         {
-            "id": "Schachspiel"
+            "id": "S\u00e4ule"
         },
         {
-            "id": "Pullover"
+            "id": "Hotel Montana Luzern"
+        },
+        {
+            "id": "Fels"
         },
         {
             "id": "Suppenkelle"
         },
         {
+            "id": "Verbrennen"
+        },
+        {
+            "id": "Ger\u00e4t"
+        },
+        {
+            "id": "Rumantsch Grischun"
+        },
+        {
+            "id": "Geisslechl\u00f6pfen"
+        },
+        {
+            "id": "Umzug"
+        },
+        {
             "id": "Suone"
         },
         {
-            "id": "Spiegelung"
+            "id": "Gotthardbahn"
         },
         {
-            "id": "Flaschenzug"
+            "id": "Armut"
         },
         {
-            "id": "Hutband"
+            "id": "Fest"
         },
         {
-            "id": "M\u00fchlestein"
+            "id": "Rauchen"
         },
         {
-            "id": "Zimmer"
+            "id": "S\u00e4gerei"
+        },
+        {
+            "id": "Mutter"
+        },
+        {
+            "id": "Klavierbauer"
+        },
+        {
+            "id": "Alp"
+        },
+        {
+            "id": "Zelt"
         },
         {
             "id": "Segelboot"
         },
         {
-            "id": "Chor (Kirche)"
+            "id": "Religion"
         },
         {
             "id": "Steinformation"
         },
         {
+            "id": "Hausbau"
+        },
+        {
             "id": "Saline"
+        },
+        {
+            "id": "Hirte/-in"
+        },
+        {
+            "id": "Holz"
         },
         {
             "id": "Hochwasser"
         },
         {
-            "id": "Kamm"
+            "id": "Hinterhof"
+        },
+        {
+            "id": "Reise"
+        },
+        {
+            "id": "Schaufel"
+        },
+        {
+            "id": "Gebirgspass"
+        },
+        {
+            "id": "Relief"
+        },
+        {
+            "id": "Kinderwagen"
         },
         {
             "id": "Verkleidung"
         },
         {
-            "id": "Trog (Beh\u00e4lter)"
+            "id": "Flechten (Verb)"
         },
         {
-            "id": "Pappel"
+            "id": "Schmuggler/Schmugglerin"
+        },
+        {
+            "id": "Staffelei"
+        },
+        {
+            "id": "Sense (Werkzeug)"
+        },
+        {
+            "id": "Schuh"
+        },
+        {
+            "id": "Quai"
+        },
+        {
+            "id": "Flechter/-in"
+        },
+        {
+            "id": "Wirtshaus"
         },
         {
             "id": "Plan"
@@ -3844,34 +736,112 @@
             "id": "Zuschauer/-in"
         },
         {
+            "id": "Reproduktion"
+        },
+        {
+            "id": "Kies"
+        },
+        {
+            "id": "Holzf\u00e4ller/-in"
+        },
+        {
             "id": "Ausstellung"
+        },
+        {
+            "id": "Curling"
+        },
+        {
+            "id": "Siedlung"
+        },
+        {
+            "id": "Fuhrwerk"
+        },
+        {
+            "id": "Strasse"
         },
         {
             "id": "Milchverarbeitung"
         },
         {
+            "id": "Hausanbau"
+        },
+        {
+            "id": "Aussicht"
+        },
+        {
+            "id": "Milit\u00e4r"
+        },
+        {
+            "id": "Kupferschmied/-in"
+        },
+        {
+            "id": "Wanderer/Wanderin"
+        },
+        {
             "id": "Schweizerische Landesausstellung"
+        },
+        {
+            "id": "Backen"
+        },
+        {
+            "id": "Stift (Kirche)"
+        },
+        {
+            "id": "Kloster Einsiedeln"
         },
         {
             "id": "Holzschlag"
         },
         {
-            "id": "Schl\u00fcssel"
+            "id": "Sturm"
+        },
+        {
+            "id": "Kreuzgang"
+        },
+        {
+            "id": "Burg"
+        },
+        {
+            "id": "R\u00e4umungsarbeiten"
         },
         {
             "id": "W\u00e4sche"
         },
         {
+            "id": "Bauernhaus"
+        },
+        {
             "id": "Malerei"
         },
         {
-            "id": "Wahlen"
+            "id": "Aletschgletscher"
+        },
+        {
+            "id": "Engadiner-Haus"
+        },
+        {
+            "id": "Besichtigung"
+        },
+        {
+            "id": "Boot"
         },
         {
             "id": "Fotografie"
         },
         {
+            "id": "Eisen (Material)"
+        },
+        {
+            "id": "Kopfbedeckung"
+        },
+        {
+            "id": "Schloss"
+        },
+        {
             "id": "Strom"
+        },
+        {
+            "id": "Knochen"
         },
         {
             "id": "Festkleidung"
@@ -3880,130 +850,334 @@
             "id": "Kuhglocke"
         },
         {
-            "id": "Flussdelta"
+            "id": "Skistock"
         },
         {
             "id": "Saignel\u00e9gier-La Chaux-de-Fonds Bahn"
         },
         {
+            "id": "Terrasse"
+        },
+        {
+            "id": "Messer"
+        },
+        {
+            "id": "Elektrizit\u00e4t"
+        },
+        {
             "id": "Ferkel"
         },
         {
-            "id": "Weidling"
+            "id": "Schlitteln"
         },
         {
-            "id": "Regenrohr"
+            "id": "Sticken"
         },
         {
-            "id": "Dose"
+            "id": "Oberaarwerk"
         },
         {
-            "id": "Waage"
+            "id": "Winzerfest"
+        },
+        {
+            "id": "Zementfabrik"
+        },
+        {
+            "id": "Gasse"
+        },
+        {
+            "id": "Kunst"
+        },
+        {
+            "id": "Pflug"
+        },
+        {
+            "id": "Kanone"
         },
         {
             "id": "Verk\u00e4ufer/-in"
         },
         {
-            "id": "Ehepaar"
+            "id": "Maultier"
+        },
+        {
+            "id": "Archivieren"
+        },
+        {
+            "id": "Eingang"
+        },
+        {
+            "id": "Giebel"
         },
         {
             "id": "Kondukteur/-in"
         },
         {
-            "id": "Peitsche"
+            "id": "Essen (T\u00e4tigkeit)"
         },
         {
-            "id": "Essen (T\u00e4tigkeit)"
+            "id": "Pferd"
+        },
+        {
+            "id": "Mosterei"
         },
         {
             "id": "Tisch"
         },
         {
-            "id": "Bettler/-in"
+            "id": "Obstbaum"
         },
         {
             "id": "Stadttor"
         },
         {
+            "id": "Krippenspiel"
+        },
+        {
+            "id": "Bauernmaler/-in"
+        },
+        {
             "id": "Rheinschlucht"
         },
         {
-            "id": "Jagd"
+            "id": "Hochstuhl"
         },
         {
-            "id": "Pfarrer"
+            "id": "Schaufenster"
         },
         {
-            "id": "Dachziegel"
+            "id": "Markt"
         },
         {
-            "id": "Schmuckst\u00fccke"
+            "id": "Mosaik"
+        },
+        {
+            "id": "Verzierung"
+        },
+        {
+            "id": "Kreuz"
+        },
+        {
+            "id": "Auto"
+        },
+        {
+            "id": "Flasche"
+        },
+        {
+            "id": "Schnee"
+        },
+        {
+            "id": "Bildstock"
+        },
+        {
+            "id": "Gotthard"
+        },
+        {
+            "id": "Kraftwerk"
+        },
+        {
+            "id": "S\u00e4gen (T\u00e4tigkeit)"
+        },
+        {
+            "id": "Beerdigung"
+        },
+        {
+            "id": "Bielersee"
+        },
+        {
+            "id": "Krawatte"
+        },
+        {
+            "id": "Taube"
+        },
+        {
+            "id": "Sch\u00fctzenfest"
+        },
+        {
+            "id": "Transport"
+        },
+        {
+            "id": "Bauernhausforschung"
+        },
+        {
+            "id": "Wildheuet"
+        },
+        {
+            "id": "Fundament"
         },
         {
             "id": "Schau"
         },
         {
-            "id": "Feuerstelle"
+            "id": "Nagel"
+        },
+        {
+            "id": "Spaghetti"
+        },
+        {
+            "id": "Dachdecken"
+        },
+        {
+            "id": "Festtafel"
+        },
+        {
+            "id": "Br\u00fccke"
         },
         {
             "id": "Landwirtschaft"
         },
         {
+            "id": "Fahrende"
+        },
+        {
+            "id": "Wurzel"
+        },
+        {
             "id": "Himmelrichstrasse 15"
+        },
+        {
+            "id": "Vieh"
+        },
+        {
+            "id": "Hauseingang"
+        },
+        {
+            "id": "Gewerbe"
         },
         {
             "id": "Katze / Kater"
         },
         {
+            "id": "Aluminium"
+        },
+        {
+            "id": "Ambrosianische T\u00e4ler"
+        },
+        {
+            "id": "Turmuhr"
+        },
+        {
+            "id": "Abbruch"
+        },
+        {
+            "id": "Schuhmacher/-in"
+        },
+        {
             "id": "Zipfelm\u00fctze"
         },
         {
-            "id": "Stacheldraht"
+            "id": "Zerfall"
         },
         {
-            "id": "Symbol"
+            "id": "Buschwindr\u00f6schen"
         },
         {
-            "id": "Sie wussten mehr!"
+            "id": "Weinherstellung"
+        },
+        {
+            "id": "Denkmalschutz"
+        },
+        {
+            "id": "Kurs"
+        },
+        {
+            "id": "Strumpfhose"
+        },
+        {
+            "id": "Kanzel"
+        },
+        {
+            "id": "Forstwirtschaft"
+        },
+        {
+            "id": "Brauch"
         },
         {
             "id": "Skizze"
         },
         {
-            "id": "Wandteppich"
+            "id": "Nahrung"
         },
         {
-            "id": "Weihwasserbecken"
+            "id": "Hospitz"
         },
         {
-            "id": "Schirm"
+            "id": "Tal"
+        },
+        {
+            "id": "Rundbogen"
+        },
+        {
+            "id": "Egge"
+        },
+        {
+            "id": "Post"
+        },
+        {
+            "id": "Garage"
+        },
+        {
+            "id": "Lawinenwinter 1951"
+        },
+        {
+            "id": "Pendeluhr"
+        },
+        {
+            "id": "Seer\u00fccken (Thurgau)"
+        },
+        {
+            "id": "Schuhnagel"
         },
         {
             "id": "Staudamm"
         },
         {
-            "id": "Mehl"
+            "id": "Schloss Hallwyl"
         },
         {
-            "id": "Decke (Stoff)"
+            "id": "Zielscheibe"
         },
         {
             "id": "Bekleidung"
         },
         {
-            "id": "Zahnrad"
+            "id": "Wasserschloss"
+        },
+        {
+            "id": "Bachbett"
+        },
+        {
+            "id": "Weide"
         },
         {
             "id": "Waldarbeiter/-in"
         },
         {
-            "id": "Nussknacker"
+            "id": "Gem\u00e4lde"
+        },
+        {
+            "id": "Knabenschiessen"
         },
         {
             "id": "Tor"
         },
         {
-            "id": "Schwimmbad"
+            "id": "Eimer"
+        },
+        {
+            "id": "Jubil\u00e4um"
+        },
+        {
+            "id": "Versammlung"
+        },
+        {
+            "id": "Portrait"
+        },
+        {
+            "id": "Musik"
+        },
+        {
+            "id": "Strohdach"
         },
         {
             "id": "Spanplatte"
@@ -4012,97 +1186,220 @@
             "id": "Weg"
         },
         {
-            "id": "Brennen (Schnaps)"
+            "id": "Acker"
         },
         {
-            "id": "Helm"
+            "id": "Br\u00fcnigbahn"
+        },
+        {
+            "id": "Wasserrinne"
+        },
+        {
+            "id": "B\u00e4cker/-in"
+        },
+        {
+            "id": "Abbau (Bergbau)"
+        },
+        {
+            "id": "Glasbl\u00e4ser/-in"
+        },
+        {
+            "id": "Inschrift"
+        },
+        {
+            "id": "Holz (Material)"
         },
         {
             "id": "Waldrand"
         },
         {
-            "id": "F\u00fcttern"
+            "id": "Bootsbauer/-in"
         },
         {
             "id": "Ger\u00f6ll"
         },
         {
-            "id": "Maiskolben"
+            "id": "Mahlzeit"
+        },
+        {
+            "id": "B\u00fcrstenbinder/-in"
+        },
+        {
+            "id": "Ziegelei"
         },
         {
             "id": "Klavier"
         },
         {
-            "id": "Gew\u00e4sser"
+            "id": "Angelrute"
         },
         {
-            "id": "Zeigen"
+            "id": "Ackerbau"
         },
         {
             "id": "Uniform"
         },
         {
-            "id": "Reh/Rehbock"
-        },
-        {
             "id": "Eisentor"
         },
         {
-            "id": "Ziehbrunnen"
+            "id": "Feuerwerk"
+        },
+        {
+            "id": "Wappen"
+        },
+        {
+            "id": "Truhe"
+        },
+        {
+            "id": "Bildhauer/-in"
+        },
+        {
+            "id": "Sonnenstrahl"
         },
         {
             "id": "Handarbeiten (Schule)"
         },
         {
+            "id": "Kathedrale"
+        },
+        {
+            "id": "Examen"
+        },
+        {
             "id": "Gitter"
         },
         {
-            "id": "Pistenfahrzeug"
+            "id": "Feldarbeit"
         },
         {
-            "id": "Fernseher"
+            "id": "Margerite"
+        },
+        {
+            "id": "Bodensee"
+        },
+        {
+            "id": "K\u00fcche"
+        },
+        {
+            "id": "Feldwerkzeug"
+        },
+        {
+            "id": "M\u00e4hen"
+        },
+        {
+            "id": "Waschbrett"
+        },
+        {
+            "id": "Scheiterbeige"
+        },
+        {
+            "id": "Untertagebau"
+        },
+        {
+            "id": "Bauen"
+        },
+        {
+            "id": "Gel\u00e4nder"
         },
         {
             "id": "Engel"
         },
         {
+            "id": "Fuhrwagen"
+        },
+        {
             "id": "Zeichnung"
+        },
+        {
+            "id": "Kamin"
+        },
+        {
+            "id": "Viadukt"
         },
         {
             "id": "Wasserversorgung"
         },
         {
+            "id": "Stausee"
+        },
+        {
             "id": "Instrument"
+        },
+        {
+            "id": "Lagerung"
+        },
+        {
+            "id": "Schiff"
         },
         {
             "id": "Essbesteck"
         },
         {
-            "id": "Rathaus"
+            "id": "Saatgut"
         },
         {
-            "id": "Jacke"
+            "id": "Reederei"
         },
         {
-            "id": "Markusturm"
+            "id": "Grossm\u00fcnster (Kirche)"
+        },
+        {
+            "id": "Frau"
+        },
+        {
+            "id": "Renaissance (Baustil)"
+        },
+        {
+            "id": "Dampfschiff"
+        },
+        {
+            "id": "Wegweiser"
         },
         {
             "id": "Garten"
         },
         {
-            "id": "Wagenbachbrunnen Luzern"
+            "id": "Kapelle"
+        },
+        {
+            "id": "Stroh"
+        },
+        {
+            "id": "Lesen"
+        },
+        {
+            "id": "Form"
         },
         {
             "id": "Alpk\u00e4serei"
         },
         {
-            "id": "Panzer"
+            "id": "Statue"
         },
         {
-            "id": "Kastanie"
+            "id": "Presse"
         },
         {
-            "id": "Bergstation"
+            "id": "Herd"
+        },
+        {
+            "id": "Milchkanne"
+        },
+        {
+            "id": "Strommast"
+        },
+        {
+            "id": "Pause"
+        },
+        {
+            "id": "Welle"
+        },
+        {
+            "id": "Knabe"
+        },
+        {
+            "id": "Pflanze"
         },
         {
             "id": "Schindel"
@@ -4111,37 +1408,58 @@
             "id": "Fahrradfahrer/-in"
         },
         {
-            "id": "Traubenlese"
+            "id": "Anzug"
         },
         {
-            "id": "Teppich"
+            "id": "Wohnhaus"
+        },
+        {
+            "id": "Zement"
         },
         {
             "id": "Reben"
         },
         {
+            "id": "Aschermittwoch"
+        },
+        {
+            "id": "Traubenlese"
+        },
+        {
             "id": "Greiflet"
         },
         {
-            "id": "Markise"
+            "id": "Stromleitung"
+        },
+        {
+            "id": "Schwimmer/Schwimmerin"
+        },
+        {
+            "id": "Schule"
+        },
+        {
+            "id": "Balke"
         },
         {
             "id": "Blockbau"
         },
         {
-            "id": "Weid\u00adling (Boot)"
+            "id": "Postkutsche"
         },
         {
-            "id": "Postkutsche"
+            "id": "Milch"
         },
         {
             "id": "Kopftuch"
         },
         {
-            "id": "Wetzstein"
+            "id": "Leinen (Textil)"
         },
         {
             "id": "Henne"
+        },
+        {
+            "id": "Berggipfel"
         },
         {
             "id": "Lachen"
@@ -4150,61 +1468,154 @@
             "id": "Brunnentrog"
         },
         {
-            "id": "Selbstportrait"
+            "id": "Weberei"
         },
         {
-            "id": "F\u00f6rster/-in"
+            "id": "Sgraffito"
+        },
+        {
+            "id": "11. Schweizerische Ausstellung f\u00fcr Landwirtschaft, Forstwirtschaft und Gartenbau"
+        },
+        {
+            "id": "Hof"
         },
         {
             "id": "Sacra"
         },
         {
-            "id": "Monte Generoso"
+            "id": "Tierpfleger/-in"
+        },
+        {
+            "id": "Theater"
+        },
+        {
+            "id": "Museumsobjekt"
+        },
+        {
+            "id": "Ast"
+        },
+        {
+            "id": "Fraum\u00fcnster"
+        },
+        {
+            "id": "Kinderheim"
         },
         {
             "id": "Schmuck"
         },
         {
-            "id": "Motor"
+            "id": "Ziege"
         },
         {
-            "id": "Wengeneralpbahn"
+            "id": "Sonne"
         },
         {
-            "id": "Chemikalie"
+            "id": "Pass"
+        },
+        {
+            "id": "T\u00fcr"
+        },
+        {
+            "id": "Klausenpass"
+        },
+        {
+            "id": "Heugabel"
         },
         {
             "id": "Kuppel"
         },
         {
-            "id": "Galerie (Strassenbau)"
-        },
-        {
             "id": "Schlachten"
         },
         {
-            "id": "Buchdruckerei"
+            "id": "Autofriedhof"
+        },
+        {
+            "id": "Bart"
+        },
+        {
+            "id": "Faden"
+        },
+        {
+            "id": "Kutsche"
+        },
+        {
+            "id": "Torbogen"
         },
         {
             "id": "M\u00fcll"
         },
         {
-            "id": "Tanzen"
+            "id": "Rhone"
         },
         {
-            "id": "Joch"
+            "id": "T\u00fcrlersee"
+        },
+        {
+            "id": "Michaelskreuz"
         },
         {
             "id": "Bauarbeiter/Bauarbeiterin"
         },
         {
-            "id": "Trauerzug"
+            "id": "Passagier/-in"
+        },
+        {
+            "id": "Bauer/B\u00e4uerin"
+        },
+        {
+            "id": "Brot (Geb\u00e4ck)"
+        },
+        {
+            "id": "G\u00fcterwagen"
+        },
+        {
+            "id": "Seilrolle"
+        },
+        {
+            "id": "Dach"
+        },
+        {
+            "id": "Schmuggeln"
+        },
+        {
+            "id": "Schifffahrt"
+        },
+        {
+            "id": "Sack"
+        },
+        {
+            "id": "Zeltplatz"
         },
         {
             "id": "Wasserrad"
         },
         {
-            "id": "Brille"
+            "id": "Fussg\u00e4nger/-in"
+        },
+        {
+            "id": "Wein"
+        },
+        {
+            "id": "Arbeitsplattform"
+        },
+        {
+            "id": "Frucht"
+        },
+        {
+            "id": "Handschrift"
+        },
+        {
+            "id": "Rigi (Berg)"
+        },
+        {
+            "id": "Marmor"
+        },
+        {
+            "id": "Vierwaldst\u00e4ttersee"
+        },
+        {
+            "id": "Steinfundament"
         },
         {
             "id": "Gespann"
@@ -4213,25 +1624,37 @@
             "id": "Drechsler/-in"
         },
         {
-            "id": "Bienenzucht"
+            "id": "Hutte"
         },
         {
-            "id": "Leiterwagen"
+            "id": "Flussbett"
         },
         {
-            "id": "Zwiebel"
+            "id": "Metzger/-in"
         },
         {
-            "id": "Pfl\u00fcgen (T\u00e4tigkeit)"
+            "id": "Uhr"
+        },
+        {
+            "id": "Lehrer/-in"
         },
         {
             "id": "Atelier"
         },
         {
-            "id": "Pfarrhaus"
+            "id": "Fruchtsaft"
         },
         {
-            "id": "Ecke"
+            "id": "Museggmauer und -t\u00fcrme"
+        },
+        {
+            "id": "Seedamm von Melide"
+        },
+        {
+            "id": "Kerze"
+        },
+        {
+            "id": "Verkehr"
         },
         {
             "id": "Flab. Battr. 311 [Fliegerabwehr Batterie 311]"
@@ -4240,82 +1663,172 @@
             "id": "Aussichtspunkt"
         },
         {
+            "id": "Villa"
+        },
+        {
+            "id": "Verein"
+        },
+        {
+            "id": "Zihlkanal"
+        },
+        {
+            "id": "Kreide"
+        },
+        {
             "id": "Nebel"
         },
         {
             "id": "Fenster"
         },
         {
+            "id": "Schindeldach"
+        },
+        {
+            "id": "Kermesse"
+        },
+        {
+            "id": "H\u00f6llgrotten"
+        },
+        {
             "id": "Chalandamarz"
+        },
+        {
+            "id": "Student/-in"
         },
         {
             "id": "Spitalm\u00fchle Luzern"
         },
         {
-            "id": "Schopf (Geb\u00e4ude)"
+            "id": "Thermalquelle"
+        },
+        {
+            "id": "Lebkuchen"
         },
         {
             "id": "Tourismus"
         },
         {
-            "id": "Laube"
+            "id": "Orgelbauer/-in"
         },
         {
-            "id": "Kapitell"
+            "id": "Spinnen"
         },
         {
-            "id": "Bundesrat"
+            "id": "Schulklasse"
+        },
+        {
+            "id": "Wanderweg"
         },
         {
             "id": "Fenstergitter"
         },
         {
+            "id": "Steg"
+        },
+        {
+            "id": "Rangierbahnhof"
+        },
+        {
             "id": "Schleuder"
         },
         {
-            "id": "Holzlagerung"
+            "id": "Skipiste"
+        },
+        {
+            "id": "Kuh"
+        },
+        {
+            "id": "Betrieb"
+        },
+        {
+            "id": "Schiefertafel"
+        },
+        {
+            "id": "Ernte"
+        },
+        {
+            "id": "Lawinenverbauung"
         },
         {
             "id": "Zuber"
         },
         {
+            "id": "Stein"
+        },
+        {
             "id": "Werkzeug"
         },
         {
-            "id": "Hydrant"
+            "id": "Eidgen\u00f6ssische Getreideverwaltung"
         },
         {
-            "id": "Kufe"
+            "id": "Reparatur"
         },
         {
             "id": "Stein (Material)"
         },
         {
-            "id": "Tanksilo"
+            "id": "Skifahrer/-in"
         },
         {
-            "id": "Fisch"
+            "id": "Reuss (Fluss)"
         },
         {
-            "id": "Betbank"
+            "id": "Vorhang"
+        },
+        {
+            "id": "Schultafel"
+        },
+        {
+            "id": "Baumpflege"
+        },
+        {
+            "id": "Bl\u00fcte"
+        },
+        {
+            "id": "Arbeiter/-in"
         },
         {
             "id": "Ufer"
         },
         {
-            "id": "#SGVzoom"
+            "id": "Labor"
         },
         {
-            "id": "Labor"
+            "id": "Schlosser/-in"
+        },
+        {
+            "id": "Wintersport"
         },
         {
             "id": "Werkstatt"
         },
         {
-            "id": "Literatur"
+            "id": "Stadt"
+        },
+        {
+            "id": "Wandmalerei"
+        },
+        {
+            "id": "Knecht"
+        },
+        {
+            "id": "Gartenbau-Ausstellung"
         },
         {
             "id": "Knechtenmarkt"
+        },
+        {
+            "id": "Aareschlucht"
+        },
+        {
+            "id": "Bauernhof"
+        },
+        {
+            "id": "Dieme"
+        },
+        {
+            "id": "Holzbau"
         },
         {
             "id": "Wohnzimmer"
@@ -4324,61 +1837,157 @@
             "id": "Pasta"
         },
         {
-            "id": "K\u00fcferei"
+            "id": "Rind"
         },
         {
-            "id": "Schreiben (T\u00e4tigkeit)"
+            "id": "Ziegel"
         },
         {
-            "id": "Butterfass"
+            "id": "Valorisierung: Museum Burgrain"
         },
         {
-            "id": "Schafschur"
+            "id": "Notiz"
+        },
+        {
+            "id": "Schloss (Geb\u00e4ude)"
         },
         {
             "id": "Laubengang"
         },
         {
-            "id": "Strohhut"
+            "id": "Weink\u00fcfer/Weink\u00fcferin"
+        },
+        {
+            "id": "Rauch"
+        },
+        {
+            "id": "Ausbildung"
+        },
+        {
+            "id": "Schlacht"
+        },
+        {
+            "id": "Nagelschmiede"
+        },
+        {
+            "id": "Textilindustrie"
+        },
+        {
+            "id": "Beinhaus"
+        },
+        {
+            "id": "Wirbelsturm"
+        },
+        {
+            "id": "Seilbahn"
+        },
+        {
+            "id": "Gehstock"
         },
         {
             "id": "Sch\u00fcler/-in"
         },
         {
-            "id": "Politiker/-in"
+            "id": "Pflanzentopf"
+        },
+        {
+            "id": "Eiszapfen"
+        },
+        {
+            "id": "Ball"
+        },
+        {
+            "id": "Bluse"
+        },
+        {
+            "id": "Decke (Haus)"
+        },
+        {
+            "id": "Brunnen"
+        },
+        {
+            "id": "Felsbrocken"
+        },
+        {
+            "id": "Br\u00e4utigam"
         },
         {
             "id": "T\u00fcrklopfer"
         },
         {
-            "id": "Nachthemd"
+            "id": "Kleid"
         },
         {
             "id": "Skilift"
         },
         {
+            "id": "Ungl\u00fcck"
+        },
+        {
+            "id": "Abstimmung"
+        },
+        {
             "id": "M\u00fchle"
         },
         {
-            "id": "Schnittfl\u00e4che"
+            "id": "Schmied/-in"
         },
         {
-            "id": "Ambulanzwagen"
+            "id": "Teppichstange"
         },
         {
-            "id": "Durchgang"
+            "id": "Industrie"
         },
         {
-            "id": "Springbrunnen"
+            "id": "Strassenbeleuchtung"
         },
         {
-            "id": "Murtensee"
+            "id": "Restaurant"
         },
         {
-            "id": "Schere"
+            "id": "Veranstaltung"
+        },
+        {
+            "id": "Kirchenbank"
+        },
+        {
+            "id": "Tracht"
+        },
+        {
+            "id": "Seil"
+        },
+        {
+            "id": "Buch"
+        },
+        {
+            "id": "Schubkarre"
+        },
+        {
+            "id": "Treppe"
+        },
+        {
+            "id": "Orgel"
+        },
+        {
+            "id": "Gruppe"
+        },
+        {
+            "id": "Matterhorn (Berg)"
+        },
+        {
+            "id": "Totholz"
+        },
+        {
+            "id": "Eisbahn"
         },
         {
             "id": "Spr\u00e4ggele"
+        },
+        {
+            "id": "Filz"
+        },
+        {
+            "id": "Haus"
         },
         {
             "id": "\u00c4hre"
@@ -4390,19 +1999,37 @@
             "id": "Panorama"
         },
         {
-            "id": "Erster Weltkrieg"
+            "id": "Berglandschaft"
         },
         {
             "id": "Lawine"
         },
         {
-            "id": "Hammer"
+            "id": "Kirche"
         },
         {
             "id": "Landschaft"
         },
         {
+            "id": "Schaf"
+        },
+        {
             "id": "Milchzentrale"
+        },
+        {
+            "id": "Platz"
+        },
+        {
+            "id": "Brienz-Rothorn-Bahn BRB"
+        },
+        {
+            "id": "Handwerk"
+        },
+        {
+            "id": "K\u00fcrbis"
+        },
+        {
+            "id": "Furkabahn"
         },
         {
             "id": "Steinhaus"
@@ -4411,55 +2038,142 @@
             "id": "M\u00e4useplatte"
         },
         {
-            "id": "Schlittschuhlaufen"
+            "id": "Schulweg"
         },
         {
-            "id": "#SGVfokus_SUVA"
+            "id": "Schreiner/-in"
         },
         {
-            "id": "Dachrinne"
+            "id": "Herstellung"
+        },
+        {
+            "id": "Tier"
+        },
+        {
+            "id": "Himmel"
+        },
+        {
+            "id": "Bahnhof"
+        },
+        {
+            "id": "Religi\u00f6se Bauten"
+        },
+        {
+            "id": "Leiter"
+        },
+        {
+            "id": "Verkehrshaus der Schweiz"
+        },
+        {
+            "id": "Kreuz (religi\u00f6ser Kontext)"
+        },
+        {
+            "id": "Holzhaus"
+        },
+        {
+            "id": "Wohnung"
         },
         {
             "id": "Ortsschild"
         },
         {
-            "id": "Stempel"
+            "id": "S\u00e4ge"
         },
         {
             "id": "Plakat"
         },
         {
+            "id": "Seeufer"
+        },
+        {
+            "id": "Erker"
+        },
+        {
+            "id": "Butzenscheibe"
+        },
+        {
+            "id": "Landsgemeinde"
+        },
+        {
             "id": "Fasnacht"
         },
         {
-            "id": "Sport"
-        },
-        {
-            "id": "Puppe"
+            "id": "Grabstein"
         },
         {
             "id": "Schloss M\u00fcnchenwiler"
         },
         {
+            "id": "Gehege"
+        },
+        {
+            "id": "Blumenwiese"
+        },
+        {
             "id": "Getreide"
+        },
+        {
+            "id": "Vater"
+        },
+        {
+            "id": "Baum"
+        },
+        {
+            "id": "Viehherde"
+        },
+        {
+            "id": "Freilichtmuseum"
         },
         {
             "id": "Schmiede"
         },
         {
+            "id": "Baby"
+        },
+        {
             "id": "Handarbeit"
+        },
+        {
+            "id": "Hotel"
         },
         {
             "id": "Nadelbaum"
         },
         {
-            "id": "K\u00f6der"
+            "id": "Fischen"
+        },
+        {
+            "id": "Furkapass"
+        },
+        {
+            "id": "Dunst"
+        },
+        {
+            "id": "Tunnel"
+        },
+        {
+            "id": "Fischer/-in"
+        },
+        {
+            "id": "L\u00f6ffel"
         },
         {
             "id": "Kochen"
         },
         {
-            "id": "Valorisierung: Buchprojekt Museumsamt Westfalen-Lippe"
+            "id": "T\u00fcrgriff"
+        },
+        {
+            "id": "Netz"
+        },
+        {
+            "id": "Grab"
+        },
+        {
+            "id": "B\u00e4ckerei"
+        },
+        {
+            "id": "Zierwerk"
         },
         {
             "id": "Sehensw\u00fcrdigkeit"
@@ -4468,58 +2182,175 @@
             "id": "Person"
         },
         {
-            "id": "Stuckatur"
+            "id": "Forschung"
+        },
+        {
+            "id": "Sch\u00fcrze"
         },
         {
             "id": "Nacht"
         },
         {
-            "id": "Gerahmtes Bild"
+            "id": "Geschirr"
+        },
+        {
+            "id": "Kloster"
+        },
+        {
+            "id": "Eidgen\u00f6ssische Forschungsanstalt f\u00fcr Obst-, Wein- und Gartenbau"
+        },
+        {
+            "id": "Steinbruch"
+        },
+        {
+            "id": "Modell (Architektur)"
+        },
+        {
+            "id": "Weben"
+        },
+        {
+            "id": "Scheunentor"
         },
         {
             "id": "Detail"
         },
         {
+            "id": "Familie"
+        },
+        {
             "id": "Regal"
         },
         {
-            "id": "#SGVfokus_Staumauern/-seen"
+            "id": "Figur"
         },
         {
-            "id": "Braten"
+            "id": "Stuhl"
+        },
+        {
+            "id": "Latzhose"
         },
         {
             "id": "M\u00e4dchen"
         },
         {
-            "id": "Wehrturm"
+            "id": "Feiertag"
         },
         {
-            "id": "Kronleuchter"
+            "id": "Hut"
         },
         {
-            "id": "Hausdach"
+            "id": "Feier"
+        },
+        {
+            "id": "Zug"
+        },
+        {
+            "id": "Gew\u00e4chshaus"
+        },
+        {
+            "id": "Winter"
+        },
+        {
+            "id": "Mauer"
+        },
+        {
+            "id": "Politik"
+        },
+        {
+            "id": "Bergsturz"
+        },
+        {
+            "id": "Textilie"
+        },
+        {
+            "id": "Riegelhaus"
         },
         {
             "id": "Anlegestelle"
         },
         {
-            "id": "Hemd"
+            "id": "Reiter/-in"
         },
         {
-            "id": "Park"
+            "id": "Grabkreuz"
         },
         {
-            "id": "Niederhorn"
+            "id": "B\u00fcrste"
         },
         {
-            "id": "Krokus"
+            "id": "Holzbeige"
         },
         {
-            "id": "Bauger\u00fcst"
+            "id": "Kind"
         },
         {
-            "id": "Besucher/-in"
+            "id": "Glocke"
+        },
+        {
+            "id": "Rhein (Fluss)"
+        },
+        {
+            "id": "Grimselwerke"
+        },
+        {
+            "id": "Deichsel"
+        },
+        {
+            "id": "Tierheim"
+        },
+        {
+            "id": "Holzhag"
+        },
+        {
+            "id": "Glash\u00fctte"
+        },
+        {
+            "id": "Kirchturm"
+        },
+        {
+            "id": "Textilfabrik"
+        },
+        {
+            "id": "Blume"
+        },
+        {
+            "id": "Axenstrasse"
+        },
+        {
+            "id": "Banner"
+        },
+        {
+            "id": "Hafen"
+        },
+        {
+            "id": "Limmat (Fluss)"
+        },
+        {
+            "id": "Umritt"
+        },
+        {
+            "id": "Auslandschweizer/-in"
+        },
+        {
+            "id": "Eggen (T\u00e4tigkeit)"
+        },
+        {
+            "id": "Brienzer Rothorn"
+        },
+        {
+            "id": "Schlitten"
+        },
+        {
+            "id": "Papierfabrik"
+        },
+        {
+            "id": "Bibliothek"
+        },
+        {
+            "id": "Bergkette"
+        },
+        {
+            "id": "Korb"
         },
         {
             "id": "Aare"
@@ -4528,61 +2359,115 @@
             "id": "Baumstrunk"
         },
         {
-            "id": "Herbstmesse"
+            "id": "Besucher/-in"
+        },
+        {
+            "id": "Trockenmauer"
+        },
+        {
+            "id": "Gewehr"
         },
         {
             "id": "Gedenktafel"
         },
         {
-            "id": "Werbung"
+            "id": "Strauch"
+        },
+        {
+            "id": "Wagen"
+        },
+        {
+            "id": "M\u00f6bel"
+        },
+        {
+            "id": "Eis"
+        },
+        {
+            "id": "Schwan"
+        },
+        {
+            "id": "Gruppenportrait"
+        },
+        {
+            "id": "Laub"
+        },
+        {
+            "id": "Ware"
         },
         {
             "id": "Dampf"
         },
         {
-            "id": "Gans"
-        },
-        {
             "id": "Landstrasse"
         },
         {
-            "id": "Industrieheim (Heilsarmee)"
+            "id": "Heuen"
         },
         {
-            "id": "Pinsel"
-        },
-        {
-            "id": "Ente"
-        },
-        {
-            "id": "Bauernkalender"
+            "id": "Wiese"
         },
         {
             "id": "Welpe"
         },
         {
+            "id": "Martinimarkt"
+        },
+        {
+            "id": "Pferdeschau Sempach"
+        },
+        {
             "id": "Scheune"
+        },
+        {
+            "id": "Turm"
         },
         {
             "id": "Tabakspfeife"
         },
         {
-            "id": "Schal"
+            "id": "Drechselmaschine"
+        },
+        {
+            "id": "Marktstand"
+        },
+        {
+            "id": "Zunfthaus"
+        },
+        {
+            "id": "Balkon"
+        },
+        {
+            "id": "Passh\u00f6he"
+        },
+        {
+            "id": "Maurer/-in"
         },
         {
             "id": "Markusplatz"
         },
         {
+            "id": "Gautschen"
+        },
+        {
+            "id": "Stall"
+        },
+        {
             "id": "Schlosserarbeit"
         },
         {
-            "id": "tragen"
+            "id": "Haushalt"
         },
         {
-            "id": "S\u00e4en"
+            "id": "Schwein"
         },
         {
-            "id": "F\u00f6rderband"
+            "id": "Steindach"
+        },
+        {
+            "id": "Bauschutt"
+        },
+        {
+            "id": "Arkade"
         },
         {
             "id": "W\u00e4scheleine"
@@ -4591,25 +2476,34 @@
             "id": "Fahne"
         },
         {
+            "id": "Madonna (Bibel)"
+        },
+        {
+            "id": "Stadion"
+        },
+        {
             "id": "Dorf"
         },
         {
-            "id": "Zimmermann"
+            "id": "Wasserfall"
         },
         {
-            "id": "Berner M\u00fcnster"
+            "id": "Berg"
         },
         {
-            "id": "Vogelperspektive"
+            "id": "Eisenbahn"
         },
         {
-            "id": "Profilbild"
+            "id": "Rh\u00e4tische Bahn RhB"
         },
         {
-            "id": "Bild der Woche 2018"
+            "id": "Wohnblock"
         },
         {
             "id": "Pilgern"
+        },
+        {
+            "id": "Sonnenuhr"
         }
     ],
     "links": [

@@ -3,44 +3,23 @@
 	import * as d3 from 'd3';
 
 	export let data;
-	console.log(data.data);
 
 	// dimensions
-	let width = 2000;
-	let height = 1800;
+	let width = 2500;
+	let height = 2500;
 
 	// colors
-	export let cLink = '#4d4d4d';
+	export let cLink = '#5A5A5A'; // 4d4d4d
 
 	let grey = '#5A5A5A';
-	let dark = '#282828';
 	let light = '#F4F4F4';
-	let background = '#141414';
 	let blue = '#8390FA';
 
 	// Define a linear scale for the stroke width
 	const strokeScale = d3
 		.scaleLinear()
-		.domain([11, d3.max(data.data.links, (d) => d.value)])
+		.domain([5, d3.max(data.data.links, (d) => d.value)])
 		.range([1, 15]);
-
-	// create a opacity scale
-	const opacityScale = d3
-		.scaleLinear()
-		.domain([11, d3.max(data.data.links, (d) => d.value)])
-		.range([0.5, 1]);
-
-	// Define a linear color scale from one color to the next
-	const colorScale = d3
-		.scaleLinear()
-		.domain([11, d3.max(data.data.links, (d) => d.value)])
-		.range([cLink, blue]);
-
-	// create a second scale for highlight
-	const colorScaleHighlight = d3
-		.scaleLinear()
-		.domain([11, d3.max(data.data.links, (d) => d.value)])
-		.range(['#80a1ff', 'red']);
 
 	// force layout
 	const simulation = d3
@@ -50,10 +29,34 @@
 			d3
 				.forceLink(data.data.links)
 				.id((d) => d.id)
-				.distance(50) // Reduced distance for tighter layout
+				.distance(150) // Reduced distance for tighter layout
 		)
-		.force('charge', d3.forceManyBody().strength(-100)) // Reduced repulsion for closer nodes
-		.force('center', d3.forceCenter(width / 2, height / 2));
+		.force('charge', d3.forceManyBody().strength(-60)) // Reduced repulsion for closer nodes
+		.force('center', d3.forceCenter(width / 2, height / 2))
+		.force('cluster', forceCluster(0.005)); // Custom force to cluster small networks
+
+	function forceCluster(alpha) {
+		return function () {
+			for (const node of data.data.nodes) {
+				const clusterCenter = { x: width / 2, y: height / 2 };
+				const distanceToCenter = Math.sqrt(
+					(node.x - clusterCenter.x) ** 2 + (node.y - clusterCenter.y) ** 2
+				);
+				// 600 outside
+				const threshold = 1000; // Adjust this threshold to set how far outliers should be before being affected
+				const targetDistance = 2000; // Adjust this to set how close the nodes should be moved towards the center
+
+				if (distanceToCenter > threshold) {
+					const damping = Math.max(
+						0.1,
+						1 - (distanceToCenter - threshold) / (threshold - targetDistance)
+					); // Damping factor
+					node.vx -= (node.x - clusterCenter.x) * alpha * damping;
+					node.vy -= (node.y - clusterCenter.y) * alpha * damping;
+				}
+			}
+		};
+	}
 
 	// add d3 logic in here
 	onMount(() => {
@@ -67,13 +70,9 @@
 			.data(data.data.links)
 			.enter()
 			.append('line')
-			// .attr("stroke-width", (d) => Math.sqrt(d.value));
-			// .attr("stroke-width", 1)
 			.attr('stroke-width', (d) => strokeScale(d.value)) // Use scale for stroke width
-			.attr('stroke', grey)
-			// .attr("stroke", (d) => colorScale(d.value))
-			.attr('stroke-opacity', '0.5');
-			// .attr("stroke-opacity", (d) => opacityScale(d.value)); // Use scale for stroke width
+			.attr('stroke', cLink)
+			.attr('stroke-opacity', '0.75');
 
 		// nodes
 		const node = svg
@@ -124,16 +123,64 @@
 			if (!event.active) simulation.alphaTarget(0.3).restart();
 			d.fx = d.x;
 			d.fy = d.y;
-			// Change the color of the links connected to the dragged node
-			link
-				.filter((l) => l.source.id === d.id || l.target.id === d.id)
-				// .attr("stroke", (d) => colorScale(d.value));
-				.attr('stroke', blue);
-		}
 
-		function dragged(event, d) {
-			d.fx = event.x;
-			d.fy = event.y;
+			// Change the color of the links connected to the dragged node
+			link.filter((l) => l.source.id === d.id || l.target.id === d.id).attr('stroke', blue);
+
+			// Change the color of the dragged node
+			d3.select(this).attr('fill', blue);
+
+			// Change the color of the labels connected to the dragged node
+			// label.filter((l) => l.id === d.id).attr('fill', blue);
+
+			// Change the color of the nodes and labels connected to the dragged node
+			node
+				.filter((n) =>
+					data.data.links.some(
+						(l) =>
+							(l.source.id === d.id && l.target.id === n.id) ||
+							(l.target.id === d.id && l.source.id === n.id)
+					)
+				)
+				.attr('fill', blue);
+
+			// label
+			// 	.filter((l) =>
+			// 		data.data.links.some(
+			// 			(lnk) =>
+			// 				(lnk.source.id === d.id && lnk.target.id === l.id) ||
+			// 				(lnk.target.id === d.id && lnk.source.id === l.id)
+			// 		)
+			// 	)
+			// 	.attr('fill', blue);
+
+			// Change the color of the nodes and labels not connected to the dragged node
+			node
+				.filter(
+					(n) =>
+						!data.data.links.some(
+							(l) =>
+								(l.source.id === d.id && l.target.id === n.id) ||
+								(l.target.id === d.id && l.source.id === n.id) ||
+								n.id === d.id
+						)
+				)
+				.attr('fill', grey);
+
+			label
+				.filter(
+					(l) =>
+						!data.data.links.some(
+							(lnk) =>
+								(lnk.source.id === d.id && lnk.target.id === l.id) ||
+								(lnk.target.id === d.id && lnk.source.id === l.id) ||
+								l.id === d.id
+						)
+				)
+				.attr('fill', grey);
+
+			// Change the opacity of the links not connected to the dragged node
+			link.filter((l) => l.source.id !== d.id && l.target.id !== d.id).attr('stroke-opacity', 0.5);
 		}
 
 		function dragended(event, d) {
@@ -143,9 +190,66 @@
 
 			// Reset the color of the links after dragging
 			link.filter((l) => l.source.id === d.id || l.target.id === d.id).attr('stroke', cLink);
-			// .attr("stroke", (d) => colorScale(d.value));
-			// .attr("stroke-width", 1)
-			// .attr("stroke-opacity", "0.2");
+
+			// Reset the color of the dragged node
+			d3.select(this).attr('fill', light);
+
+			// Reset the color of the labels connected to the dragged node
+			label.filter((l) => l.id === d.id).attr('fill', light);
+
+			// Reset the color of the nodes and labels connected to the dragged node
+			node
+				.filter((n) =>
+					data.data.links.some(
+						(l) =>
+							(l.source.id === d.id && l.target.id === n.id) ||
+							(l.target.id === d.id && l.source.id === n.id)
+					)
+				)
+				.attr('fill', light);
+
+			label
+				.filter((l) =>
+					data.data.links.some(
+						(lnk) =>
+							(lnk.source.id === d.id && lnk.target.id === l.id) ||
+							(lnk.target.id === d.id && lnk.source.id === l.id)
+					)
+				)
+				.attr('fill', light);
+
+			// Reset the color of the nodes and labels not connected to the dragged node
+			node
+				.filter(
+					(n) =>
+						!data.data.links.some(
+							(l) =>
+								(l.source.id === d.id && l.target.id === n.id) ||
+								(l.target.id === d.id && l.source.id === n.id) ||
+								n.id === d.id
+						)
+				)
+				.attr('fill', light);
+
+			label
+				.filter(
+					(l) =>
+						!data.data.links.some(
+							(lnk) =>
+								(lnk.source.id === d.id && lnk.target.id === l.id) ||
+								(lnk.target.id === d.id && lnk.source.id === l.id) ||
+								l.id === d.id
+						)
+				)
+				.attr('fill', light);
+
+			// Reset the opacity of the links not connected to the dragged node
+			link.filter((l) => l.source.id !== d.id && l.target.id !== d.id).attr('stroke-opacity', 0.75);
+		}
+
+		function dragged(event, d) {
+			d.fx = event.x;
+			d.fy = event.y;
 		}
 	});
 </script>
