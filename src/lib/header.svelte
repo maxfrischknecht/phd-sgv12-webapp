@@ -1,7 +1,8 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import Tread from './tread.svelte';
 	import { viewVisualization } from './store';
+	import { headerHeight } from './store'; // Adjust the path as needed
 	import { get } from 'svelte/store';
 
 	// get the current route to set the settings on reload
@@ -19,6 +20,16 @@
 
 	function toggleView(view) {
 		viewVisualization.set(view);
+	}
+
+	async function setHeaderHeight(newHeight) {
+		await tick(); // Wait for the DOM to update
+		const header = document.querySelector('header'); // Adjust the selector as needed
+		if (header) {
+			const newHeight = header.offsetHeight;
+			headerHeight.set(newHeight);
+			console.log("new header height: ", newHeight)
+		}
 	}
 
 	// the settings to create all navigation options
@@ -50,6 +61,9 @@
 			if (currentDataInterpretation)
 				currentSetting['data-interpretation'] = currentDataInterpretation;
 		}
+
+		// get & set the headerHeight for defining content height
+		setHeaderHeight();
 	});
 
 	// update the currentSettings by section interaction
@@ -164,3 +178,12 @@
 	<!-- THREAD -->
 	<Tread {currentSetting} />
 </header>
+
+<style>
+	header {
+		position: fixed;
+		top:0;
+		left: 0;
+		right: 0;
+	}
+</style>
