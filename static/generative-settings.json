@@ -39,6 +39,11 @@
                 "label": "Co-Occurence Matrix",
                 "id": "co-occurence-matrix",
                 "details": "tbd"
+            },
+            {
+                "label": "Network Graph",
+                "id": "network-graph",
+                "details": "tbd"
             }
         ],
         "dates": [

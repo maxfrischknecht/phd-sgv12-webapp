@@ -27,11 +27,12 @@
 	const xScale = d3.scaleBand().domain(keywordsArray).range([0, width]);
 	const yScale = d3.scaleBand().domain(keywordsArray).range([0, height]);
 
+	// show texts on mouse over
 	function handleMouseOver(event, d) {
 		const hoveredCell = d3.select(event.target);
 		const padding = 10;
 
-		const svg = d3.select('#network-svg');
+		const svg = d3.select('#matrix-svg');
 
 		// Append a group to hold the text and background rect
 		const labelGroup = svg.append('g').attr('class', 'hoveredLabel');
@@ -57,14 +58,14 @@
 			.attr('height', 25)
 			.attr('fill', cLight);
 	}
-
+	// remove texts on mouse leave
 	function handleMouseOut(event, d) {
 		d3.selectAll('.hoveredLabel').remove();
 	}
 </script>
 
 <svg
-	id="network-svg"
+	id="matrix-svg"
 	width={width + margin.left + margin.right}
 	height={height + margin.top + margin.bottom}
 >

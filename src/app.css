@@ -26,3 +26,11 @@ a:hover {
     @apply border-b;
 }
 
+/* Network Visualization */
+text.labels {
+    font-size: 0.5rem;
+    letter-spacing: 0.4px;
+    @apply text-light;
+    @apply font-mono;
+}
+

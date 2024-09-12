@@ -19,7 +19,7 @@ export default {
 		},
 		fontSize: {
 			// https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
-      base: ['1.125rem', '1.375rem'],
+      		base: ['1.125rem', '1.375rem'],
 			'sans-md': ['1.125rem', '1.375rem'],
 			'mono-sm': ['0.71875rem', '1rem'],
 		}
