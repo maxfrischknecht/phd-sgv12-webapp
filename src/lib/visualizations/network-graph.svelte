@@ -9,7 +9,7 @@
 	let height = 2500;
 
 	// colors
-	export let cLink = '#5A5A5A'; // 4d4d4d
+	export let cLink = '#4d4d4d'; // 4d4d4d
 
 	let grey = '#5A5A5A';
 	let light = '#F4F4F4';
