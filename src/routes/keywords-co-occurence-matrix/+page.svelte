@@ -1,7 +1,7 @@
 <script>
-  import { viewVisualization } from '../../../lib/store';
-  import CoOccurenceMatrix from '../../../lib/visualizations/co-occurence-matrix.svelte';
-  import CoOccurenceNotebook from '../../../lib/curations/co-occurence-notebook.svelte';
+  import { viewVisualization } from '../../lib/store';
+  import CoOccurenceMatrix from '../../lib/visualizations/co-occurence-matrix.svelte';
+  import CoOccurenceNotebook from '../../lib/curations/co-occurence-notebook.svelte';
   export let data;
 </script>
 

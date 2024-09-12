@@ -29,37 +29,89 @@
         }
     ],
     "data-interpretation": {
-        "keywords": [
+        "comments": [
             {
-                "label": "Co-Occurence Matrix",
-                "id": "co-occurence-matrix",
-                "details": "tbd"
+                "label": "Table",
+                "id": "comments-table",
+                "details": "details on table"
+            }
+        ],
+        "comments-dates": [
+            {
+                "label": "Table",
+                "id": "comments-dates-table",
+                "details": "details on table"
             },
             {
-                "label": "Network Graph",
-                "id": "network-graph",
-                "details": "tbd"
+                "label": "Series Timeline",
+                "id": "comments-dates-series-timeline",
+                "details": "details on table"
+            }
+        ],
+        "comments-keywords": [
+            {
+                "label": "Table",
+                "id": "comments-keywords-table",
+                "details": "details on table"
+            }
+        ],
+        "comments-locations": [
+            {
+                "label": "Table",
+                "id": "comments-locations-table",
+                "details": "details on table"
             }
         ],
         "dates": [
             {
-                "label": "tbd",
-                "id": "tbd", 
+                "label": "Table",
+                "id": "dates-table",
+                "details": "details on table"
+            }
+        ],
+        "dates-keywords": [
+            {
+                "label": "Table",
+                "id": "dates-keywords-table",
+                "details": "details on table"
+            }
+        ],
+        "dates-locations": [
+            {
+                "label": "Table",
+                "id": "dates-locations-table",
+                "details": "details on table"
+            }
+        ],
+        "keywords": [
+            {
+                "label": "Table",
+                "id": "keywords-table",
+                "details": "details on table"
+            },
+            {
+                "label": "Co-Occurence Matrix",
+                "id": "keywords-co-occurence-matrix",
                 "details": "tbd"
+            },
+            {
+                "label": "Network Graph",
+                "id": "keywords-network-graph",
+                "details": "tbd"
+            }
+        ],
+        "keywords-locations": [
+            {
+                "label": "Table",
+                "id": "keywords-locations-table",
+                "details": "details on table"
             }
         ],
         "locations": [
             {
-                "label": "tbd",
-                "id": "tbd", 
-                "details": "tbd"
-            }
-        ], 
-        "comments": [
-            {
-                "label": "Series Timeline",
-                "id": "series-timeline",
-                "details": "details on series timeline curation"
+                "label": "Table",
+                "id": "locations-table",
+                "details": "details on table"
             }
         ]
     }

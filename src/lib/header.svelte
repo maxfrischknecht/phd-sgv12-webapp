@@ -53,7 +53,16 @@
 
 	// subscribe to the current setting to update the hover effect
 	let currentSetting = [];
+	let currentId = '';
 	const unsubscribe = metaDataSetting.subscribe((value) => {
+		currentId = '';
+		value.forEach((el, index) => {
+			currentId += el.id;
+			if (index < value.length - 1) {
+				currentId += '-';
+			}
+		});
+		console.log('current-id', currentId);
 		currentSetting = value;
 	});
 </script>
@@ -112,29 +121,23 @@
 			</div>
 		{/if}
 		<!-- DATA INTERPRETATION OPTIONS -->
-		<!-- visible depending on subpage route, e.g /keywords -->
-		<!-- {#if settings != null && currentSetting['meta-data']}
-			<div class="col-span-2 font-sans text-sans-md">
-				{#each Object.keys(settings['data-interpretation']) as optionKey}
-					{#if currentSetting['meta-data']['id'] == optionKey}
-						<div id={optionKey}>
-							{#each settings['data-interpretation'][optionKey] as option}
-								<a
-									on:mouseover={() => setDataInterpretation(option)}
-									on:focus={() => setDataInterpretation(option)}
-									on:click={() => setDataInterpretation(option)}
-									href="/{currentSetting['meta-data']['id']}/{option.id}"
-									class="block {currentSetting['data-interpretation'] &&
-									currentSetting['data-interpretation']['id'] === option.id
-										? 'text-blue'
-										: ''}">{option.label}</a
-								>
-							{/each}
-						</div>
-					{/if}
-				{/each}
-			</div>
-		{/if} -->
+		<!-- visible depending on selected meta data -->
+		{#if settings != null && settings['data-interpretation']}
+		<div class="col-span-2 font-sans text-sans-md">
+			{#each Object.keys(settings['data-interpretation']) as optionKey}
+				{#if currentId != '' && currentId == optionKey}
+					<div id={optionKey}>
+						{#each settings['data-interpretation'][optionKey] as option}
+							<a
+								href="/{option.id}"
+								class="block">{option.label}</a
+							>
+						{/each}
+					</div>
+				{/if}
+			{/each}
+		</div>
+		{/if}
 	</div>
 
 	<!-- THREAD -->
