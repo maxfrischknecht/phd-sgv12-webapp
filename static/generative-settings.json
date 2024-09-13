@@ -67,8 +67,14 @@
                 "label": "Table",
                 "id": "dates-table",
                 "details": "details on table"
+            },
+            {
+                "label": "Magnitude",
+                "id": "dates-magnitude",
+                "details": "details on magnitude"
             }
         ],
+        
         "dates-keywords": [
             {
                 "label": "Table",
@@ -88,6 +94,11 @@
                 "label": "Table",
                 "id": "keywords-table",
                 "details": "details on table"
+            },
+            {
+                "label": "Magnitude",
+                "id": "keywords-magnitude",
+                "details": "details on magnitude"
             },
             {
                 "label": "Co-Occurence Matrix",

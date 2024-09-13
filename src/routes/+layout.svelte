@@ -12,7 +12,7 @@
 	});
 
 	function adjustScroll() {
-		if (window.location.pathname.includes('keywords/network-graph')) {
+		if (window.location.pathname.includes('keywords-network-graph')) {
 			const container = document.querySelector('#content');
 			container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
 			container.scrollTop = (container.scrollHeight - container.clientHeight) / 2;
