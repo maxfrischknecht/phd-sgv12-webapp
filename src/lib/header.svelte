@@ -75,7 +75,7 @@
 		<div class="col-span-2 h-8 flex items-center font-mono text-mono-sm">Meta Data</div>
 		<div class="col-span-2 h-8 flex items-center font-mono text-mono-sm">Data Interpretation</div>
 
-		<div class="col-span-2 flex">
+		<div class="col-span-2 col-start-11 flex">
 			<!-- VISUALIZATION BUTTON -->
 			<button
 				class="border-b border-l border-grey font-mono text-mono-sm h-8 flex-1"
@@ -84,7 +84,7 @@
 				class:text-grey={!$viewVisualization}
 				on:click={() => toggleView(true)}
 			>
-				Visualization
+				Display
 			</button>
 			<!-- DURATION BUTTON -->
 			<button
