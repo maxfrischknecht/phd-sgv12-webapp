@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { imageIdsStore } from './../../lib/store';
+	import ThreeColumnTable from '../../lib/layouts/three-column-table.svelte';
 
 	let displayData = [];
 
@@ -12,49 +12,5 @@
 	});
 </script>
 
-<!-- TABLE HEADER -->
-<div class="grid grid-cols-12 gap-6 px-6 mb-6">
-	<div class="col-span-4 py-2 cursor-pointer">
-		<p class="font-mono text-mono-sm hover:underline" >Identifier</p>
-	</div>
-	<div class="col-span-2 py-2 cursor-pointer">
-		<p class="font-mono text-mono-sm hover:underline">Date</p>
-	</div>
-	<div class="col-span-6 py-2">
-		<p class="font-mono text-mono-sm">Comment</p>
-	</div>
-</div>
+<ThreeColumnTable {displayData} tableHeader1="Comments" key1="schema:comment" tableHeader2="Dates" key2="schema:temporal"></ThreeColumnTable>
 
-<!-- TABLE CONTENT -->
-{#each displayData as item}
-	<div class="grid grid-cols-12 gap-6 px-6 border-b border-grey cursor-pointer">
-		<div class="col-span-4 py-2">
-			<p class="font-mono text-mono-sm">
-				{#each item['schema:identifier'] as id}
-					{` ${id} `}
-				{/each}
-			</p>
-		</div>
-		<div class="col-span-2 py-2">
-			<p class="font-mono text-mono-sm">
-				{#each item['schema:temporal'] as temp}
-					{` ${temp} `}
-				{/each}
-			</p>
-		</div>
-		<div class="col-span-6 py-2">
-			<p class="font-mono text-mono-sm">
-				{#each item['schema:comment'] as com}
-					{` ${com} `}
-				{/each}
-			</p>
-		</div>
-	</div>
-{/each}
-
-<style>
-	p {
-		word-wrap: break-word;
-		width: 100%; /* or any specific width you need */
-	}
-</style>
