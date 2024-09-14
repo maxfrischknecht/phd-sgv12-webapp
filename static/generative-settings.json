@@ -28,112 +28,41 @@
             "details": "42'107 total objects (88.02%) <br> 42'107 total locations <br> 1,087 unique locations"
         }
     ],
-    "data-interpretation": {
-        "comments": [
-            {
-                "label": "Table",
-                "id": "comments-table",
-                "details": "details on table"
-            }
-        ],
-        "comments-dates": [
-            {
-                "label": "Table",
-                "id": "comments-dates-table",
-                "details": "details on table"
-            },
-            {
-                "label": "Series Timeline",
-                "id": "comments-dates-series-timeline",
-                "details": "details on table"
-            }
-        ],
-        "comments-keywords": [
-            {
-                "label": "Table",
-                "id": "comments-keywords-table",
-                "details": "details on table"
-            }
-        ],
-        "comments-locations": [
-            {
-                "label": "Table",
-                "id": "comments-locations-table",
-                "details": "details on table"
-            }
-        ],
-        "dates": [
-            {
-                "label": "Table",
-                "id": "dates-table",
-                "details": "details on table"
-            },
-            {
-                "label": "Magnitude",
-                "id": "dates-magnitude",
-                "details": "details on magnitude"
-            }
-        ],
-        
-        "dates-keywords": [
-            {
-                "label": "Table",
-                "id": "dates-keywords-table",
-                "details": "details on table"
-            }
-        ],
-        "dates-locations": [
-            {
-                "label": "Table",
-                "id": "dates-locations-table",
-                "details": "details on table"
-            },
-            {
-                "label": "Magnitude",
-                "id": "dates-locations-magnitude",
-                "details": "details on magnitude"
-            }
-        ],
-        "keywords": [
-            {
-                "label": "Table",
-                "id": "keywords-table",
-                "details": "details on table"
-            },
-            {
-                "label": "Magnitude",
-                "id": "keywords-magnitude",
-                "details": "details on magnitude"
-            },
-            {
-                "label": "Co-Occurence Matrix",
-                "id": "keywords-co-occurence-matrix",
-                "details": "tbd"
-            },
-            {
-                "label": "Network Graph",
-                "id": "keywords-network-graph",
-                "details": "tbd"
-            }
-        ],
-        "keywords-locations": [
-            {
-                "label": "Table",
-                "id": "keywords-locations-table",
-                "details": "details on table"
-            }
-        ],
-        "locations": [
-            {
-                "label": "Table",
-                "id": "locations-table",
-                "details": "details on table"
-            },
-            {
-                "label": "Magnitude",
-                "id": "locations-magnitude",
-                "details": "details on magnitude"
-            }
-        ]
-    }
+    "data-interpretation": [
+        {
+            "label": "Co-Occurence",
+            "id": "co-occurence",
+            "variable-count": 2,
+            "variable-dynamic": [
+                "comments",
+                "dates",
+                "keywords",
+                "locations"
+            ],
+            "variable-fixed": ""
+        },
+        {
+            "label": "Magnitude",
+            "id": "magnitude",
+            "variable-count": 1,
+            "variable-dynamic": [
+                "comments",
+                "dates",
+                "keywords",
+                "locations"
+            ],
+            "variable-fixed": ""
+        },
+        {
+            "label": "Timeline",
+            "id": "timeline",
+            "variable-count": 2,
+            "variable-dynamic": [
+                "comments",
+                "keywords",
+                "locations"
+            ],
+            "variable-fixed": "dates"
+        }
+    ]
 }

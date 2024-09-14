@@ -41,32 +41,12 @@
 		setHeaderHeight();
 	});
 
-	function setDataInterpretation(newObject) {
-		// Set the dataInterpretationSetting
-		dataInterpretationSetting.set(newObject);
-
-		// Check if "variable-fixed" is not an empty string
-		if (newObject['variable-fixed'] && newObject['variable-fixed'] !== '') {
-			// Search for the object in settings['meta-data'] that matches the id from "variable-fixed"
-			const fixedObject = settings['meta-data'].find(
-				(item) => item.id === newObject['variable-fixed']
-			);
-
-			if (fixedObject) {
-				// If the object is found, set it as metaDataSetting
-				metaDataSetting.set([fixedObject]);
-			} else {
-				// If no matching object is found, clear metaDataSetting
-				metaDataSetting.set([]);
-			}
-		} else {
-			// If "variable-fixed" is an empty string, clear metaDataSetting
-			metaDataSetting.set([]);
-		}
-	}
-
 	// update the metaDataSetting and order alphabetically for link construction
 	function setMetaData(newObject) {
+		console.log('add', newObject.id);
+		// Clear the dataInterpretationSetting
+		dataInterpretationSetting.set([]); // This empties the store
+
 		metaDataSetting.update((objects) => {
 			const index = objects.findIndex((obj) => obj.id === newObject.id);
 			if (index === -1) {
@@ -77,15 +57,28 @@
 		});
 	}
 
-	let currentDataInterpretation = {};
-	dataInterpretationSetting.subscribe((value) => {
-		currentDataInterpretation = value;
-	});
+	// update the metaDataSetting and order alphabetically for link construction
+	function setDataInterpretation(newObject) {
+		console.log('add', newObject.id);
+		dataInterpretationSetting.update((objects) => {
+			const index = objects.findIndex((obj) => obj.id === newObject.id);
+			if (index === -1) {
+				return [...objects, newObject].sort((a, b) => a.id.localeCompare(b.id));
+			} else {
+				return objects.filter((_, i) => i !== index).sort((a, b) => a.id.localeCompare(b.id));
+			}
+		});
+	}
 
 	// subscribe to the current settings to update the hover effect
 	let currentMetaData = [];
 	metaDataSetting.subscribe((value) => {
 		currentMetaData = value;
+	});
+
+	let currentDataInterpretation = [];
+	dataInterpretationSetting.subscribe((value) => {
+		currentDataInterpretation = value;
 	});
 </script>
 
@@ -94,8 +87,8 @@
 	<div class="grid grid-cols-12 gap-6 px-6">
 		<button class="col-span-2 bg-light text-dark font-mono text-mono-sm h-8">Settings</button>
 		<div class="col-span-2 h-8 flex items-center font-mono text-mono-sm">Data Set</div>
-		<div class="col-span-2 h-8 flex items-center font-mono text-mono-sm">Data Interpretation</div>
 		<div class="col-span-2 h-8 flex items-center font-mono text-mono-sm">Meta Data</div>
+		<div class="col-span-2 h-8 flex items-center font-mono text-mono-sm">Data Interpretation</div>
 
 		<div class="col-span-2 col-start-11 flex">
 			<!-- VISUALIZATION BUTTON -->
@@ -127,38 +120,39 @@
 		<div class="col-start-3 col-span-2 font-sans text-sans-md">
 			<a href="/">Negatives Ernst Brunner Collection</a>
 		</div>
+		<!-- META DATA OPTIONS -->
+		<!-- Select up to two-->
+		{#if settings != null && settings['meta-data'] && settings['meta-data'].length > 0}
+			<div class="col-span-2 font-sans text-sans-md">
+				{#each settings['meta-data'] as option}
+					<button
+						on:click={() => setMetaData(option)}
+						class="block {currentMetaData.some((item) => item.id === option.id)
+							? 'text-blue'
+							: currentMetaData.length >= 2
+								? 'text-grey'
+								: ''}"
+						disabled={currentMetaData.length >= 2 &&
+							!currentMetaData.some((item) => item.id === option.id)}
+						>{option.label}
+					</button>
+				{/each}
+			</div>
+		{/if}
 		<!-- DATA INTERPRETATION OPTIONS -->
+		<!-- visible depending on selected meta data -->
 		{#if settings != null && settings['data-interpretation'] && settings['data-interpretation'].length > 0}
 			<div class="col-span-2 font-sans text-sans-md">
 				{#each settings['data-interpretation'] as option}
 					<button
 						on:click={() => setDataInterpretation(option)}
-						class="block {currentDataInterpretation.id === option.id ? 'text-blue' : ''}"
-					>
-						{option.label}
-					</button>
-				{/each}
-			</div>
-		{/if}
-		<!-- META DATA OPTIONS -->
-		{#if settings != null && settings['meta-data'] && settings['meta-data'].length > 0}
-			<div class="col-span-2 font-sans text-sans-md">
-				{#each settings['meta-data'] as option}
-					<button
-						on:click={() => {
-							// Prevent deselection if option.id matches dataInterpretationSetting["variable-fixed"]
-							if (currentDataInterpretation['variable-fixed'] !== option.id) {
-								setMetaData(option);
-							}
-						}}
-						class="block {currentMetaData.some((item) => item.id === option.id)
+						class="block {currentDataInterpretation.some((item) => item.id === option.id)
 							? 'text-blue'
-							: currentMetaData.length >= currentDataInterpretation['variable-count']
+							: currentMetaData.length === 0 || currentMetaData.length !== option['variable-count']
 								? 'text-grey'
 								: ''}"
-						disabled={(currentMetaData.length >= currentDataInterpretation['variable-count'] &&
-							!currentMetaData.some((item) => item.id === option.id)) ||
-							currentDataInterpretation['variable-fixed'] === option.id}
+						disabled={currentMetaData.length === 0 ||
+							currentMetaData.length !== option['variable-count']}
 					>
 						{option.label}
 					</button>

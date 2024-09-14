@@ -1,6 +1,6 @@
 <script>
 	import { onDestroy } from 'svelte';
-	import { metaDataSetting } from './store';
+	import { metaDataSetting, dataInterpretationSetting } from './store';
 	import { panelVisible } from './store';
 
 	function togglePanel() {
@@ -8,13 +8,13 @@
 		console.log(panelVisible);
 	}
 
-	let currentSetting = [];
-	const unsubscribe = metaDataSetting.subscribe((value) => {
-		currentSetting = value;
+	let currentMetaData = [];
+	metaDataSetting.subscribe((value) => {
+		currentMetaData = value;
 	});
-
-	onDestroy(() => {
-		unsubscribe();
+	let currentDataInterpretation = [];
+	dataInterpretationSetting.subscribe((value) => {
+		currentDataInterpretation = value;
 	});
 </script>
 
@@ -24,20 +24,20 @@
 	<div class="col-span-2 mt-2">
 		<p class="font-mono text-mono-sm">47'837 Objects</p>
 	</div>
+	<!-- DATA INTERPRETATION DETAILS -->
+	<div class="col-span-2 mt-2">
+		{#if currentDataInterpretation.id}
+			<p class="font-mono text-mono-sm">{currentDataInterpretation.id}</p>
+		{/if}
+	</div>
 	<!-- METADATA DETAILS -->
 	<div class="col-span-2 mt-2">
-		{#if currentSetting}
-			{#each currentSetting as setting}
+		{#if currentMetaData}
+			{#each currentMetaData as setting}
 				<p class="font-mono text-mono-sm">{setting.id}</p>
 			{/each}
 		{/if}
 	</div>
-	<!-- DATA INTERPRETATION DETAILS -->
-	<!-- <div class="col-span-2 mt-2">
-		{#if metaDataSetting && metaDataSetting['data-curation']}
-			<p class="font-mono text-mono-sm">{metaDataSetting['data-curation']['details']}</p>
-		{/if}
-	</div> -->
 	<!-- OBJECT VIEWER BUTTON -->
 	<button
 		on:click={togglePanel}
