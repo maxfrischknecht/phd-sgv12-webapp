@@ -87,6 +87,11 @@
                 "label": "Table",
                 "id": "dates-locations-table",
                 "details": "details on table"
+            },
+            {
+                "label": "Magnitude",
+                "id": "dates-locations-magnitude",
+                "details": "details on magnitude"
             }
         ],
         "keywords": [
@@ -123,6 +128,11 @@
                 "label": "Table",
                 "id": "locations-table",
                 "details": "details on table"
+            },
+            {
+                "label": "Magnitude",
+                "id": "locations-magnitude",
+                "details": "details on magnitude"
             }
         ]
     }
