@@ -10,21 +10,25 @@
         {
             "label": "Comments",
             "id": "comments",
+            "key": "schema:comment",
             "details": "40'666 total objects (85.01%%) <br> 60'475 total comments <br> 3,378 unique comments"
         },
         {
             "label": "Dates",
             "id": "dates",
+            "key": "schema:temporal",
             "details": "33'539 total objects (70.11%) <br> 39'489 total dates <br> 574 unique dates"
         },
         {
             "label": "Keywords",
             "id": "keywords",
+            "key": "schema:about",
             "details": "22'364 total objects (46.75%) <br> 71'092 total keywords <br> 1,578 unique keywords"
         },
         {
             "label": "Locations",
             "id": "locations",
+            "key": "schema:location",
             "details": "42'107 total objects (88.02%) <br> 42'107 total locations <br> 1,087 unique locations"
         }
     ],

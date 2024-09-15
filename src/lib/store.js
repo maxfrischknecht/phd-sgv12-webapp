@@ -10,3 +10,5 @@ export const headerHeight = writable(0);
 export const metaDataSetting = writable([])
 export const dataInterpretationSetting = writable({})
 
+export const currentData = writable([]);
+export const currentKey = writable('');

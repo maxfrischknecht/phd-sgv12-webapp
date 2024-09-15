@@ -19,7 +19,7 @@
 	const unsubscribeHeaderHeight = headerHeight.subscribe((value) => {
 		panelHeight = `calc(100vh - ${value}px)`;
 		panelTop = `${value}px`;
-		console.log(panelHeight, panelTop)
+		// console.log(panelHeight, panelTop)
 	});
 
 	onDestroy(() => {

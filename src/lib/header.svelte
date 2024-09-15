@@ -1,5 +1,5 @@
 <script>
-	import { onMount, tick } from 'svelte';
+	import { onMount, onDestroy, tick } from 'svelte';
 	import Tread from './tread.svelte';
 	import {
 		metaDataSetting,
@@ -18,7 +18,7 @@
 		if (header) {
 			const newHeight = header.offsetHeight;
 			headerHeight.set(newHeight);
-			console.log('new header height: ', newHeight);
+			// console.log('new header height: ', newHeight);
 		}
 	}
 
@@ -78,14 +78,20 @@
 	}
 
 	let currentDataInterpretation = {};
-	dataInterpretationSetting.subscribe((value) => {
+	const subscription1 = dataInterpretationSetting.subscribe((value) => {
 		currentDataInterpretation = value;
 	});
 
 	// subscribe to the current settings to update the hover effect
 	let currentMetaData = [];
-	metaDataSetting.subscribe((value) => {
+	const subscription2 = metaDataSetting.subscribe((value) => {
 		currentMetaData = value;
+	});
+
+	// Cleanup subscription when component is destroyed
+	onDestroy(() => {
+		subscription1();
+		subscription2();
 	});
 </script>
 
