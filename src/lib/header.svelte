@@ -131,12 +131,13 @@
 		{#if settings != null && settings['data-interpretation'] && settings['data-interpretation'].length > 0}
 			<div class="col-span-2 font-sans text-sans-md">
 				{#each settings['data-interpretation'] as option}
-					<button
+					<a
+						href="/{option.id}"
 						on:click={() => setDataInterpretation(option)}
 						class="block {currentDataInterpretation.id === option.id ? 'text-blue' : ''}"
 					>
 						{option.label}
-					</button>
+					</a>
 				{/each}
 			</div>
 		{/if}
