@@ -29,9 +29,9 @@ a:hover {
 text {
     @apply text-light;
     @apply font-mono;
-    /* @apply text-mono-sm; */
-    font-size: 0.5rem;
-    letter-spacing: 0.4px;
+    @apply text-mono-sm;
+    /* font-size: 0.5rem; */
+    /* letter-spacing: 0.4px; */
 }
 
 /* Network Visualization */
