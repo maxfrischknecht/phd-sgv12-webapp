@@ -1,6 +1,6 @@
 <script>
 	import { onMount, onDestroy, afterUpdate } from 'svelte';
-	import { currentData, currentKey } from './../../lib/store';
+	import { currentData, currentKeyA } from './../../lib/store';
 	import * as d3 from 'd3';
 
 	// Dimensions for the SVG container
@@ -23,7 +23,7 @@
 		displayData = value;
 		updateViz();
 	});
-	const keyUnsubscribe = currentKey.subscribe((value) => {
+	const keyUnsubscribe = currentKeyA.subscribe((value) => {
 		vizKey = value;
 		updateViz();
 	});

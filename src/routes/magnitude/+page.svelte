@@ -1,6 +1,6 @@
 <script>
 	import { onMount, onDestroy } from 'svelte';
-	import { metaDataSetting, currentData, currentKey } from './../../lib/store';
+	import { metaDataSetting, currentData, currentKeyA } from './../../lib/store';
 	import Magnitude from '../../lib/visualizations/magnitude.svelte';
 
 	let currentMetaData = [];
@@ -10,7 +10,7 @@
 		unsubscribe = metaDataSetting.subscribe((value) => {
 			if (Array.isArray(value) && value.length > 0) {
 				let vizKey = value[0]['key'];
-				currentKey.set(vizKey);
+				currentKeyA.set(vizKey);
 				console.log('loading..', vizKey);
 				loadData(value);
 			} else {

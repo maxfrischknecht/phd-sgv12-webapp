@@ -11,4 +11,5 @@ export const metaDataSetting = writable([])
 export const dataInterpretationSetting = writable({})
 
 export const currentData = writable([]);
-export const currentKey = writable('');
+export const currentKeyA = writable('');
+export const currentKeyB = writable('');
