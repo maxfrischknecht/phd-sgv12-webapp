@@ -13,7 +13,7 @@
                 let vizKeyB = value[1]['key'];
 				currentKeyA.set(vizKeyA);
                 currentKeyB.set(vizKeyB);
-				console.log('loading..', vizKeyA, vizKeyB);
+				console.log('set keys: ', vizKeyA, vizKeyB);
 				loadData(value);
 			} else {
 				console.log('no meta data set yet');
@@ -23,9 +23,8 @@
 	});
 
 	async function loadData(storeObj) {
-		console.log(storeObj)
-        const path = `/data/sgv-12_${storeObj[0].id}_${storeObj[1].id}_cooc_matrix.json`;
-		console.log('load:', path);
+        const path = `/data/sgv-12_${storeObj[0].id}_${storeObj[1].id}_matrix.json`;
+		console.log('loading...', path);
 		try {
 			const response = await fetch(path);
 			const data = await response.json();
