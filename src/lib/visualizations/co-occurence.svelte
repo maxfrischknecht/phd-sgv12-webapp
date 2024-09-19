@@ -1,6 +1,7 @@
 <script>
 	import { onMount, onDestroy, afterUpdate } from 'svelte';
 	import { currentData, currentKeyA, currentKeyB } from './../../lib/store';
+	import { createObjectViewerData } from '../utilities/createObjectViewerData.js';
 	import * as d3 from 'd3';
 
 	// Viz Variables
@@ -94,6 +95,13 @@
 
 		// remove if new data has less
 		cells.exit().remove();
+
+		// create hover & click events for cells
+		d3.selectAll('.cell')
+			.on('click', function (event, d) {
+				console.log(d)
+				createObjectViewerData(d);
+			})
 
 		// Draw the Y Axis
 		let shortString = (d) => (d.length > 19 ? `${d.substring(0, 19)}` : d);

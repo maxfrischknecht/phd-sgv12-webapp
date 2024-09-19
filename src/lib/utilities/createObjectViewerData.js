@@ -1,7 +1,7 @@
 import { getSchemaIdentifiers } from './getSchemaIdentifiers.js';
 import { extractIIIFData } from './extractIIIFData.js';
 import { callPiaApi } from './callPiaApi.js';
-import { objectViewerData, objectViewerLoading } from './../store.js';
+import { objectViewerData, objectViewerLoading, objectViewerError } from './../store.js';
 
 /**
  * Receives the data associated with a section of a data visualization
@@ -19,7 +19,7 @@ export async function createObjectViewerData(newObject) {
 
 		// Step 1: Extract all identifiers
 		const allIdentifiers = getSchemaIdentifiers(newObject);
-        const limitedData = allIdentifiers.slice(0, 5);
+        const limitedData = allIdentifiers.slice(0, 10);
 
         console.log(limitedData)
 
@@ -36,6 +36,7 @@ export async function createObjectViewerData(newObject) {
 	} catch (err) {
 		error = err.message;
 		console.error('An error occurred during the API call process:', error);
+        objectViewerError.set(error)
 	} finally {
 		objectViewerLoading.set(false);
 	}

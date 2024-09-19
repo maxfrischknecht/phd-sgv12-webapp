@@ -1,5 +1,5 @@
 <script>
-	import { panelVisible, headerHeight, objectViewerData, objectViewerLoading } from './store';
+	import { panelVisible, headerHeight, objectViewerData, objectViewerLoading, objectViewerError } from './store';
 	import { onDestroy, onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
@@ -8,6 +8,7 @@
 	let panelTop = '0px'; // Default top position
 	let displayData = [];
 	let loading;
+	let error = null;
 
 	const unsubscribe = panelVisible.subscribe((value) => {
 		visible = value;
@@ -21,6 +22,10 @@
 		loading = value;
 	})
 
+	const unsubscribeViewerError = objectViewerError.subscribe((value) => {
+		error = value;
+	});
+	
 	const unsubscribeHeaderHeight = headerHeight.subscribe((value) => {
 		panelHeight = `calc(100vh - ${value}px)`;
 		panelTop = `${value}px`;
@@ -42,6 +47,8 @@
 		<div class="grid grid-cols-6 gap-6 px-6 my-4">
 			{#if loading}
 				<p class="font-mono text-mono-sm">Loading images...</p>
+			{:else if error}
+				<p class="font-mono text-mono-sm">Error: {error}</p>
 			{:else if displayData.length === 0}
 				<p class="font-mono text-mono-sm">No images found. {displayData.length}</p>
 			{:else}
@@ -63,5 +70,6 @@
 		position: fixed;
 		right: 0;
 		overflow: auto;
+		z-index: 100;
 	}
 </style>
