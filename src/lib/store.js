@@ -2,7 +2,8 @@
 import { writable } from 'svelte/store';
 
 export const panelVisible = writable(false);
-export const imageIdsStore = writable([]);
+export const objectViewerData = writable([]);
+export const objectViewerLoading = writable(true)
 export const viewVisualization = writable(true);
 
 export const headerHeight = writable(0);

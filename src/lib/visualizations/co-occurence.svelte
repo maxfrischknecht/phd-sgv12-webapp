@@ -9,7 +9,7 @@
 	let margin = { top: 0, right: 0, bottom: 0, left: 0 };
 	let width = window.innerWidth;
 	let height = window.innerHeight;
-	let xAxisSvgWidth; 
+	let xAxisSvgWidth;
 
 	let light = '#F4F4F4';
 	let grey = '#5A5A5A';
@@ -73,7 +73,7 @@
 		// Draw the matrix cells
 		const cells = svg.selectAll('.cell').data(displayData, (d) => `${d.row}-${d.col}`); // Key by vizKey to ensure consistency
 
-		let offsetY = 150;
+		let offsetY = 10;
 		let offsetX = 150;
 
 		cells
@@ -181,9 +181,11 @@
 		width: 100vw;
 		height: 100vh;
 		overflow: auto;
+		/* border: 1px solid blue; */
 	}
 	#x-axis-container {
-		/* border: 1px solid red !important; */
-		position: absolute;
+		position: sticky;
+		top: 0;
+		/* border: 1px solid red; */
 	}
 </style>

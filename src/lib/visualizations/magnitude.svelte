@@ -1,6 +1,7 @@
 <script>
 	import { onMount, onDestroy, afterUpdate } from 'svelte';
 	import { currentData, currentKeyA } from './../../lib/store';
+	import { createObjectViewerData } from '../utilities/createObjectViewerData.js';
 	import * as d3 from 'd3';
 
 	// Dimensions for the SVG container
@@ -108,7 +109,7 @@
 			.attr('width', (d) => xScale(3000)) // Full width of the bar area
 			.attr('y', (d) => yScale(d[vizKey]) - 5) // Position the hover area around the thin bar
 			.attr('fill', 'transparent') // Invisible but captures events
-			.style('cursor', 'pointer')
+			.style('cursor', 'pointer');
 
 		// visible bars
 		bars
@@ -130,10 +131,7 @@
 				console.log('hover!');
 				// Change bar color
 				// d3.select(this).attr('fill', blue);
-				d3.select(d3.selectAll('.bar').nodes()[yScaleDomain.indexOf(d[vizKey])]).attr(
-					'fill',
-					blue
-				);
+				d3.select(d3.selectAll('.bar').nodes()[yScaleDomain.indexOf(d[vizKey])]).attr('fill', blue);
 
 				// Find the corresponding y-axis label and change its color
 				d3.selectAll('.y-axis text')
@@ -151,6 +149,10 @@
 				d3.selectAll('.y-axis text')
 					.filter((label) => label === d[vizKey]) // Match the corresponding y-axis label
 					.attr('fill', light);
+			})
+			.on('click', function (event, d) {
+				// send the data from the clicked element to the utils
+				createObjectViewerData(d);
 			});
 
 		bars.exit().remove();
@@ -164,4 +166,3 @@
 </script>
 
 <div id="svg-container"></div>
-
