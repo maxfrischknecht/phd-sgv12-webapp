@@ -11,31 +11,32 @@
             "label": "Comments",
             "id": "comments",
             "key": "schema:comment",
-            "details": "40'666 total objects (85.01%%) <br> 60'475 total comments <br> 3,378 unique comments"
+            "description": "40'666 objects (85.01%%) <br> 60'475 comments <br> 3,378 unique comments"
         },
         {
             "label": "Dates",
             "id": "dates",
             "key": "schema:temporal",
-            "details": "33'539 total objects (70.11%) <br> 39'489 total dates <br> 574 unique dates"
+            "description": "33'539 objects (70.11%) <br> 39'489 dates <br> 574 unique dates"
         },
         {
             "label": "Keywords",
             "id": "keywords",
             "key": "schema:about",
-            "details": "22'364 total objects (46.75%) <br> 71'092 total keywords <br> 1,578 unique keywords"
+            "description": "22'364 objects (46.75%) <br> 71'092 keywords <br> 1,578 unique keywords"
         },
         {
             "label": "Locations",
             "id": "locations",
             "key": "schema:location",
-            "details": "42'107 total objects (88.02%) <br> 42'107 total locations <br> 1,087 unique locations"
+            "description": "42'107 objects (88.02%) <br> 42'107 locations <br> 1,087 unique locations"
         }
     ],
     "data-interpretation": [
         {
             "label": "Co-Occurence",
             "id": "co-occurence",
+            "description": "Co-occurrence visualizations allow to analyse how often two variables appear together in the meta-data of an image. At least two variables must be selected.",
             "variable-count": 2,
             "variable-dynamic": [
                 "comments",
@@ -48,6 +49,7 @@
         {
             "label": "Magnitude",
             "id": "magnitude",
+            "description": "Magnitude visualizations allow to analyse the frequency of comments, dates, keywords and locations.",
             "variable-count": 1,
             "variable-dynamic": [
                 "comments",
@@ -60,6 +62,7 @@
         {
             "label": "Timeline",
             "id": "timeline",
+            "description": "Timelines allow data to be analysed along the dimension of time.",
             "variable-count": 2,
             "variable-dynamic": [
                 "comments",

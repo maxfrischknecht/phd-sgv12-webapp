@@ -8,7 +8,7 @@ export async function callPiaApi(allIdentifiers) {
 	// Step 1: Create the query string by joining identifiers with '+'
 	const query_value = allIdentifiers.join('+');
 	// Step 2: Define query parameters
-	const per_page = 10;
+	const per_page = 25;
 	const page_count = 1;
 	const ressource_class_id = 26;
 

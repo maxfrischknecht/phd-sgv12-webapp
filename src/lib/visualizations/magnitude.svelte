@@ -10,8 +10,8 @@
 	let margin = { top: 12, right: 30, bottom: 24, left: 250 };
 	let width = window.innerWidth - margin.right;
 	let height; // define dynamically
-	let barSpacing = 16;
-	let barThickness = 1;
+	let barSpacing = 10;
+	let barThickness = 6;
 	let light = '#F4F4F4';
 	let grey = '#5A5A5A';
 	let blue = '#8390FA';
@@ -99,27 +99,28 @@
 		// Update Bars
 		const bars = svg.selectAll('.bar').data(displayData, (d) => d[vizKey]); // Key by vizKey to ensure consistency
 
-		bars
-			.enter()
-			.append('rect')
-			.attr('class', 'hover-target') // A larger, invisible rectangle for hover events
-			.attr('transform', `translate(0, 34)`)
-			.attr('x', margin.left)
-			.attr('height', barThickness + 10) // Make the hover area larger (10px more)
-			.attr('width', (d) => xScale(3000)) // Full width of the bar area
-			.attr('y', (d) => yScale(d[vizKey]) - 5) // Position the hover area around the thin bar
-			.attr('fill', 'transparent') // Invisible but captures events
-			.style('cursor', 'pointer');
+		// bars
+		// 	.enter()
+		// 	.append('rect')
+		// 	.attr('class', 'hover-target') // A larger, invisible rectangle for hover events
+		// 	.attr('transform', `translate(0, 31)`)
+		// 	.attr('x', margin.left)
+		// 	.attr('height', barThickness + 4) // Make the hover area larger (10px more)
+		// 	.attr('width', (d) => xScale(3000)) // Full width of the bar area
+		// 	.attr('y', (d) => yScale(d[vizKey]) - 2) // Position the hover area around the thin bar
+		// 	.attr('fill', 'red') // Invisible but captures events
+		// 	.style('cursor', 'pointer');
 
 		// visible bars
 		bars
 			.enter()
 			.append('rect')
-			.attr('class', 'bar')
-			.attr('transform', `translate(0, 34)`)
+			.attr('class', 'bar hover-target')
+			.attr('transform', `translate(0, 31)`)
 			.attr('x', margin.left)
 			.attr('height', barThickness)
-			.attr('fill', light)
+			.attr('fill', blue)
+			.style('cursor', 'pointer')
 			.attr('y', (d) => yScale(d[vizKey])) // Initial y position
 			.merge(bars)
 			.transition()
@@ -131,19 +132,20 @@
 				console.log('hover!');
 				// Change bar color
 				// d3.select(this).attr('fill', blue);
-				d3.select(d3.selectAll('.bar').nodes()[yScaleDomain.indexOf(d[vizKey])]).attr('fill', blue);
+				d3.select(d3.selectAll('.bar').nodes()[yScaleDomain.indexOf(d[vizKey])])
+					.attr('fill', blue)
+					.attr('opacity', 0.5);
 
 				// Find the corresponding y-axis label and change its color
 				d3.selectAll('.y-axis text')
 					.filter((label) => label === d[vizKey]) // Match the corresponding y-axis label
-					.attr('fill', blue);
+					.attr('fill', blue)
 			})
 			.on('mouseout', function (event, d) {
 				// Restore original thin bar color
-				d3.select(d3.selectAll('.bar').nodes()[yScaleDomain.indexOf(d[vizKey])]).attr(
-					'fill',
-					light
-				);
+				d3.select(d3.selectAll('.bar').nodes()[yScaleDomain.indexOf(d[vizKey])])
+					.attr('fill', blue)
+					.attr('opacity', 1);
 
 				// Restore original y-axis label color
 				d3.selectAll('.y-axis text')

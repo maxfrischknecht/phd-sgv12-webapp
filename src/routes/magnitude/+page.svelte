@@ -27,7 +27,7 @@
 			const response = await fetch(path);
 			const data = await response.json();
 			// Sort the data by 'magnitude' from large to small
-			data.sort((a, b) => b["magnitude"] - a["magnitude"]);
+			data.sort((a, b) => b['magnitude'] - a['magnitude']);
 			currentData.set(data);
 			console.log('data loaded & set: ', data);
 		} catch (error) {
@@ -41,5 +41,13 @@
 		unsubscribe();
 	});
 </script>
-<Magnitude></Magnitude>
 
+{#if !currentMetaData.length}
+	<div class="grid grid-cols-12 gap-6 px-6 mb-1 pt-6">
+		<div class="col-span-4">
+			<p class="font-mono text-mono-sm">Please select some meta-data for analysis.</p>
+		</div>
+	</div>
+{:else}
+	<Magnitude></Magnitude>
+{/if}
