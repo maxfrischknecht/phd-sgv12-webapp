@@ -37,9 +37,9 @@
 	}
 
 	// Cleanup subscription when component is destroyed
-	onDestroy(() => {
-		unsubscribe();
-	});
+	// onDestroy(() => {
+	// 	unsubscribe();
+	// });
 </script>
 
 {#if !currentMetaData.length}

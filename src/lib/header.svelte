@@ -7,6 +7,10 @@
 		viewVisualization,
 		headerHeight
 	} from './store';
+	import { clearMetaData } from './utilities/clearMetaData.js';
+	import { clearDataInterpretation } from './utilities/clearDataInterpretation.js';
+	import { setDataInterpretation } from './utilities/setDataInterpretation.js';
+	import { setMetaData } from './utilities/setMetaData.js';
 
 	function toggleView(view) {
 		viewVisualization.set(view);
@@ -22,76 +26,21 @@
 		}
 	}
 
-	// the settings to create all navigation options
-	let settings = null;
-	// Fetch the settings to dynamically generate the navigations
+	// load the generative settings to create the navigation structure of the page
+	let appSettings;
 	onMount(async () => {
 		try {
 			const response = await fetch('/generative-settings.json');
 			if (response.ok) {
-				settings = await response.json();
+				appSettings = await response.json();
+				console.log('app settings set');
 			} else {
 				console.error('Failed to load JSON data');
 			}
 		} catch (error) {
 			console.error('Error fetching data:', error);
 		}
-
-		// get & set the headerHeight for defining content height
 		setHeaderHeight();
-	});
-
-	function setDataInterpretation(newObject) {
-		// Set the dataInterpretationSetting
-		dataInterpretationSetting.set(newObject);
-
-		// Check if "variable-fixed" is not an empty string
-		if (newObject['variable-fixed'] && newObject['variable-fixed'] !== '') {
-			// Search for the object in settings['meta-data'] that matches the id from "variable-fixed"
-			const fixedObject = settings['meta-data'].find(
-				(item) => item.id === newObject['variable-fixed']
-			);
-
-			if (fixedObject) {
-				// If the object is found, set it as metaDataSetting
-				metaDataSetting.set([fixedObject]);
-			} else {
-				// If no matching object is found, clear metaDataSetting
-				metaDataSetting.set([]);
-			}
-		} else {
-			// If "variable-fixed" is an empty string, clear metaDataSetting
-			metaDataSetting.set([]);
-		}
-	}
-
-	// update the metaDataSetting and order alphabetically for link construction
-	function setMetaData(newObject) {
-		metaDataSetting.update((objects) => {
-			const index = objects.findIndex((obj) => obj.id === newObject.id);
-			if (index === -1) {
-				return [...objects, newObject].sort((a, b) => a.id.localeCompare(b.id));
-			} else {
-				return objects.filter((_, i) => i !== index).sort((a, b) => a.id.localeCompare(b.id));
-			}
-		});
-	}
-
-	let currentDataInterpretation = {};
-	const subscription1 = dataInterpretationSetting.subscribe((value) => {
-		currentDataInterpretation = value;
-	});
-
-	// subscribe to the current settings to update the hover effect
-	let currentMetaData = [];
-	const subscription2 = metaDataSetting.subscribe((value) => {
-		currentMetaData = value;
-	});
-
-	// Cleanup subscription when component is destroyed
-	onDestroy(() => {
-		subscription1();
-		subscription2();
 	});
 </script>
 
@@ -114,7 +63,7 @@
 			>
 				Display
 			</button>
-			<!-- DURATION BUTTON -->
+			<!-- CURATION BUTTON -->
 			<button
 				class="border-b border-l border-r border-grey font-mono text-mono-sm h-8 flex-1"
 				class:bg-light={!$viewVisualization}
@@ -131,16 +80,24 @@
 	<div class="grid grid-cols-12 gap-6 px-6 pb-4 border-b border-grey">
 		<!-- DATA SET OPTIONS aka HOME BTN -->
 		<div class="col-start-3 col-span-2 font-sans text-sans-md">
-			<a href="/">Negatives Ernst Brunner Collection</a>
+			<a
+				href="/"
+				on:click={(event) => {
+					clearMetaData();
+					clearDataInterpretation();
+				}}
+			>
+				Negatives Ernst Brunner Collection
+			</a>
 		</div>
 		<!-- DATA INTERPRETATION OPTIONS -->
-		{#if settings != null && settings['data-interpretation'] && settings['data-interpretation'].length > 0}
+		{#if appSettings != null && appSettings['data-interpretation'] && appSettings['data-interpretation'].length > 0}
 			<div class="col-span-2 font-sans text-sans-md">
-				{#each settings['data-interpretation'] as option}
+				{#each appSettings['data-interpretation'] as option}
 					<a
 						href="/{option.id}"
 						on:click={() => setDataInterpretation(option)}
-						class="block {currentDataInterpretation.id === option.id ? 'text-blue' : ''}"
+						class="block {$dataInterpretationSetting.id === option.id ? 'text-blue' : ''}"
 					>
 						{option.label}
 					</a>
@@ -148,24 +105,34 @@
 			</div>
 		{/if}
 		<!-- META DATA OPTIONS -->
-		{#if settings != null && settings['meta-data'] && settings['meta-data'].length > 0}
+		{#if appSettings != null && appSettings['meta-data'] && appSettings['meta-data'].length > 0}
 			<div class="col-span-2 font-sans text-sans-md">
-				{#each settings['meta-data'] as option}
+				{#each appSettings['meta-data'] as option}
 					<button
 						on:click={() => {
 							// Prevent deselection if option.id matches dataInterpretationSetting["variable-fixed"]
-							if (currentDataInterpretation['variable-fixed'] !== option.id) {
+							if (
+								$dataInterpretationSetting &&
+								$dataInterpretationSetting['variable-fixed'] !== option.id
+							) {
 								setMetaData(option);
 							}
 						}}
-						class="block {currentMetaData.some((item) => item.id === option.id)
-							? 'text-blue'
-							: currentMetaData.length >= currentDataInterpretation['variable-count']
-								? 'text-grey'
-								: ''}"
-						disabled={(currentMetaData.length >= currentDataInterpretation['variable-count'] &&
-							!currentMetaData.some((item) => item.id === option.id)) ||
-							currentDataInterpretation['variable-fixed'] === option.id}
+						class="block {!(
+							$dataInterpretationSetting && Object.keys($dataInterpretationSetting).length > 0
+						)
+							? 'text-grey' // Apply text-grey if dataInterpretationSetting is not defined or empty
+							: $metaDataSetting.some((item) => item.id === option.id)
+								? 'text-blue'
+								: $metaDataSetting.length >= $dataInterpretationSetting['variable-count']
+									? 'text-grey'
+									: ''}"
+						disabled={!(
+							$dataInterpretationSetting && Object.keys($dataInterpretationSetting).length > 0
+						) || // Check if dataInterpretationSetting is defined and not empty
+							($metaDataSetting.length >= $dataInterpretationSetting['variable-count'] &&
+								!$metaDataSetting.some((item) => item.id === option.id)) ||
+							$dataInterpretationSetting['variable-fixed'] === option.id}
 					>
 						{option.label}
 					</button>
