@@ -1,5 +1,5 @@
 <script>
-	import { onMount, onDestroy, tick } from 'svelte';
+	import { onMount, beforeUpdate, onDestroy, tick } from 'svelte';
 	import Tread from './tread.svelte';
 	import {
 		appSettingsStore,
@@ -12,6 +12,8 @@
 	import { clearDataInterpretation } from './utilities/clearDataInterpretation.js';
 	import { setDataInterpretation } from './utilities/setDataInterpretation.js';
 	import { setMetaData } from './utilities/setMetaData.js';
+
+	let threadElement; // Reference to the <Thread> component's element
 
 	function toggleView(view) {
 		viewVisualization.set(view);
@@ -29,6 +31,7 @@
 
 	// load the generative settings to create the navigation structure of the page
 	let appSettings;
+	let resizeObserver;
 	onMount(async () => {
 		try {
 			const response = await fetch('/generative-settings.json');
@@ -43,7 +46,26 @@
 			console.error('Error fetching data:', error);
 		}
 		setHeaderHeight();
+
+		resizeObserver = new ResizeObserver(() => {
+			setHeaderHeight(); // Call the function whenever the Thread element changes its size
+		});
+		if (threadElement) {
+			resizeObserver.observe(threadElement);
+		}
 	});
+
+	beforeUpdate(() => {
+		console.log('new header settings');
+		setHeaderHeight();
+	});
+
+	onDestroy(()=> {
+		// Disconnect the observer when the component is destroyed
+		if (resizeObserver && threadElement) {
+			resizeObserver.unobserve(threadElement);
+		}
+	})
 </script>
 
 <header class="w-100 min-h-8 bg-background">
@@ -98,7 +120,9 @@
 				{#each appSettings['data-interpretation'] as option}
 					<a
 						href="/{option.id}"
-						on:click={() => setDataInterpretation(option)}
+						on:click={() => {
+							setDataInterpretation(option);
+						}}
 						class="block {$dataInterpretationSetting.id === option.id ? 'text-blue' : ''}"
 					>
 						{option.label}
@@ -144,7 +168,9 @@
 	</div>
 
 	<!-- THREAD -->
-	<Tread />
+	 <div bind:this={threadElement}>
+		<Tread />
+	 </div>
 </header>
 
 <style>
