@@ -2,6 +2,7 @@
 	import { onMount, onDestroy, tick } from 'svelte';
 	import Tread from './tread.svelte';
 	import {
+		appSettingsStore,
 		metaDataSetting,
 		dataInterpretationSetting,
 		viewVisualization,
@@ -33,6 +34,7 @@
 			const response = await fetch('/generative-settings.json');
 			if (response.ok) {
 				appSettings = await response.json();
+				appSettingsStore.set(appSettings); // set for dataInterpretation function
 				console.log('app settings set');
 			} else {
 				console.error('Failed to load JSON data');

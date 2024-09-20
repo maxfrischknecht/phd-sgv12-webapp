@@ -4,6 +4,7 @@ import { writable } from 'svelte/store';
 // Navigation, Header
 export const viewVisualization = writable(true);
 export const headerHeight = writable(0);
+export const appSettingsStore = writable({});
 
 // Set Interpretation, Meta Data
 export const metaDataSetting = writable([])

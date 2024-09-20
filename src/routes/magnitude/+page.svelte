@@ -2,9 +2,10 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { metaDataSetting, currentData, currentKeyA } from './../../lib/store';
 	import Magnitude from '../../lib/visualizations/magnitude.svelte';
+	import Placeholder from '../../lib/layouts/placeholder.svelte';
 
 	let currentMetaData = [];
-	let unsubscribe;
+	let unsubscribe = null;
 
 	onMount(() => {
 		unsubscribe = metaDataSetting.subscribe((value) => {
@@ -37,17 +38,15 @@
 	}
 
 	// Cleanup subscription when component is destroyed
-	// onDestroy(() => {
-	// 	unsubscribe();
-	// });
+	onDestroy(() => {
+		if (typeof unsubscribe === 'function') {
+			unsubscribe();
+		}
+	});
 </script>
 
 {#if !currentMetaData.length}
-	<div class="grid grid-cols-12 gap-6 px-6 mb-1 pt-6">
-		<div class="col-span-4">
-			<p class="font-mono text-mono-sm">Please select some meta-data for analysis.</p>
-		</div>
-	</div>
+	<Placeholder></Placeholder>
 {:else}
 	<Magnitude></Magnitude>
 {/if}
